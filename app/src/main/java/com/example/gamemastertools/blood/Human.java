@@ -1,6 +1,6 @@
 package com.example.gamemastertools.blood;
 
-public class HumanAdversary implements Adversary {
+public class Human implements Adversary {
 
     int virtueBeauty;
     int virtueCourage;
@@ -11,26 +11,8 @@ public class HumanAdversary implements Adversary {
 
     int bonusInitiative;
     int bonusCombatDices;
-
-    @Override
-    public void rollForInitiative() {
-
-    }
-
-    @Override
-    public void rollForStrategy() {
-
-    }
-
-
-    public HumanAdversary(int virtueBeauty, int virtueCourage, int virtueCunning, int virtueProwess, int virtueStrength, int virtueWisdom){
-        this.virtueBeauty=virtueBeauty;
-        this.virtueCourage=virtueCourage;
-        this.virtueCunning=virtueCunning;
-        this.virtueProwess=virtueProwess;
-        this.virtueStrength=virtueStrength;
-        this.virtueWisdom=virtueWisdom;
-    }
+    int initiativeDices;
+    int combatDices;
 
     public void setVirtueBeauty(int virtueBeauty) {
         this.virtueBeauty=virtueBeauty;
@@ -56,6 +38,12 @@ public class HumanAdversary implements Adversary {
     }
     public void setBonusInitiative(int bonusInitiative) {
         this.bonusInitiative = bonusInitiative;
+    }
+    public void setCombatDices(int combatDices) {
+        this.combatDices = combatDices;
+    }
+    public void setInitiativeDices(int initiativeDices) {
+        this.initiativeDices = initiativeDices;
     }
 
     public int getVirtueBeauty() {
@@ -83,4 +71,16 @@ public class HumanAdversary implements Adversary {
     public int getBonusInitiative() {
         return bonusInitiative;
     }
+    public int getCombatDices() {
+        return combatDices;
+    }
+    public int getInitiativeDices() {
+        return initiativeDices;
+    }
+
+    @Override
+    public void rollForInitiative() {
+
+    }
+
 }

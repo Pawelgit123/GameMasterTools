@@ -1,6 +1,7 @@
 package com.example.gamemastertools.blood;
 
-public enum HumanStrategy {
+public interface HumanStrategy {
 
-    OPPORTUNIST, FRENZY, BALANCE, WARY
+    void setStrategyForHuman(Human human, Integer strategy);
+
 }

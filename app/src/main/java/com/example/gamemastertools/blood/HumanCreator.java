@@ -3,13 +3,29 @@ package com.example.gamemastertools.blood;
 import java.util.Collections;
 import java.util.List;
 
-public class HumanVirtuesSetByRank {
+public class HumanCreator{
 
     HumanVirtuesComposition humanVirtuesComposition;
+    HumanStrategyComposition humanStrategyComposition;
 
-    public void setVirtuesByRank(HumanAdversary human, int rank){
+    public void createNewHumanAdversary(Human human,
+                                        Integer rank,
+                                        HumanWeapon adversaryWeapon,
+                                        HumanStrategy adversaryStrategy) {
 
-        switch (rank){
+        setVirtuesByRank(human,rank);
+        human.setBonusInitiative(human.getVirtueCunning());
+        if(human.getVirtueStrength()>=3){
+            human.setBonusCombatDices(1);
+        }
+        adversaryWeapon.setWeaponForHuman(human);
+        adversaryStrategy.setStrategyForHuman(human,humanStrategyComposition.checkAndRollForStrategy(
+                human.getVirtueProwess()+human.getBonusCombatDices()));
+    }
+
+
+    void setVirtuesByRank(Human human, Integer rank) {
+        switch (rank) {
             case 1:
                 List<Integer> rankOneStats = humanVirtuesComposition.getRankOneStats();
                 Collections.shuffle(rankOneStats);
@@ -72,6 +88,5 @@ public class HumanVirtuesSetByRank {
                 break;
 
         }
-
     }
 }
