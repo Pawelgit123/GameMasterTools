@@ -8,12 +8,14 @@ public class HumanCreator{
     HumanVirtuesComposition humanVirtuesComposition;
     HumanStrategyComposition humanStrategyComposition;
 
-    public void createNewHumanAdversary(Human human,
-                                        Integer rank,
-                                        HumanWeapon adversaryWeapon,
-                                        HumanStrategy adversaryStrategy) {
+    Human createNewHumanAdversary (Integer rank,
+                                   HumanWeapon adversaryWeapon,
+                                   HumanStrategy adversaryStrategy) {
+        //Todo additional options (virtues bonuses)
 
+        Human human = new Human();
         setVirtuesByRank(human,rank);
+        human.setRank(rank);
         human.setBonusInitiative(human.getVirtueCunning());
         if(human.getVirtueStrength()>=3){
             human.setBonusCombatDices(1);
@@ -21,6 +23,8 @@ public class HumanCreator{
         adversaryWeapon.setWeaponForHuman(human);
         adversaryStrategy.setStrategyForHuman(human,humanStrategyComposition.checkAndRollForStrategy(
                 human.getVirtueProwess()+human.getBonusCombatDices()));
+
+        return human;
     }
 
 

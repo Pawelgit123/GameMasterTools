@@ -14,6 +14,8 @@ public class Human implements Adversary {
     int initiativeDices;
     int combatDices;
 
+    int rank;
+
     public void setVirtueBeauty(int virtueBeauty) {
         this.virtueBeauty=virtueBeauty;
     }
@@ -46,6 +48,10 @@ public class Human implements Adversary {
         this.initiativeDices = initiativeDices;
     }
 
+    public void setRank(int rank) {
+        this.rank = rank;
+    }
+
     public int getVirtueBeauty() {
         return this.virtueBeauty;
     }
@@ -76,6 +82,10 @@ public class Human implements Adversary {
     }
     public int getInitiativeDices() {
         return initiativeDices;
+    }
+
+    public int getRank() {
+        return rank;
     }
 
     @Override
