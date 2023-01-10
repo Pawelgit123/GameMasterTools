@@ -2,16 +2,28 @@
     <string name="app_name">Game Master Tools</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="third_fragment_label">Third Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="first_fragment_label">Game Master Tools</string>
+    <string name="source_books">Source Books</string>
+
+    <string name="second_fragment_label">Blood RPG</string>
+    <string name="blood_battle_creation">Blood-Battle Creator</string>
+    <string name="blood_source_books">Blood-Source Books</string>
+    <string name="blood_healing">Blood-Healing Table</string>
+
+    <string name="healing_table">Healing Table</string>
+    <string name="battle_creator">Battle Creator</string>
+
+    <string name="third_fragment_label">Alien RPG</string>
+    <string name="alien_source_books">Alien-Source Books</string>
+
     <string name="blood">Blood n Honor</string>
     <string name="alien">Alien</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
     <string name="developedBy">Developed by: Paweł Gałązka</string>
     <string name="imageLogoDescription">mainLogo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

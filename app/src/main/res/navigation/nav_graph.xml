@@ -13,30 +13,77 @@
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/BloodFragment" />
         <action
             android:id="@+id/action_FirstFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment" />
+            app:destination="@id/AlienFragment" />
     </fragment>
+
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.gamemastertools.SecondFragment"
+        android:id="@+id/BloodFragment"
+        android:name="com.example.gamemastertools.BloodFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_blood">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_blood_to_blood_source_books"
+            app:destination="@id/BloodSourceBooks" />
+        <action
+            android:id="@+id/action_blood_to_blood_battle_creator"
+            app:destination="@id/BloodBattleCreationFragment" />
+        <action
+            android:id="@+id/action_blood_to_blood_healing"
+            app:destination="@id/BloodHealing" />
+
     </fragment>
 
     <fragment
-        android:id="@+id/ThirdFragment"
-        android:name="com.example.gamemastertools.ThirdFragment"
+        android:id="@+id/AlienFragment"
+        android:name="com.example.gamemastertools.AlienFragment"
         android:label="@string/third_fragment_label"
-        tools:layout="@layout/fragment_third">
+        tools:layout="@layout/fragment_alien">
 
         <action
             android:id="@+id/action_ThirdFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_alien_to_alien_source_books"
+            app:destination="@id/AlienSourceBooks" />
     </fragment>
+
+    <fragment
+        android:id="@+id/BloodBattleCreationFragment"
+        android:name="com.example.gamemastertools.BloodBattleCreation"
+        android:label="@string/blood_battle_creation"
+        tools:layout="@layout/fragment_blood_battle_creation">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/BloodSourceBooks"
+        android:name="com.example.gamemastertools.BloodSourceBook"
+        android:label="@string/blood_source_books"
+        tools:layout="@layout/fragment_blood_source_book">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/AlienSourceBooks"
+        android:name="com.example.gamemastertools.AlienSourceBook"
+        android:label="@string/alien_source_books"
+        tools:layout="@layout/fragment_alien_source_book">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/BloodHealing"
+        android:name="com.example.gamemastertools.BloodHealing"
+        android:label="@string/blood_healing"
+        tools:layout="@layout/fragment_blood_healing">
+
+    </fragment>
+
 </navigation>

@@ -8,6 +8,7 @@
 
     <TextView
         android:id="@+id/textview_first"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -22,11 +23,13 @@
 
     <Button
         android:id="@+id/button_go_blood"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
         android:layout_marginTop="100dp"
+        android:fontFamily="@font/xangda_shiny"
         android:text="@string/blood"
         android:textAllCaps="false"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textview_first"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/textview_first"
@@ -34,11 +37,13 @@
 
     <Button
         android:id="@+id/button_go_alien"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/ocr_a_std_regular"
         android:text="@string/alien"
         android:textAllCaps="false"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button_go_blood"
         app:layout_constraintHorizontal_bias="0.498"
