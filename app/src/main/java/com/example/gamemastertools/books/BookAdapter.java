@@ -1,6 +1,5 @@
 package com.example.gamemastertools.books;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,18 +9,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.gamemastertools.BloodSourceBook;
 import com.example.gamemastertools.R;
 
 import java.util.List;
 
 public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder>{
 
-    private BloodSourceBook context;
-    private List<Book> bookList;
+    private final List<Book> bookList;
 
-    public BookAdapter(BloodSourceBook context, List<Book> bookList) {
-        this.context = context;
+    public BookAdapter(List<Book> bookList) {
         this.bookList = bookList;
     }
 
@@ -40,7 +36,6 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
         Book book = bookList.get(position);
         holder.textView.setText(book.getTitle());
         holder.imageView.setImageResource(book.getBookImage());
-
     }
 
     @Override

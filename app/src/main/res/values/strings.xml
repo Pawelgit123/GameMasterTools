@@ -23,10 +23,22 @@
     <string name="previous">Previous</string>
     <string name="developedBy">Developed by: Paweł Gałązka</string>
     <string name="imageLogoDescription">mainLogo</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="book_img_blood_and_honor">Blood and Honor</string>
-    <string name="book_img_world_of_dew">World of Dew</string>
+
+    //Books here
+    <string name="book_title_blood_and_honor">Blood and Honor</string>
+    <string name="book_title_world_of_dew">World of Dew</string>
+    <string name="book_title_sound_of_water">Sound of Water</string>
+
+    <string name="book_title_house_of_the_blooded">House of the Blooded</string>
+    <string name="book_title_house_of_the_blooded_coronets">House of the Blooded: Coronets</string>
+    <string name="book_title_house_of_the_blooded_wilderness">House of the Blooded: Wilderness</string>
+
+    <string name="book_title_alien_rpg">Alien RPG</string>
+    <string name="book_title_alien_colonial_marines">Alien: Colonial Marines</string>
+    <string name="book_title_alien_chariot_of_the_gods">Alien: Chariot of the Gods</string>
+    <string name="book_title_alien_destroyer_of_the_worlds">Alien: Destroyer of the Worlds</string>
+    <string name="book_title_alien_colony_wars">Colony Wars</string>
+    <string name="book_title_alien_infernos_fall">Infernos Fall</string>
 
 </resources>
