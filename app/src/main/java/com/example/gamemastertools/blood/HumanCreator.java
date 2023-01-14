@@ -8,16 +8,15 @@ public class HumanCreator{
     HumanVirtuesComposition humanVirtuesComposition;
     HumanStrategyComposition humanStrategyComposition;
 
-    Human createNewHumanAdversary (Integer rank,
+    public Human createNewHumanAdversary (Integer rank,
                                    HumanWeapon humanWeapon,
                                    HumanStrategy humanStrategy,
-                                   boolean onlyFighters) {
+                                    boolean onlyFighters) {
 
         Human human = new Human();
         setVirtuesByRank(human,rank);
         human.setRank(rank);
         human.setBonusInitiative(human.getVirtueCunning());
-
         if(onlyFighters&&human.getVirtueProwess()==0){
             human.setVirtueProwess(human.getVirtueBeauty());
             human.setVirtueBeauty(0);

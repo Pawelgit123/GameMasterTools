@@ -8,11 +8,10 @@ public class BattleCreator {
     WeaponRandomByRank weaponRandomByRank;
     HumanStrategy humanStrategy;
 
-    Battle createNewBattle(Battle battle,
-                           int number,
-                           int rank,
-                           boolean onlyFighters,
-                           boolean withLeader){
+    public Battle createNewBattle(int number,
+                                  int rank,
+                                  boolean onlyFighters,
+                                  boolean withLeader){
 
         Battle battle1 = new Battle();
         List<Adversary> adversaryList = battle1.getAdversaryList();
@@ -30,4 +29,5 @@ public class BattleCreator {
 
      return battle1;
     }
+
 }

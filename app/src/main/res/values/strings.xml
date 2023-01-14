@@ -24,6 +24,15 @@
     <string name="developedBy">Developed by: Paweł Gałązka</string>
     <string name="imageLogoDescription">mainLogo</string>
 
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+
+    //Battle
+    <string name="createNewBattle">Create New Battle</string>
+    <string name="withLeader">with Leader</string>
+    <string name="onlyFighters">only Fighters</string>
+    <string name="numberOfEnemies">Number of enemies</string>
+    <string name="rankOfEnemies">Rank of enemies</string>
 
     //Books here
     <string name="book_title_blood_and_honor">Blood and Honor</string>
@@ -40,5 +49,7 @@
     <string name="book_title_alien_destroyer_of_the_worlds">Alien: Destroyer of the Worlds</string>
     <string name="book_title_alien_colony_wars">Colony Wars</string>
     <string name="book_title_alien_infernos_fall">Infernos Fall</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -1,14 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BloodBattleCreation">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/blood_battle_recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/battle_item"/>
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/blood_battle_recycler_view"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="386dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/button"-->
+    <!--        tools:listitem="@layout/battle_item" />-->
 
-</FrameLayout>
+    <Button
+        android:id="@+id/btnCreateNewBattle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/createNewBattle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumberOfAdversaries" />
+
+    <CheckBox
+        android:id="@+id/fightersCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/onlyFighters"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/leaderCheck"
+        app:layout_constraintTop_toBottomOf="@+id/leaderCheck" />
+
+    <TextView
+        android:id="@+id/txtNumberOfAdversaries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/numberOfEnemies"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minusNumberOfAdversaries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/minus"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtToButtonNumberOfAdversaries"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtToButtonNumberOfAdversaries"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <Button
+        android:id="@+id/plusNumberOfAdversaries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="@string/plus"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtToButtonNumberOfAdversaries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtToButtonNumberOfAdversaries" />
+
+    <CheckBox
+        android:id="@+id/leaderCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/withLeader"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtToButtonRankOfAdversaries"
+        app:layout_constraintStart_toStartOf="@+id/txtToButtonRankOfAdversaries"
+        app:layout_constraintTop_toBottomOf="@+id/txtToButtonRankOfAdversaries" />
+
+    <TextView
+        android:id="@+id/txtToButtonNumberOfAdversaries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/plusNumberOfAdversaries"
+        app:layout_constraintStart_toEndOf="@+id/minusNumberOfAdversaries"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumberOfAdversaries" />
+
+    <Button
+        android:id="@+id/minusRankOfAdversaries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minus"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtToButtonRankOfAdversaries"
+        app:layout_constraintEnd_toEndOf="@+id/minusNumberOfAdversaries"
+        app:layout_constraintStart_toStartOf="@+id/minusNumberOfAdversaries"
+        app:layout_constraintTop_toTopOf="@+id/txtToButtonRankOfAdversaries" />
+
+    <Button
+        android:id="@+id/plusRankOfAdversaries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtToButtonRankOfAdversaries"
+        app:layout_constraintEnd_toEndOf="@+id/plusNumberOfAdversaries"
+        app:layout_constraintStart_toStartOf="@+id/plusNumberOfAdversaries"
+        app:layout_constraintTop_toTopOf="@+id/txtToButtonRankOfAdversaries" />
+
+    <TextView
+        android:id="@+id/txtToButtonRankOfAdversaries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/plusRankOfAdversaries"
+        app:layout_constraintStart_toEndOf="@+id/minusRankOfAdversaries"
+        app:layout_constraintTop_toBottomOf="@+id/txtRankOfEnemies" />
+
+    <TextView
+        android:id="@+id/txtRankOfEnemies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/rankOfEnemies"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtNumberOfAdversaries"
+        app:layout_constraintStart_toStartOf="@+id/txtNumberOfAdversaries"
+        app:layout_constraintTop_toBottomOf="@+id/txtToButtonNumberOfAdversaries" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
