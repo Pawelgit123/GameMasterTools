@@ -1,5 +1,7 @@
 package com.example.gamemastertools.blood;
 
+import com.example.gamemastertools.dices.SixDice;
+
 public class Human implements Adversary {
 
     int virtueBeauty;
@@ -15,6 +17,7 @@ public class Human implements Adversary {
     int combatDices;
 
     int rank;
+    int initiative;
 
     public void setVirtueBeauty(int virtueBeauty) {
         this.virtueBeauty=virtueBeauty;
@@ -50,6 +53,9 @@ public class Human implements Adversary {
 
     public void setRank(int rank) {
         this.rank = rank;
+    }
+    public void setInitiative(int initiative) {
+        this.initiative = initiative;
     }
 
     public int getVirtueBeauty() {
@@ -87,10 +93,22 @@ public class Human implements Adversary {
     public int getRank() {
         return rank;
     }
+    public int getInitiative() {
+        return initiative;
+    }
 
     @Override
     public void rollForInitiative() {
+        int result = 0;
+        int dices = getInitiativeDices();
+        SixDice sixDice = new SixDice();
 
+        for (int i = 0; i < dices; i++) {
+            sixDice.rollADie();
+            result += sixDice.getDiceValue();
+        }
+
+        setInitiative(result+getBonusInitiative());
     }
 
 }

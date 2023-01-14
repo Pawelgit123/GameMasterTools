@@ -10,6 +10,7 @@ public class Battle implements Adversary{
     public List<Adversary> getAdversaryList() {
         return adversaryList;
     }
+
     public void setAdversaryList(List<Adversary> adversaryList) {
         this.adversaryList = adversaryList;
     }

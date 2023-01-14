@@ -86,12 +86,4 @@
 
     </fragment>
 
-    <fragment
-        android:id="@+id/BloodHealing"
-        android:name="com.example.gamemastertools.BloodHealing"
-        android:label="@string/blood_healing"
-        tools:layout="@layout/fragment_blood_healing">
-
-    </fragment>
-
 </navigation>

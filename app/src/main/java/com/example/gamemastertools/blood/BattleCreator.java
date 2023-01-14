@@ -12,21 +12,21 @@ public class BattleCreator {
                            int number,
                            int rank,
                            boolean onlyFighters,
-                           boolean additionalTraining,
                            boolean withLeader){
 
         Battle battle1 = new Battle();
         List<Adversary> adversaryList = battle1.getAdversaryList();
+        int leaderBonus = 1;
 
-        //Todo additional options (booleans)
-
+        if(withLeader){
+            Human newHumanAdversaryLeader = humanCreator.createNewHumanAdversary(rank+leaderBonus,weaponRandomByRank,humanStrategy, onlyFighters);
+            adversaryList.add(newHumanAdversaryLeader);
+            number--;
+        }
         for (int i = 0; i < number; i++) {
-            Human newHumanAdversary = humanCreator.createNewHumanAdversary(rank, weaponRandomByRank, humanStrategy);
+            Human newHumanAdversary = humanCreator.createNewHumanAdversary(rank, weaponRandomByRank, humanStrategy, onlyFighters);
             adversaryList.add(newHumanAdversary);
         }
-
-
-
 
      return battle1;
     }

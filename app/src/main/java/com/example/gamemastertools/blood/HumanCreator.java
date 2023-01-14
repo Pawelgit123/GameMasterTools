@@ -9,19 +9,25 @@ public class HumanCreator{
     HumanStrategyComposition humanStrategyComposition;
 
     Human createNewHumanAdversary (Integer rank,
-                                   HumanWeapon adversaryWeapon,
-                                   HumanStrategy adversaryStrategy) {
-        //Todo additional options (virtues bonuses)
+                                   HumanWeapon humanWeapon,
+                                   HumanStrategy humanStrategy,
+                                   boolean onlyFighters) {
 
         Human human = new Human();
         setVirtuesByRank(human,rank);
         human.setRank(rank);
         human.setBonusInitiative(human.getVirtueCunning());
+
+        if(onlyFighters&&human.getVirtueProwess()==0){
+            human.setVirtueProwess(human.getVirtueBeauty());
+            human.setVirtueBeauty(0);
+        }
+
         if(human.getVirtueStrength()>=3){
             human.setBonusCombatDices(1);
         }
-        adversaryWeapon.setWeaponForHuman(human);
-        adversaryStrategy.setStrategyForHuman(human,humanStrategyComposition.checkAndRollForStrategy(
+        humanWeapon.setWeaponForHuman(human);
+        humanStrategy.setStrategyForHuman(human,humanStrategyComposition.checkAndRollForStrategy(
                 human.getVirtueProwess()+human.getBonusCombatDices()));
 
         return human;
