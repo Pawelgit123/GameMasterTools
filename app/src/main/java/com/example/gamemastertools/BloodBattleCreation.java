@@ -100,10 +100,15 @@ public class BloodBattleCreation extends Fragment {
             @Override
             public void onClick(View v) {
 
+                //Todo fix this
+
+               Battle newBattle = BattleCreator.createNewBattle(numberOfAdversaries, rankOfAdversaries, onlyFighters, withLeader);
+
+
                 Snackbar.make(binding.getRoot(), "Enemies: " +numberOfAdversaries +
-                                        " Rank: " + rankOfAdversaries +
+                                        " Rank: " +rankOfAdversaries +
                                         " Leader: " +withLeader +
-                                        " Fighters: " + onlyFighters
+                                        " Fighters: " +onlyFighters
                         , Snackbar.LENGTH_LONG).show();
 
             }

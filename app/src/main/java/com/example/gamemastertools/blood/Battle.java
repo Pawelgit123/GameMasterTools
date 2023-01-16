@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Battle implements Adversary{
 
-    List<Adversary> adversaryList;
+    private List<Adversary> adversaryList;
 
     public List<Adversary> getAdversaryList() {
         return adversaryList;

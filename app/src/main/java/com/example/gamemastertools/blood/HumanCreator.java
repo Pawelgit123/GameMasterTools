@@ -3,40 +3,41 @@ package com.example.gamemastertools.blood;
 import java.util.Collections;
 import java.util.List;
 
-public class HumanCreator{
+public class HumanCreator {
 
-    HumanVirtuesComposition humanVirtuesComposition;
-    HumanStrategyComposition humanStrategyComposition;
-
-    public Human createNewHumanAdversary (Integer rank,
-                                   HumanWeapon humanWeapon,
-                                   HumanStrategy humanStrategy,
-                                    boolean onlyFighters) {
+    public static Human createNewHumanAdversary(Integer rank,
+                                                boolean onlyFighters) {
 
         Human human = new Human();
-        setVirtuesByRank(human,rank);
+        setVirtuesByRank(human, rank);
         human.setRank(rank);
         human.setBonusInitiative(human.getVirtueCunning());
-        if(onlyFighters&&human.getVirtueProwess()==0){
+
+        if (onlyFighters && human.getVirtueProwess() == 0) {
             human.setVirtueProwess(human.getVirtueBeauty());
             human.setVirtueBeauty(0);
         }
 
-        if(human.getVirtueStrength()>=3){
+        if (human.getVirtueStrength() >= 3) {
             human.setBonusCombatDices(1);
         }
-        humanWeapon.setWeaponForHuman(human);
-        humanStrategy.setStrategyForHuman(human,humanStrategyComposition.checkAndRollForStrategy(
-                human.getVirtueProwess()+human.getBonusCombatDices()));
+
+        WeaponRandomByRank weaponRandomByRank = new WeaponRandomByRank();
+        weaponRandomByRank.setWeaponForHuman(human);
+
+        HumanStrategyComposition humanStrategyComposition = new HumanStrategyComposition();
+        HumanStrategyBalanced humanStrategyBalanced = new HumanStrategyBalanced();
+        humanStrategyBalanced.setStrategyForHuman(human, humanStrategyComposition.checkAndRollForStrategy(
+                human.getVirtueProwess() + human.getBonusCombatDices()));
 
         return human;
     }
 
 
-    void setVirtuesByRank(Human human, Integer rank) {
+    static void setVirtuesByRank(Human human, Integer rank) {
         switch (rank) {
             case 1:
-                List<Integer> rankOneStats = humanVirtuesComposition.getRankOneStats();
+                List<Integer> rankOneStats = HumanVirtuesComposition.rankOneStats;
                 Collections.shuffle(rankOneStats);
                 human.setVirtueBeauty(rankOneStats.get(0));
                 human.setVirtueCourage(rankOneStats.get(1));
@@ -46,7 +47,7 @@ public class HumanCreator{
                 human.setVirtueWisdom(rankOneStats.get(5));
                 break;
             case 2:
-                List<Integer> rankTwoStats = humanVirtuesComposition.getRankTwoStats();
+                List<Integer> rankTwoStats = HumanVirtuesComposition.rankTwoStats;
                 Collections.shuffle(rankTwoStats);
                 human.setVirtueBeauty(rankTwoStats.get(0));
                 human.setVirtueCourage(rankTwoStats.get(1));
@@ -56,7 +57,7 @@ public class HumanCreator{
                 human.setVirtueWisdom(rankTwoStats.get(5));
                 break;
             case 3:
-                List<Integer> rankThreeStats = humanVirtuesComposition.getRankThreeStats();
+                List<Integer> rankThreeStats = HumanVirtuesComposition.rankThreeStats;
                 Collections.shuffle(rankThreeStats);
                 human.setVirtueBeauty(rankThreeStats.get(0));
                 human.setVirtueCourage(rankThreeStats.get(1));
@@ -66,7 +67,7 @@ public class HumanCreator{
                 human.setVirtueWisdom(rankThreeStats.get(5));
                 break;
             case 4:
-                List<Integer> rankFourStats = humanVirtuesComposition.getRankFourStats();
+                List<Integer> rankFourStats = HumanVirtuesComposition.rankFourStats;
                 Collections.shuffle(rankFourStats);
                 human.setVirtueBeauty(rankFourStats.get(0));
                 human.setVirtueCourage(rankFourStats.get(1));
@@ -76,7 +77,7 @@ public class HumanCreator{
                 human.setVirtueWisdom(rankFourStats.get(5));
                 break;
             case 5:
-                List<Integer> rankFiveStats = humanVirtuesComposition.getRankFiveStats();
+                List<Integer> rankFiveStats = HumanVirtuesComposition.rankFiveStats;
                 Collections.shuffle(rankFiveStats);
                 human.setVirtueBeauty(rankFiveStats.get(0));
                 human.setVirtueCourage(rankFiveStats.get(1));
@@ -86,7 +87,7 @@ public class HumanCreator{
                 human.setVirtueWisdom(rankFiveStats.get(5));
                 break;
             case 6:
-                List<Integer> rankSixStats = humanVirtuesComposition.getRankSixStats();
+                List<Integer> rankSixStats = HumanVirtuesComposition.rankSixStats;
                 Collections.shuffle(rankSixStats);
                 human.setVirtueBeauty(rankSixStats.get(0));
                 human.setVirtueCourage(rankSixStats.get(1));

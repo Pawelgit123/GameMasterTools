@@ -1,29 +1,28 @@
 package com.example.gamemastertools.blood;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BattleCreator {
 
-    HumanCreator humanCreator;
-    WeaponRandomByRank weaponRandomByRank;
-    HumanStrategy humanStrategy;
-
-    public Battle createNewBattle(int number,
+    public static Battle createNewBattle(int number,
                                   int rank,
                                   boolean onlyFighters,
                                   boolean withLeader){
 
         Battle battle1 = new Battle();
-        List<Adversary> adversaryList = battle1.getAdversaryList();
+        List<Adversary> adversaryList = new ArrayList<>();
+        battle1.setAdversaryList(adversaryList);
+
         int leaderBonus = 1;
 
         if(withLeader){
-            Human newHumanAdversaryLeader = humanCreator.createNewHumanAdversary(rank+leaderBonus,weaponRandomByRank,humanStrategy, onlyFighters);
+            Human newHumanAdversaryLeader = HumanCreator.createNewHumanAdversary(rank+leaderBonus, onlyFighters);
             adversaryList.add(newHumanAdversaryLeader);
             number--;
         }
         for (int i = 0; i < number; i++) {
-            Human newHumanAdversary = humanCreator.createNewHumanAdversary(rank, weaponRandomByRank, humanStrategy, onlyFighters);
+            Human newHumanAdversary = HumanCreator.createNewHumanAdversary(rank, onlyFighters);
             adversaryList.add(newHumanAdversary);
         }
 
