@@ -20,45 +20,193 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="initiative rolled"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/gold"
+        android:text="@string/initiativeRolled"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textAdversaryName"
         app:layout_constraintTop_toBottomOf="@+id/textAdversaryName" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView2"
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textAdversaryInitiativeRolled" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/recyclerView2"
-        app:layout_constraintStart_toEndOf="@+id/recyclerView2"
-        app:layout_constraintTop_toTopOf="@+id/recyclerView2" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/recyclerView2"
-        app:layout_constraintEnd_toStartOf="@+id/recyclerView2"
-        app:layout_constraintTop_toTopOf="@+id/recyclerView2" />
 
     <TextView
         android:id="@+id/textInitiativeDices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:text="initiativedices"
+        android:layout_marginTop="8dp"
+        android:background="@color/gold"
+        android:text="@string/initiativeDices"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textAdversaryInitiativeRolled"
+        app:layout_constraintTop_toBottomOf="@+id/textAdversaryInitiativeRolled" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="56dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="105dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="71dp" />
+
+    <ImageView
+        android:id="@+id/imageViewBackgroundVirtues"
+        android:layout_width="100dp"
+        android:layout_height="87dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewStrength"
+        app:layout_constraintEnd_toEndOf="@+id/textViewWisdomNumber"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/textViewStrength"
+        app:srcCompat="@color/gold" />
+
+    <TextView
+        android:id="@+id/textViewProwess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/virtueProwess"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textAdversaryName" />
+
+    <TextView
+        android:id="@+id/textViewStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/virtueStrength"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProwess" />
+
+    <TextView
+        android:id="@+id/textViewCunning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/virtueCunning"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStrength" />
+
+    <TextView
+        android:id="@+id/textViewCourage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/virtueCourage"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewProwess"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/textViewProwess" />
+
+    <TextView
+        android:id="@+id/textViewWisdom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/virtueWisdom"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewStrength"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/textViewStrength" />
+
+    <TextView
+        android:id="@+id/textViewBeauty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/virtueBeauty"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCunning"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/textViewCunning" />
+
+    <TextView
+        android:id="@+id/textViewProwessNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewProwess"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/textViewProwess" />
+
+    <TextView
+        android:id="@+id/textViewStrengthNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewStrength"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/textViewStrength" />
+
+    <TextView
+        android:id="@+id/textViewCunningNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCunning"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/textViewCunning" />
+
+    <TextView
+        android:id="@+id/textViewCourageNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCourage"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/textViewCourage" />
+
+    <TextView
+        android:id="@+id/textViewWisdomNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewWisdom"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/textViewWisdom" />
+
+    <TextView
+        android:id="@+id/textViewBeautyNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBeauty"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/textViewBeauty" />
+
+    <TextView
+        android:id="@+id/textAdversaryInitiativeRolledNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zeroPlacedHolder"
         app:layout_constraintBottom_toBottomOf="@+id/textAdversaryInitiativeRolled"
-        app:layout_constraintEnd_toStartOf="@+id/textAdversaryInitiativeRolled"
-        app:layout_constraintTop_toTopOf="@+id/textAdversaryInitiativeRolled"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toEndOf="@+id/textAdversaryInitiativeRolled"
+        app:layout_constraintTop_toTopOf="@+id/textAdversaryInitiativeRolled" />
+
+    <TextView
+        android:id="@+id/textInitiativeDicesNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textInitiativeDices"
+        app:layout_constraintStart_toEndOf="@+id/textInitiativeDices"
+        app:layout_constraintTop_toTopOf="@+id/textInitiativeDices" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

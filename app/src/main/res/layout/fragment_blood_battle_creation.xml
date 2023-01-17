@@ -6,14 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".BloodBattleCreation">
 
-    <!--    <androidx.recyclerview.widget.RecyclerView-->
-    <!--        android:id="@+id/blood_battle_recycler_view"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="386dp"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/button"-->
-    <!--        tools:listitem="@layout/battle_item" />-->
-
     <Button
         android:id="@+id/btnCreateNewBattle"
         android:layout_width="wrap_content"

@@ -36,7 +36,7 @@
             app:destination="@id/BloodBattleCreationFragment" />
         <action
             android:id="@+id/action_blood_to_blood_healing"
-            app:destination="@id/BloodHealing" />
+            app:destination="@id/BloodBattleSide" />
 
     </fragment>
 
@@ -50,7 +50,7 @@
             android:id="@+id/action_ThirdFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
         <action
-            android:id="@+id/action_alien_to_alien_source_books"
+            android:id="@+id/action_blood_battle_create_and_go_side"
             app:destination="@id/AlienSourceBooks" />
     </fragment>
 
@@ -59,6 +59,10 @@
         android:name="com.example.gamemastertools.BloodBattleCreation"
         android:label="@string/blood_battle_creation"
         tools:layout="@layout/fragment_blood_battle_creation">
+
+        <action
+            android:id="@+id/action_blood_battle_create_and_go_side"
+            app:destination="@id/BloodBattleSide" />
 
     </fragment>
 
@@ -79,9 +83,9 @@
     </fragment>
 
     <fragment
-        android:id="@+id/BloodHealing"
+        android:id="@+id/BloodBattleSide"
         android:name="com.example.gamemastertools.BloodHealing"
-        android:label="@string/blood_healing"
+        android:label="@string/blood_battle_side"
         tools:layout="@layout/fragment_blood_healing">
 
     </fragment>

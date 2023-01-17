@@ -41,7 +41,7 @@ public class AlienFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 NavHostFragment.findNavController(AlienFragment.this)
-                        .navigate(R.id.action_alien_to_alien_source_books);
+                        .navigate(R.id.action_blood_battle_create_and_go_side);
             }
         });
     }

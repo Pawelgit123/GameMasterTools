@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -110,6 +111,9 @@ public class BloodBattleCreation extends Fragment {
                                         " Leader: " +withLeader +
                                         " Fighters: " +onlyFighters
                         , Snackbar.LENGTH_LONG).show();
+
+                NavHostFragment.findNavController(BloodBattleCreation.this)
+                        .navigate(R.id.action_blood_battle_create_and_go_side);
 
             }
         });

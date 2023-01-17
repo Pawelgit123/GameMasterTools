@@ -7,6 +7,7 @@
 
     <string name="second_fragment_label">Blood RPG</string>
     <string name="blood_battle_creation">Blood-Battle Creator</string>
+    <string name="blood_battle_side">Blood-Battle Side</string>
     <string name="blood_source_books">Blood-Source Books</string>
     <string name="blood_healing">Blood-Healing Table</string>
 
@@ -33,6 +34,17 @@
     <string name="onlyFighters">only Fighters</string>
     <string name="numberOfEnemies">Number of enemies</string>
     <string name="rankOfEnemies">Rank of enemies</string>
+
+    <string name="virtueProwess">Pro:</string>
+    <string name="virtueStrength">Str:</string>
+    <string name="virtueCunning">Cun:</string>
+    <string name="virtueCourage">Crg:</string>
+    <string name="virtueWisdom">Wis:</string>
+    <string name="virtueBeauty">Bty:</string>
+    <string name="zeroPlacedHolder">0</string>
+    <string name="initiativeRolled">IniR:</string>
+    <string name="initiativeDices">IniD:</string>
+
 
     //Books here
     <string name="book_title_blood_and_honor">Blood and Honor</string>
