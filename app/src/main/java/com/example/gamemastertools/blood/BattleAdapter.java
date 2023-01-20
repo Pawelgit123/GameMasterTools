@@ -1,5 +1,6 @@
 package com.example.gamemastertools.blood;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,11 +15,11 @@ import java.util.List;
 
 public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleViewHolder> {
 
-    public BattleAdapter(Battle battle){
-        adversaryList = battle.getAdversaryList();
-    }
+    private final List<Human> adversaryList;
 
-    private final List<Adversary> adversaryList;
+    public BattleAdapter(List<Human> adversaryList){
+        this.adversaryList = adversaryList;
+    }
 
     @NonNull
     @Override
@@ -29,18 +30,21 @@ public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleView
         return new BattleViewHolder(v);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull BattleViewHolder holder, int position) {
 
-        Human human = (Human) adversaryList.get(position);
-        holder.prowess.setText(human.getVirtueProwess());
-        holder.strength.setText(human.getVirtueStrength());
-        holder.cunning.setText(human.getVirtueCunning());
-        holder.courage.setText(human.getVirtueCourage());
-        holder.wisdom.setText(human.getVirtueWisdom());
-        holder.beauty.setText(human.getVirtueBeauty());
-        holder.initiativeRolled.setText(human.getInitiative());
-        holder.initiativeDices.setText(human.getInitiativeDices());
+        Human human = adversaryList.get(position);
+        holder.prowessTextView.setText(String.valueOf(human.getVirtueProwess()));
+        holder.strengthTextView.setText(String.valueOf(human.getVirtueStrength()));
+        holder.cunningTextView.setText(String.valueOf(human.getVirtueCunning()));
+        holder.courageTextView.setText(String.valueOf(human.getVirtueCourage()));
+        holder.wisdomTextView.setText(String.valueOf(human.getVirtueWisdom()));
+        holder.beautyTextView.setText(String.valueOf(human.getVirtueBeauty()));
+        holder.initiativeRolledTextView.setText(String.valueOf(human.getInitiative()));
+        holder.initiativeDicesTextView.setText(String.valueOf(human.getInitiativeDices()));
+        holder.combatDices.setText(String.valueOf(human.getCombatDices()));
+        holder.bonusInitiative.setText("+" + human.getBonusInitiative());
 
     }
 
@@ -51,25 +55,29 @@ public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleView
 
     public static class BattleViewHolder extends RecyclerView.ViewHolder {
 
-        TextView prowess;
-        TextView strength;
-        TextView cunning;
-        TextView courage;
-        TextView wisdom;
-        TextView beauty;
-        TextView initiativeRolled;
-        TextView initiativeDices;
+        TextView prowessTextView;
+        TextView strengthTextView;
+        TextView cunningTextView;
+        TextView courageTextView;
+        TextView wisdomTextView;
+        TextView beautyTextView;
+        TextView initiativeRolledTextView;
+        TextView initiativeDicesTextView;
+        TextView combatDices;
+        TextView bonusInitiative;
 
         public BattleViewHolder(@NonNull View itemView) {
             super(itemView);
-            prowess = itemView.findViewById(R.id.textViewProwessNumber);
-            strength = itemView.findViewById(R.id.textViewStrengthNumber);
-            cunning = itemView.findViewById(R.id.textViewCunningNumber);
-            courage = itemView.findViewById(R.id.textViewCourageNumber);
-            wisdom = itemView.findViewById(R.id.textViewWisdomNumber);
-            beauty = itemView.findViewById(R.id.textViewBeautyNumber);
-            initiativeRolled = itemView.findViewById(R.id.textAdversaryInitiativeRolledNumber);
-            initiativeDices = itemView.findViewById(R.id.textInitiativeDicesNumber);
+            prowessTextView = itemView.findViewById(R.id.textViewProwessNumber);
+            strengthTextView = itemView.findViewById(R.id.textViewStrengthNumber);
+            cunningTextView = itemView.findViewById(R.id.textViewCunningNumber);
+            courageTextView = itemView.findViewById(R.id.textViewCourageNumber);
+            wisdomTextView = itemView.findViewById(R.id.textViewWisdomNumber);
+            beautyTextView = itemView.findViewById(R.id.textViewBeautyNumber);
+            initiativeRolledTextView = itemView.findViewById(R.id.textAdversaryInitiativeRolledNumber);
+            initiativeDicesTextView = itemView.findViewById(R.id.textInitiativeDicesNumber);
+            combatDices = itemView.findViewById(R.id.textCombatdDicesNumber);
+            bonusInitiative = itemView.findViewById(R.id.textBonusInitiative);
 
         }
     }

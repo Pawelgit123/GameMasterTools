@@ -36,7 +36,7 @@
             app:destination="@id/BloodBattleCreationFragment" />
         <action
             android:id="@+id/action_blood_to_blood_healing"
-            app:destination="@id/BloodBattleSide" />
+            app:destination="@id/btnBloodHealing" />
 
     </fragment>
 
@@ -83,10 +83,18 @@
     </fragment>
 
     <fragment
-        android:id="@+id/BloodBattleSide"
+        android:id="@+id/btnBloodHealing"
         android:name="com.example.gamemastertools.BloodHealing"
-        android:label="@string/blood_battle_side"
+        android:label="@string/healing_table"
         tools:layout="@layout/fragment_blood_healing">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/BloodBattleSide"
+        android:name="com.example.gamemastertools.BloodBattleSide"
+        android:label="@string/blood_battle_side"
+        tools:layout="@layout/fragment_blood_battle_side">
 
     </fragment>
 

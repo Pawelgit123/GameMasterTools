@@ -6,7 +6,7 @@
     tools:context=".AlienSourceBook">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerViewBook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:listitem="@layout/book_item" />

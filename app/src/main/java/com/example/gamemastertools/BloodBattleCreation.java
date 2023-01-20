@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavDirections;
 import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
@@ -32,7 +33,7 @@ public class BloodBattleCreation extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        binding = FragmentBloodBattleCreationBinding.inflate(inflater,container,false);
+        binding = FragmentBloodBattleCreationBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
@@ -46,7 +47,7 @@ public class BloodBattleCreation extends Fragment {
         binding.minusNumberOfAdversaries.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(numberOfAdversaries>1){
+                if (numberOfAdversaries > 1) {
                     numberOfAdversaries--;
                 }
                 binding.txtToButtonNumberOfAdversaries.setText(String.valueOf(numberOfAdversaries));
@@ -56,7 +57,7 @@ public class BloodBattleCreation extends Fragment {
         binding.plusNumberOfAdversaries.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(numberOfAdversaries<10){
+                if (numberOfAdversaries < 10) {
                     numberOfAdversaries++;
                 }
                 binding.txtToButtonNumberOfAdversaries.setText(String.valueOf(numberOfAdversaries));
@@ -66,7 +67,7 @@ public class BloodBattleCreation extends Fragment {
         binding.minusRankOfAdversaries.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(rankOfAdversaries>1){
+                if (rankOfAdversaries > 1) {
                     rankOfAdversaries--;
                 }
                 binding.txtToButtonRankOfAdversaries.setText(String.valueOf(rankOfAdversaries));
@@ -76,7 +77,7 @@ public class BloodBattleCreation extends Fragment {
         binding.plusRankOfAdversaries.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(rankOfAdversaries<5){
+                if (rankOfAdversaries < 5) {
                     rankOfAdversaries++;
                 }
                 binding.txtToButtonRankOfAdversaries.setText(String.valueOf(rankOfAdversaries));
@@ -86,14 +87,14 @@ public class BloodBattleCreation extends Fragment {
         binding.leaderCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                withLeader= !withLeader;
+                withLeader = !withLeader;
             }
         });
 
         binding.fightersCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onlyFighters= !onlyFighters;
+                onlyFighters = !onlyFighters;
             }
         });
 
@@ -103,22 +104,20 @@ public class BloodBattleCreation extends Fragment {
 
                 //Todo fix this
 
-               Battle newBattle = BattleCreator.createNewBattle(numberOfAdversaries, rankOfAdversaries, onlyFighters, withLeader);
+                Battle newBattle = BattleCreator.createNewBattle(numberOfAdversaries, rankOfAdversaries, onlyFighters, withLeader);
+                Bundle bundle = new Bundle();
+                bundle.putParcelable("battle", newBattle);
 
-
-                Snackbar.make(binding.getRoot(), "Enemies: " +numberOfAdversaries +
-                                        " Rank: " +rankOfAdversaries +
-                                        " Leader: " +withLeader +
-                                        " Fighters: " +onlyFighters
+                Snackbar.make(binding.getRoot(), "Enemies: " + numberOfAdversaries +
+                                " Rank: " + rankOfAdversaries +
+                                " Leader: " + withLeader +
+                                " Fighters: " + onlyFighters
                         , Snackbar.LENGTH_LONG).show();
 
                 NavHostFragment.findNavController(BloodBattleCreation.this)
-                        .navigate(R.id.action_blood_battle_create_and_go_side);
-
+                        .navigate(R.id.action_blood_battle_create_and_go_side, bundle);
             }
         });
-
-
 
     }
 }

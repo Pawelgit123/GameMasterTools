@@ -38,12 +38,13 @@
     <string name="virtueProwess">Pro:</string>
     <string name="virtueStrength">Str:</string>
     <string name="virtueCunning">Cun:</string>
-    <string name="virtueCourage">Crg:</string>
+    <string name="virtueCourage">Cou:</string>
     <string name="virtueWisdom">Wis:</string>
-    <string name="virtueBeauty">Bty:</string>
+    <string name="virtueBeauty">Bea:</string>
     <string name="zeroPlacedHolder">0</string>
     <string name="initiativeRolled">IniR:</string>
     <string name="initiativeDices">IniD:</string>
+    <string name="combatDices">Combat Dices:</string>
 
 
     //Books here

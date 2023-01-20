@@ -41,7 +41,7 @@ public class BloodSourceBook extends Fragment {
         bookInitialize();
 
         bookAdapter = new BookAdapter(bookArraylist);
-        recyclerView = view.findViewById(R.id.recyclerView);
+        recyclerView = view.findViewById(R.id.recyclerViewBook);
         recyclerView.setLayoutManager(new GridLayoutManager(this.getContext(),2));
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(bookAdapter);

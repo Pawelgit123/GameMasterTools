@@ -11,7 +11,7 @@ public class BattleCreator {
                                   boolean withLeader){
 
         Battle battle1 = new Battle();
-        List<Adversary> adversaryList = new ArrayList<>();
+        List<Human> adversaryList = new ArrayList<>();
         battle1.setAdversaryList(adversaryList);
 
         int leaderBonus = 1;

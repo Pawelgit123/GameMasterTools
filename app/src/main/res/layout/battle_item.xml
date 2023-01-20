@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/textAdversaryName"
@@ -208,5 +208,35 @@
         app:layout_constraintBottom_toBottomOf="@+id/textInitiativeDices"
         app:layout_constraintStart_toEndOf="@+id/textInitiativeDices"
         app:layout_constraintTop_toTopOf="@+id/textInitiativeDices" />
+
+    <TextView
+        android:id="@+id/textCombatDices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/combatDices"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textInitiativeDices"
+        app:layout_constraintTop_toBottomOf="@+id/textInitiativeDices" />
+
+    <TextView
+        android:id="@+id/textCombatdDicesNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textCombatDices"
+        app:layout_constraintStart_toEndOf="@+id/textCombatDices"
+        app:layout_constraintTop_toTopOf="@+id/textCombatDices" />
+
+    <TextView
+        android:id="@+id/textBonusInitiative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textAdversaryInitiativeRolledNumber"
+        app:layout_constraintStart_toEndOf="@+id/textAdversaryInitiativeRolledNumber"
+        app:layout_constraintTop_toTopOf="@+id/textAdversaryInitiativeRolledNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
