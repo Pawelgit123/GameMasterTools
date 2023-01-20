@@ -6,6 +6,7 @@ public class WeaponAxeHeavy implements HumanWeapon{
     public void setWeaponForHuman(Human human) {
         human.setBonusCombatDices(human.getBonusCombatDices() + human.getVirtueStrength());
         human.setBonusInitiative(human.getBonusInitiative() + 1);
+        human.setWeapon("H-Axe");
 
     }
 }

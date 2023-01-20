@@ -2,7 +2,7 @@ package com.example.gamemastertools.blood;
 
 import com.example.gamemastertools.dices.SixDice;
 
-public class Human implements Adversary {
+public class Human implements Adversary, Comparable<Human> {
 
     int virtueBeauty;
     int virtueCourage;
@@ -18,6 +18,10 @@ public class Human implements Adversary {
 
     int rank;
     int initiative;
+    String name;
+    String isLeader;
+    int isLeaderNumCompare;
+    String weapon;
 
     public void setVirtueBeauty(int virtueBeauty) {
         this.virtueBeauty=virtueBeauty;
@@ -56,6 +60,18 @@ public class Human implements Adversary {
     }
     public void setInitiative(int initiative) {
         this.initiative = initiative;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setIsLeader(String isLeader) {
+        this.isLeader = isLeader;
+    }
+    public void setIsLeaderNumCompare(int isLeaderNumCompare) {
+        this.isLeaderNumCompare = isLeaderNumCompare;
+    }
+    public void setWeapon(String weapon) {
+        this.weapon = weapon;
     }
 
     public int getVirtueBeauty() {
@@ -96,6 +112,18 @@ public class Human implements Adversary {
     public int getInitiative() {
         return initiative;
     }
+    public String getName() {
+        return name;
+    }
+    public String getIsLeader() {
+        return isLeader;
+    }
+    public int getIsLeaderNumCompare() {
+        return isLeaderNumCompare;
+    }
+    public String getWeapon() {
+        return weapon;
+    }
 
     @Override
     public void rollForInitiative() {
@@ -111,4 +139,16 @@ public class Human implements Adversary {
         setInitiative(result+getBonusInitiative());
     }
 
+    @Override
+    public int compareTo(Human o) {
+
+       /* if(o.getIsLeaderNumCompare()==1){
+            return Integer.compare(o.getIsLeaderNumCompare(),getIsLeaderNumCompare());
+        } else {
+        }*/
+
+        return Integer.compare(o.getInitiative(),getInitiative());
+
+
+    }
 }

@@ -10,12 +10,12 @@
         android:id="@+id/btnCreateNewBattle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
+
         android:text="@string/createNewBattle"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNumberOfAdversaries" />
+        app:layout_constraintTop_toBottomOf="@+id/fightersCheck" />
 
     <CheckBox
         android:id="@+id/fightersCheck"
@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/onlyFighters"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/leaderCheck"
         app:layout_constraintTop_toBottomOf="@+id/leaderCheck" />
@@ -33,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="@string/numberOfEnemies"
+        android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,6 +73,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/withLeader"
+        android:textColor="@color/white"
+        android:buttonTint="@color/gold"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/txtToButtonRankOfAdversaries"
         app:layout_constraintStart_toStartOf="@+id/txtToButtonRankOfAdversaries"
@@ -82,6 +86,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/plusNumberOfAdversaries"
         app:layout_constraintStart_toEndOf="@+id/minusNumberOfAdversaries"
         app:layout_constraintTop_toBottomOf="@+id/txtNumberOfAdversaries" />
@@ -116,6 +123,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/plusRankOfAdversaries"
         app:layout_constraintStart_toEndOf="@+id/minusRankOfAdversaries"
         app:layout_constraintTop_toBottomOf="@+id/txtRankOfEnemies" />
@@ -126,10 +136,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/rankOfEnemies"
+        android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/txtNumberOfAdversaries"
         app:layout_constraintStart_toStartOf="@+id/txtNumberOfAdversaries"
         app:layout_constraintTop_toBottomOf="@+id/txtToButtonNumberOfAdversaries" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

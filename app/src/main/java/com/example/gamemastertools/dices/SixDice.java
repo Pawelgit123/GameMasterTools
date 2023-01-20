@@ -1,10 +1,13 @@
 package com.example.gamemastertools.dices;
 
-import java.util.Random;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class SixDice implements Dice {
 
     int diceValue;
+    final static  List<Integer> dieNumbers = Arrays.asList(1, 2, 3, 4, 5, 6);
 
     public SixDice() {
     }
@@ -24,10 +27,8 @@ public class SixDice implements Dice {
     @Override
     public void rollADie() {
 
-        Random random = new Random();
-        int rolledValue = random.nextInt(5);
-        rolledValue++;
-        setDiceValue(rolledValue);
+        Collections.shuffle(dieNumbers);
+        setDiceValue(dieNumbers.get(0));
 
     }
 }

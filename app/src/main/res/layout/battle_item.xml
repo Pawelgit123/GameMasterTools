@@ -3,14 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp">
 
     <TextView
         android:id="@+id/textAdversaryName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="adversary name"
+        android:layout_marginTop="8dp"
+        android:text="@string/namePlacedHolder"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -19,12 +22,13 @@
         android:id="@+id/textAdversaryInitiativeRolled"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
         android:background="@color/gold"
         android:text="@string/initiativeRolled"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textAdversaryName"
-        app:layout_constraintTop_toBottomOf="@+id/textAdversaryName" />
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCourageNumber"
+        app:layout_constraintStart_toEndOf="@+id/textViewCourageNumber"
+        app:layout_constraintTop_toTopOf="@+id/textViewCourageNumber" />
 
     <TextView
         android:id="@+id/textInitiativeDices"
@@ -195,6 +199,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/textAdversaryInitiativeRolled"
         app:layout_constraintStart_toEndOf="@+id/textAdversaryInitiativeRolled"
         app:layout_constraintTop_toTopOf="@+id/textAdversaryInitiativeRolled" />
@@ -205,6 +210,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/textInitiativeDices"
         app:layout_constraintStart_toEndOf="@+id/textInitiativeDices"
         app:layout_constraintTop_toTopOf="@+id/textInitiativeDices" />
@@ -215,6 +221,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/combatDices"
+        android:textColor="@color/teal_200"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textInitiativeDices"
         app:layout_constraintTop_toBottomOf="@+id/textInitiativeDices" />
@@ -225,6 +232,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/textCombatDices"
         app:layout_constraintStart_toEndOf="@+id/textCombatDices"
         app:layout_constraintTop_toTopOf="@+id/textCombatDices" />
@@ -233,10 +241,35 @@
         android:id="@+id/textBonusInitiative"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="32dp"
         android:text="@string/zeroPlacedHolder"
-        app:layout_constraintBottom_toBottomOf="@+id/textAdversaryInitiativeRolledNumber"
-        app:layout_constraintStart_toEndOf="@+id/textAdversaryInitiativeRolledNumber"
-        app:layout_constraintTop_toTopOf="@+id/textAdversaryInitiativeRolledNumber" />
+        android:textColor="@color/gold"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textAdversaryInitiativeRolled"
+        app:layout_constraintStart_toEndOf="@+id/textAdversaryInitiativeRolled"
+        app:layout_constraintTop_toTopOf="@+id/textAdversaryInitiativeRolled" />
+
+    <TextView
+        android:id="@+id/textAreYouLeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/namePlacedHolder"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textAdversaryName"
+        app:layout_constraintEnd_toStartOf="@+id/textAdversaryName"
+        app:layout_constraintTop_toTopOf="@+id/textAdversaryName" />
+
+    <TextView
+        android:id="@+id/textWeapon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/purple_200"
+        android:text="@string/namePlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textAdversaryName"
+        app:layout_constraintStart_toEndOf="@+id/textAdversaryName"
+        app:layout_constraintTop_toTopOf="@+id/textAdversaryName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

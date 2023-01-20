@@ -6,6 +6,8 @@ import android.os.Parcelable;
 
 import androidx.annotation.NonNull;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Battle implements Adversary, Parcelable {
@@ -48,7 +50,7 @@ public class Battle implements Adversary, Parcelable {
         for (Human adv:adversaryList) {
             adv.rollForInitiative();
         }
-
+        Collections.sort(adversaryList);
     }
 
     @Override

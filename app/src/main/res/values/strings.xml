@@ -42,9 +42,11 @@
     <string name="virtueWisdom">Wis:</string>
     <string name="virtueBeauty">Bea:</string>
     <string name="zeroPlacedHolder">0</string>
+    <string name="namePlacedHolder">Here is my Name</string>
     <string name="initiativeRolled">IniR:</string>
     <string name="initiativeDices">IniD:</string>
     <string name="combatDices">Combat Dices:</string>
+    <string name="rollInitiative">Roll Initiative</string>
 
 
     //Books here

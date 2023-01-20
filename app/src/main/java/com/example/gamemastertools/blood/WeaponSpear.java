@@ -5,6 +5,7 @@ public class WeaponSpear implements HumanWeapon {
     @Override
     public void setWeaponForHuman(Human human) {
         human.setBonusInitiative(human.getBonusInitiative() + human.getVirtueProwess());
+        human.setWeapon("Spear");
 
     }
 }

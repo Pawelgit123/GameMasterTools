@@ -14,15 +14,19 @@ public class BattleCreator {
         List<Human> adversaryList = new ArrayList<>();
         battle1.setAdversaryList(adversaryList);
 
+        HumanNameGiver humanNameGiver = new HumanNameGiver();
+
         int leaderBonus = 1;
 
         if(withLeader){
-            Human newHumanAdversaryLeader = HumanCreator.createNewHumanAdversary(rank+leaderBonus, onlyFighters);
+            Human newHumanAdversaryLeader = HumanCreator.createNewHumanAdversary(rank+leaderBonus, onlyFighters, humanNameGiver);
+            newHumanAdversaryLeader.setIsLeader("LEADER");
+            newHumanAdversaryLeader.setIsLeaderNumCompare(1);
             adversaryList.add(newHumanAdversaryLeader);
             number--;
         }
         for (int i = 0; i < number; i++) {
-            Human newHumanAdversary = HumanCreator.createNewHumanAdversary(rank, onlyFighters);
+            Human newHumanAdversary = HumanCreator.createNewHumanAdversary(rank, onlyFighters, humanNameGiver);
             adversaryList.add(newHumanAdversary);
         }
 

@@ -44,7 +44,10 @@ public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleView
         holder.initiativeRolledTextView.setText(String.valueOf(human.getInitiative()));
         holder.initiativeDicesTextView.setText(String.valueOf(human.getInitiativeDices()));
         holder.combatDices.setText(String.valueOf(human.getCombatDices()));
-        holder.bonusInitiative.setText("+" + human.getBonusInitiative());
+        holder.bonusInitiative.setText("(+" + human.getBonusInitiative() + " mod)");
+        holder.name.setText(human.getName());
+        holder.isLeader.setText(human.getIsLeader());
+        holder.weapon.setText("[" +human.getWeapon()+"]");
 
     }
 
@@ -65,6 +68,9 @@ public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleView
         TextView initiativeDicesTextView;
         TextView combatDices;
         TextView bonusInitiative;
+        TextView name;
+        TextView isLeader;
+        TextView weapon;
 
         public BattleViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -78,6 +84,9 @@ public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleView
             initiativeDicesTextView = itemView.findViewById(R.id.textInitiativeDicesNumber);
             combatDices = itemView.findViewById(R.id.textCombatdDicesNumber);
             bonusInitiative = itemView.findViewById(R.id.textBonusInitiative);
+            name = itemView.findViewById(R.id.textAdversaryName);
+            isLeader = itemView.findViewById(R.id.textAreYouLeader);
+            weapon = itemView.findViewById(R.id.textWeapon);
 
         }
     }

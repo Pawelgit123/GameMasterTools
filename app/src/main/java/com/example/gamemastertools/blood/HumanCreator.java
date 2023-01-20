@@ -6,22 +6,29 @@ import java.util.List;
 public class HumanCreator {
 
     public static Human createNewHumanAdversary(Integer rank,
-                                                boolean onlyFighters) {
+                                                boolean onlyFighters,
+                                                HumanNameGiver humanNameGiver) {
 
         int humanQualityUpgrade = 1;
 
         Human human = new Human();
         setVirtuesByRank(human, rank);
         human.setRank(rank);
-        human.setBonusInitiative(human.getRank()-humanQualityUpgrade);
+        human.setBonusInitiative(human.getRank() - humanQualityUpgrade);
 
         if (onlyFighters && human.getVirtueProwess() == 0) {
             human.setVirtueProwess(human.getVirtueBeauty());
             human.setVirtueBeauty(0);
         }
 
-        if (human.getVirtueCunning() >= 3) {
-            human.setBonusInitiative(human.getBonusInitiative()+humanQualityUpgrade);
+        if (human.getVirtueCourage() >= 3) {
+            human.setBonusInitiative(human.getBonusInitiative() + humanQualityUpgrade);
+        }
+        if (human.getVirtueStrength() >= 3) {
+            human.setBonusCombatDices(human.getBonusCombatDices()+humanQualityUpgrade);
+        }
+        if (human.getVirtueWisdom() >= 4) {
+            human.setBonusCombatDices(human.getBonusCombatDices() + humanQualityUpgrade);
         }
 
         WeaponRandomByRank weaponRandomByRank = new WeaponRandomByRank();
@@ -32,14 +39,15 @@ public class HumanCreator {
         humanStrategyBalanced.setStrategyForHuman(human, humanStrategyComposition.checkAndRollForStrategy(
                 human.getVirtueProwess() + human.getBonusCombatDices()));
 
-        if (human.getVirtueStrength() >= 3) {
-            human.setCombatDices(human.getCombatDices()+humanQualityUpgrade);
+        if (human.getVirtueCunning() >= 4) {
+            human.setCombatDices(human.getCombatDices() + humanQualityUpgrade);
         }
+
+        humanNameGiver.giveMeName(human);
+        humanNameGiver.giveMeRankDescription(human);
 
         return human;
     }
-
-
 
     static void setVirtuesByRank(Human human, Integer rank) {
         switch (rank) {
