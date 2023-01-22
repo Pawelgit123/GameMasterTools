@@ -10,9 +10,11 @@
     <string name="blood_battle_side">Blood-Battle Side</string>
     <string name="blood_source_books">Blood-Source Books</string>
     <string name="blood_healing">Blood-Healing Table</string>
+    <string name="blood_dice_table">Blood-Dice Table</string>
 
     <string name="healing_table">Healing Table</string>
     <string name="battle_creator">Battle Creator</string>
+    <string name="dice_table">Dice Table</string>
 
     <string name="third_fragment_label">Alien RPG</string>
     <string name="alien_source_books">Alien-Source Books</string>

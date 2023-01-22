@@ -60,6 +60,14 @@ public class BloodFragment extends Fragment {
                         .navigate(R.id.action_blood_to_blood_healing);
             }
         });
+
+        binding.btnBloodDiceTable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(BloodFragment.this)
+                        .navigate(R.id.action_blood_to_blood_dice_roll);
+            }
+        });
     }
 
     @Override

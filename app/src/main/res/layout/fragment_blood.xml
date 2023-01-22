@@ -23,7 +23,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBloodSourceBooks" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBloodDiceTable" />
 
     <Button
         android:id="@+id/btnBloodSourceBooks"
@@ -52,4 +52,15 @@
         app:layout_constraintEnd_toEndOf="@+id/btnBloodSourceBooks"
         app:layout_constraintStart_toStartOf="@+id/btnBloodSourceBooks"
         app:layout_constraintTop_toBottomOf="@+id/btnBloodSourceBooks" />
+
+    <Button
+        android:id="@+id/btnBloodDiceTable"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:text="@string/dice_table"
+        app:layout_constraintEnd_toEndOf="@+id/btnBloodHealing"
+        app:layout_constraintStart_toStartOf="@+id/btnBloodHealing"
+        app:layout_constraintTop_toBottomOf="@+id/btnBloodHealing" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
