@@ -91,6 +91,10 @@
         android:label="@string/healing_table"
         tools:layout="@layout/fragment_blood_healing">
 
+        <action
+            android:id="@+id/action_blood_healing_table_to_blood"
+            app:destination="@id/BloodFragment" />
+
     </fragment>
 
     <fragment

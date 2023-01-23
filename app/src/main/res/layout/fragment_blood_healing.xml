@@ -1,8 +1,347 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BloodHealing"
+    tools:context=".BloodHealing">
 
-    />
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="1dp"
+        android:paddingHorizontal="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/textViewWoundRank"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:background="@color/red"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="2dp"
+                android:text="Wound Rank"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewInfection"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:background="@color/gold"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="2dp"
+                android:text="Infection Rate"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textViewFirstAid"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:background="@color/green"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingHorizontal="2dp"
+                android:text="First Aid"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewMedicalHelp"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:background="@color/green_deep"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="2dp"
+                android:text="Medical Help"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewHealing"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:background="@color/teal_200"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingHorizontal="2dp"
+                android:text="Healing"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textViewWoundRankOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/healing_wound_rank_one"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/textViewInfectionOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_infection_one" />
+
+            <TextView
+                android:id="@+id/textViewFirstAidOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_first_aid_one" />
+
+            <TextView
+                android:id="@+id/textViewMedicalHelpOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_medical_help_one" />
+
+            <TextView
+                android:id="@+id/textViewHealingOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_healing_one" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textViewWoundRankTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/healing_wound_rank_two"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/textViewInfectionTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_infection_two" />
+
+            <TextView
+                android:id="@+id/textViewFirstAidTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_first_aid_two" />
+
+            <TextView
+                android:id="@+id/textViewMedicalHelpTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_medical_help_two" />
+
+            <TextView
+                android:id="@+id/textViewHealingTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_healing_two" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/textViewWoundRankThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/healing_wound_rank_three"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/textViewInfectionThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_infection_three" />
+
+            <TextView
+                android:id="@+id/textViewFirstAidThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_first_aid_three" />
+
+            <TextView
+                android:id="@+id/textViewMedicalHelpThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_medical_help_three" />
+
+            <TextView
+                android:id="@+id/textViewHealingThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_healing_three" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/textViewWoundRankFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/healing_wound_rank_four"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/textViewInfectionFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_infection_four" />
+
+            <TextView
+                android:id="@+id/textViewFirstAidFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_first_aid_four" />
+
+            <TextView
+                android:id="@+id/textViewMedicalHelpFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_medical_help_four" />
+
+            <TextView
+                android:id="@+id/textViewHealingFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_healing_four" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/textViewWoundRankFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/healing_wound_rank_five"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/textViewInfectionFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_infection_five" />
+
+            <TextView
+                android:id="@+id/textVieFirstAidFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_first_aid_five" />
+
+            <TextView
+                android:id="@+id/textViewMedicalHelpFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_medical_help_five" />
+
+            <TextView
+                android:id="@+id/textViewHealingFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_healing_five" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/textViewWoundRankSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/healing_wound_rank_six"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/textViewInfectionSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_infection_six" />
+
+            <TextView
+                android:id="@+id/textViewFirstAidSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_first_aid_six" />
+
+            <TextView
+                android:id="@+id/textViewMedicalHelpSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_medical_help_six" />
+
+            <TextView
+                android:id="@+id/textViewHealingSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/healing_healing_six" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btbBloodHealingTablePrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/previous"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -66,7 +66,44 @@
     <string name="book_title_alien_destroyer_of_the_worlds">Alien: Destroyer of the Worlds</string>
     <string name="book_title_alien_colony_wars">Colony Wars</string>
     <string name="book_title_alien_infernos_fall">Infernos Fall</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="healing_wound_rank_one">Rank I</string>
+    <string name="healing_wound_rank_two">Rank II</string>
+    <string name="healing_wound_rank_three">Rank III</string>
+    <string name="healing_wound_rank_four">Rank IV</string>
+    <string name="healing_wound_rank_five">Rank V</string>
+    <string name="healing_wound_rank_six">Rank VI</string>
+
+    <string name="healing_infection_one">- none -</string>
+    <string name="healing_infection_two">- none -</string>
+    <string name="healing_infection_three">3D6 >= 10</string>
+    <string name="healing_infection_four">4D6 >= 10</string>
+    <string name="healing_infection_five">5D6 >= 10</string>
+    <string name="healing_infection_six">6D6 >= 10</string>
+
+    <string name="healing_first_aid_one">- none -</string>
+    <string name="healing_first_aid_two">- none -</string>
+    <string name="healing_first_aid_three">-1 Infection</string>
+    <string name="healing_first_aid_four">-1 Infection</string>
+    <string name="healing_first_aid_five">-1 Infection</string>
+    <string name="healing_first_aid_six">-1 Infection</string>
+
+    <string name="healing_medical_help_one">1 wage</string>
+    <string name="healing_medical_help_two">2 wages</string>
+    <string name="healing_medical_help_three">3 wages</string>
+    <string name="healing_medical_help_four">4 wages</string>
+    <string name="healing_medical_help_five">5 wages</string>
+    <string name="healing_medical_help_six">6 wages</string>
+
+    <string name="healing_healing_one">Day</string>
+    <string name="healing_healing_two">Week</string>
+    <string name="healing_healing_three">Month</string>
+    <string name="healing_healing_four">Quarter</string>
+    <string name="healing_healing_five">Year</string>
+    <string name="healing_healing_six">Year</string>
+
+
+
 
 </resources>
