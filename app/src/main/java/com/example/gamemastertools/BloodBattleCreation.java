@@ -102,8 +102,6 @@ public class BloodBattleCreation extends Fragment {
             @Override
             public void onClick(View v) {
 
-                //Todo fix this
-
                 Battle newBattle = BattleCreator.createNewBattle(numberOfAdversaries, rankOfAdversaries, onlyFighters, withLeader);
                 Bundle bundle = new Bundle();
                 bundle.putParcelable("battle", newBattle);

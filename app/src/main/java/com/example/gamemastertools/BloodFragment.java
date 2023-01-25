@@ -9,11 +9,13 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.gamemastertools.blood.HealingModificationPack;
 import com.example.gamemastertools.databinding.FragmentBloodBinding;
 
 public class BloodFragment extends Fragment {
 
     private FragmentBloodBinding binding;
+
 
     @Override
     public View onCreateView(
@@ -56,8 +58,15 @@ public class BloodFragment extends Fragment {
         binding.btnBloodHealing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                HealingModificationPack healingModificationPack = new HealingModificationPack();
+                healingModificationPack.initialiseMods(healingModificationPack);
+
+                Bundle bundle = new Bundle();
+                bundle.putParcelable("healingPack", healingModificationPack);
+
                 NavHostFragment.findNavController(BloodFragment.this)
-                        .navigate(R.id.action_blood_to_blood_healing);
+                        .navigate(R.id.action_blood_to_blood_healing, bundle);
             }
         });
 

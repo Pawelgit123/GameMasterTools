@@ -51,7 +51,7 @@
     <string name="rollInitiative">Roll Initiative</string>
 
 
-    //Books here
+    //Books
     <string name="book_title_blood_and_honor">Blood and Honor</string>
     <string name="book_title_world_of_dew">World of Dew</string>
     <string name="book_title_sound_of_water">Sound of Water</string>
@@ -68,6 +68,7 @@
     <string name="book_title_alien_infernos_fall">Infernos Fall</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    //Healing Table
     <string name="healing_wound_rank_one">Rank I</string>
     <string name="healing_wound_rank_two">Rank II</string>
     <string name="healing_wound_rank_three">Rank III</string>
@@ -102,6 +103,17 @@
     <string name="healing_healing_four">Quarter</string>
     <string name="healing_healing_five">Year</string>
     <string name="healing_healing_six">Year</string>
+
+    <string name="healing_modifications">Additional mod:</string>
+
+    <string name="wound_rank">Wound Rank</string>
+    <string name="infection_rate">Infection Rate</string>
+    <string name="first_aid">First Aid</string>
+    <string name="medical_help">Medical Help</string>
+    <string name="healing">Healing</string>
+
+
+
 
 
 

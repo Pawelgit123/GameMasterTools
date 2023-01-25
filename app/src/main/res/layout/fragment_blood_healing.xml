@@ -30,7 +30,7 @@
                 android:background="@color/red"
                 android:gravity="center_horizontal"
                 android:paddingHorizontal="2dp"
-                android:text="Wound Rank"
+                android:text="@string/wound_rank"
                 android:textStyle="bold" />
 
             <TextView
@@ -40,7 +40,7 @@
                 android:background="@color/gold"
                 android:gravity="center_horizontal"
                 android:paddingHorizontal="2dp"
-                android:text="Infection Rate"
+                android:text="@string/infection_rate"
                 android:textStyle="bold" />
 
 
@@ -51,7 +51,7 @@
                 android:background="@color/green"
                 android:gravity="center_horizontal|center_vertical"
                 android:paddingHorizontal="2dp"
-                android:text="First Aid"
+                android:text="@string/first_aid"
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
@@ -62,7 +62,7 @@
                 android:background="@color/green_deep"
                 android:gravity="center_horizontal"
                 android:paddingHorizontal="2dp"
-                android:text="Medical Help"
+                android:text="@string/medical_help"
                 android:textStyle="bold" />
 
             <TextView
@@ -72,7 +72,7 @@
                 android:background="@color/teal_200"
                 android:gravity="center_horizontal|center_vertical"
                 android:paddingHorizontal="2dp"
-                android:text="Healing"
+                android:text="@string/healing"
                 android:textStyle="bold" />
 
         </TableRow>
@@ -339,9 +339,91 @@
         android:id="@+id/btbBloodHealingTablePrevious"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="64dp"
         android:text="@string/previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFirstAidMod"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/green"
+        android:textAlignment="center"
+        android:text="@string/healing_modifications"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TextView
+        android:id="@+id/textViewInfectionMod"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:background="@color/gold"
+        android:textAlignment="center"
+        android:text="@string/healing_modifications"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFirstAidMod"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFirstAidMod"
+        app:layout_constraintTop_toTopOf="@+id/textViewFirstAidMod" />
+
+    <TextView
+        android:id="@+id/textViewMedicalHelpMod"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:background="@color/green_deep"
+        android:textAlignment="center"
+        android:text="@string/healing_modifications"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFirstAidMod"
+        app:layout_constraintStart_toEndOf="@+id/textViewFirstAidMod"
+        app:layout_constraintTop_toTopOf="@+id/textViewFirstAidMod"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewHealingMod"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:textAlignment="center"
+        android:text="@string/healing_modifications"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMedicalHelpMod"
+        app:layout_constraintStart_toEndOf="@+id/textViewMedicalHelpMod"
+        app:layout_constraintTop_toTopOf="@+id/textViewMedicalHelpMod" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFirstAidMod"
+        android:layout_width="59dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFirstAidMod"
+        app:layout_constraintStart_toStartOf="@+id/textViewFirstAidMod"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirstAidMod" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewInfectionMod"
+        android:layout_width="65dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewInfectionMod"
+        app:layout_constraintStart_toStartOf="@+id/textViewInfectionMod"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfectionMod" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMedicalHelpMod"
+        android:layout_width="56dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMedicalHelpMod"
+        app:layout_constraintStart_toStartOf="@+id/textViewMedicalHelpMod"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMedicalHelpMod" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHealingMod"
+        android:layout_width="55dp"
+        android:layout_height="209dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHealingMod"
+        app:layout_constraintStart_toStartOf="@+id/textViewHealingMod"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHealingMod" />
 </androidx.constraintlayout.widget.ConstraintLayout>
