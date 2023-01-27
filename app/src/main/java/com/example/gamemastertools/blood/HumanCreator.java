@@ -1,5 +1,6 @@
 package com.example.gamemastertools.blood;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -15,6 +16,9 @@ public class HumanCreator {
         setVirtuesByRank(human, rank);
         human.setRank(rank);
         human.setBonusInitiative(human.getRank() - humanQualityUpgrade);
+
+        ArrayList<Integer> integerList = new ArrayList<>();
+        human.setWounds(integerList);
 
         if (onlyFighters && human.getVirtueProwess() == 0) {
             human.setVirtueProwess(human.getVirtueBeauty());

@@ -50,6 +50,8 @@
     <string name="combatDices">Combat Dices:</string>
     <string name="rollInitiative">Roll Initiative</string>
 
+    <string name="addWoundButton">Add wound</string>
+
 
     //Books
     <string name="book_title_blood_and_honor">Blood and Honor</string>

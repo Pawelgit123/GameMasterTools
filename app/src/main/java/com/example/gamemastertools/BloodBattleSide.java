@@ -5,28 +5,16 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavDirections;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.gamemastertools.blood.Adversary;
 import com.example.gamemastertools.blood.Battle;
 import com.example.gamemastertools.blood.BattleAdapter;
-import com.example.gamemastertools.blood.BattleCreator;
-import com.example.gamemastertools.blood.Human;
-import com.example.gamemastertools.books.Book;
-import com.example.gamemastertools.books.BookAdapter;
 import com.example.gamemastertools.databinding.FragmentBloodBattleSideBinding;
-import com.example.gamemastertools.databinding.FragmentBloodSourceBookBinding;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class BloodBattleSide extends Fragment {
@@ -77,6 +65,7 @@ public class BloodBattleSide extends Fragment {
 
             }
         });
+
 
     }
 }

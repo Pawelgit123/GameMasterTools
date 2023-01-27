@@ -6,6 +6,90 @@
     android:layout_height="wrap_content"
     android:paddingBottom="8dp">
 
+    <CheckBox
+        android:id="@+id/checkBoxDiceNumberTwelve"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxDiceNumberEleven"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDiceNumberEight" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDiceNumberEleven"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxDiceNumberTen"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDiceNumberSeven" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDiceNumberTen"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxDiceNumberNine"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDiceNumberSix" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDiceNumberNine"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxDiceNumberFive"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDiceNumberFive" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDiceNumberFive"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxDiceNumberOne"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxDiceNumberOne"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDiceNumberOne" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDiceNumberSeven"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxDiceNumberSix"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDiceNumberThree" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDiceNumberEight"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxDiceNumberSeven"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDiceNumberFour" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDiceNumberSix"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxDiceNumberFive"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDiceNumberTwo" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDiceNumberFour"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxDiceNumberThree"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxDiceNumberThree"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxDiceNumberThree" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDiceNumberThree"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxDiceNumberSix"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxDiceNumberTwo"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxDiceNumberTwo" />
+
     <TextView
         android:id="@+id/textAdversaryName"
         android:layout_width="wrap_content"
@@ -266,10 +350,54 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:textColor="@color/purple_200"
         android:text="@string/namePlacedHolder"
+        android:textColor="@color/purple_200"
         app:layout_constraintBottom_toBottomOf="@+id/textAdversaryName"
         app:layout_constraintStart_toEndOf="@+id/textAdversaryName"
         app:layout_constraintTop_toTopOf="@+id/textAdversaryName" />
+
+    <Button
+        android:id="@+id/btnAddWound"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/addWoundButton"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toEndOf="@+id/textCombatDices"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDiceNumberTen" />
+
+    <TextView
+        android:id="@+id/textViewWounds"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/house_lanister"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddWound"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBackgroundVirtues" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDiceNumberOne"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAdversaryName"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDiceNumberTwo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxDiceNumberOne"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxDiceNumberOne"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxDiceNumberOne" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

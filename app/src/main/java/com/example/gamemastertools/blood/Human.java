@@ -2,6 +2,9 @@ package com.example.gamemastertools.blood;
 
 import com.example.gamemastertools.dices.SixDice;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Human implements Adversary, Comparable<Human> {
 
     int virtueBeauty;
@@ -22,6 +25,7 @@ public class Human implements Adversary, Comparable<Human> {
     String isLeader;
     int isLeaderNumCompare;
     String weapon;
+    ArrayList<Integer> wounds;
 
     public void setVirtueBeauty(int virtueBeauty) {
         this.virtueBeauty=virtueBeauty;
@@ -73,6 +77,9 @@ public class Human implements Adversary, Comparable<Human> {
     public void setWeapon(String weapon) {
         this.weapon = weapon;
     }
+    public void setWounds(ArrayList<Integer> wounds) {
+        this.wounds = wounds;
+    }
 
     public int getVirtueBeauty() {
         return this.virtueBeauty;
@@ -123,6 +130,9 @@ public class Human implements Adversary, Comparable<Human> {
     }
     public String getWeapon() {
         return weapon;
+    }
+    public ArrayList<Integer> getWounds() {
+        return wounds;
     }
 
     @Override

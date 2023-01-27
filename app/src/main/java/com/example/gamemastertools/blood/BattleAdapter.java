@@ -1,9 +1,12 @@
 package com.example.gamemastertools.blood;
 
 import android.annotation.SuppressLint;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Adapter;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,7 +14,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.gamemastertools.R;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleViewHolder> {
 
@@ -49,6 +55,33 @@ public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleView
         holder.isLeader.setText(human.getIsLeader());
         holder.weapon.setText("[" +human.getWeapon()+"]");
 
+        Collections.sort(human.getWounds());
+        String wound = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+            wound = human.getWounds().stream().map(String::valueOf).collect(Collectors.joining(" "));
+        }
+
+        holder.wounds.setText(wound);
+
+        holder.human = human;
+
+
+        switch (human.getCombatDices()){
+            case 12: holder.diceBox12.setVisibility(View.VISIBLE);
+            case 11: holder.diceBox11.setVisibility(View.VISIBLE);
+            case 10: holder.diceBox10.setVisibility(View.VISIBLE);
+            case 9: holder.diceBox9.setVisibility(View.VISIBLE);
+            case 8: holder.diceBox8.setVisibility(View.VISIBLE);
+            case 7: holder.diceBox7.setVisibility(View.VISIBLE);
+            case 6: holder.diceBox6.setVisibility(View.VISIBLE);
+            case 5: holder.diceBox5.setVisibility(View.VISIBLE);
+            case 4: holder.diceBox4.setVisibility(View.VISIBLE);
+            case 3: holder.diceBox3.setVisibility(View.VISIBLE);
+            case 2: holder.diceBox2.setVisibility(View.VISIBLE);
+            case 1: holder.diceBox1.setVisibility(View.VISIBLE);
+            break;
+        }
+
     }
 
     @Override
@@ -71,6 +104,22 @@ public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleView
         TextView name;
         TextView isLeader;
         TextView weapon;
+        TextView wounds;
+
+        CheckBox diceBox1;
+        CheckBox diceBox2;
+        CheckBox diceBox3;
+        CheckBox diceBox4;
+        CheckBox diceBox5;
+        CheckBox diceBox6;
+        CheckBox diceBox7;
+        CheckBox diceBox8;
+        CheckBox diceBox9;
+        CheckBox diceBox10;
+        CheckBox diceBox11;
+        CheckBox diceBox12;
+
+        Human human;
 
         public BattleViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -87,6 +136,38 @@ public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleView
             name = itemView.findViewById(R.id.textAdversaryName);
             isLeader = itemView.findViewById(R.id.textAreYouLeader);
             weapon = itemView.findViewById(R.id.textWeapon);
+            wounds = itemView.findViewById(R.id.textViewWounds);
+
+            diceBox1 = itemView.findViewById(R.id.checkBoxDiceNumberOne);
+            diceBox2 = itemView.findViewById(R.id.checkBoxDiceNumberTwo);
+            diceBox3 = itemView.findViewById(R.id.checkBoxDiceNumberThree);
+            diceBox4 = itemView.findViewById(R.id.checkBoxDiceNumberFour);
+            diceBox5 = itemView.findViewById(R.id.checkBoxDiceNumberFive);
+            diceBox6 = itemView.findViewById(R.id.checkBoxDiceNumberSix);
+            diceBox7 = itemView.findViewById(R.id.checkBoxDiceNumberSeven);
+            diceBox8 = itemView.findViewById(R.id.checkBoxDiceNumberEight);
+            diceBox9 = itemView.findViewById(R.id.checkBoxDiceNumberNine);
+            diceBox10 = itemView.findViewById(R.id.checkBoxDiceNumberTen);
+            diceBox11 = itemView.findViewById(R.id.checkBoxDiceNumberEleven);
+            diceBox12 = itemView.findViewById(R.id.checkBoxDiceNumberTwelve);
+
+            itemView.findViewById(R.id.btnAddWound).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ArrayList<Integer> wounds = human.getWounds();
+                    wounds.add(1);
+                    wounds.add(2);
+                    wounds.add(3);
+                    wounds.add(4);
+                    wounds.add(5);
+                    wounds.add(6);
+                    human.setWounds(wounds);
+
+
+                    Log.d("test", "+1 wound");
+                }
+            });
+
 
         }
     }
