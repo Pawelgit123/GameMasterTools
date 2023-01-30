@@ -28,10 +28,10 @@ public class HumanCreator {
         if (human.getVirtueCourage() >= 3) {
             human.setBonusInitiative(human.getBonusInitiative() + humanQualityUpgrade);
         }
-        if (human.getVirtueStrength() >= 3) {
-            human.setBonusCombatDices(human.getBonusCombatDices()+humanQualityUpgrade);
-        }
         if (human.getVirtueWisdom() >= 4) {
+            human.setBonusCombatDices(human.getBonusCombatDices() + humanQualityUpgrade);
+        }
+        if (human.getVirtueCunning() >= 4) {
             human.setBonusCombatDices(human.getBonusCombatDices() + humanQualityUpgrade);
         }
 
@@ -43,7 +43,10 @@ public class HumanCreator {
         humanStrategyBalanced.setStrategyForHuman(human, humanStrategyComposition.checkAndRollForStrategy(
                 human.getVirtueProwess() + human.getBonusCombatDices()));
 
-        if (human.getVirtueCunning() >= 4) {
+        if (human.getVirtueStrength() >= 3) {
+            human.setCombatDices(human.getCombatDices() + humanQualityUpgrade);
+        }
+        if (human.getRank() >= 4) {
             human.setCombatDices(human.getCombatDices() + humanQualityUpgrade);
         }
 

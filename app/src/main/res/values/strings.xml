@@ -50,7 +50,7 @@
     <string name="combatDices">Combat Dices:</string>
     <string name="rollInitiative">Roll Initiative</string>
 
-    <string name="addWoundButton">Add wound</string>
+    <string name="addWoundButton">wounds</string>
 
 
     //Books
@@ -114,10 +114,15 @@
     <string name="medical_help">Medical Help</string>
     <string name="healing">Healing</string>
 
-
-
-
-
-
+    <string name="wound_one">1</string>
+    <string name="wound_two">2</string>
+    <string name="wound_three">3</string>
+    <string name="wound_four">4</string>
+    <string name="wound_five">5</string>
+    <string name="wound_six">6</string>
+    <string name="wound_seven">7</string>
+    <string name="wound_eight">8</string>
+    <string name="button_add_text">add</string>
+    <string name="button_remove_text">rem</string>
 
 </resources>

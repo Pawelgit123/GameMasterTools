@@ -52,19 +52,11 @@ public class BloodBattleSide extends Fragment {
             public void onClick(View v) {
                 battle.rollForInitiative();
 
-                Bundle bundle = getArguments();
-                assert bundle != null;
-                Battle battle = bundle.getParcelable("battle");
-
-                battleAdapter = new BattleAdapter(battle.getAdversaryList());
-                recyclerView = view.findViewById(R.id.blood_battle_recycler_view);
-                recyclerView.setLayoutManager(new LinearLayoutManager(binding.getRoot().getContext()));
-                recyclerView.setHasFixedSize(true);
                 recyclerView.setAdapter(battleAdapter);
-
 
             }
         });
+
 
 
     }

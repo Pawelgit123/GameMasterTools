@@ -1,12 +1,16 @@
 package com.example.gamemastertools.blood;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
 import android.widget.CheckBox;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -32,8 +36,32 @@ public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleView
     public BattleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.battle_item, parent, false);
+        final BattleViewHolder holder = new BattleViewHolder(v);
 
-        return new BattleViewHolder(v);
+        Dialog dialog = new Dialog(parent.getContext());
+        dialog.setContentView(R.layout.wound_dialog);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        v.findViewById(R.id.btnAddWound).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.show();
+
+                //Todo dialog buttons
+                Human human = adversaryList.get(holder.getAdapterPosition());
+                ArrayList<Integer> wounds = human.getWounds();
+                wounds.add(1);
+                wounds.add(2);
+                wounds.add(3);
+                wounds.add(4);
+                wounds.add(5);
+                wounds.add(6);
+
+                notifyItemChanged(holder.getAdapterPosition());
+            }
+        });
+
+        return holder;
     }
 
     @SuppressLint("SetTextI18n")
@@ -60,11 +88,8 @@ public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleView
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
             wound = human.getWounds().stream().map(String::valueOf).collect(Collectors.joining(" "));
         }
-
         holder.wounds.setText(wound);
-
         holder.human = human;
-
 
         switch (human.getCombatDices()){
             case 12: holder.diceBox12.setVisibility(View.VISIBLE);
@@ -121,6 +146,7 @@ public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleView
 
         Human human;
 
+
         public BattleViewHolder(@NonNull View itemView) {
             super(itemView);
             prowessTextView = itemView.findViewById(R.id.textViewProwessNumber);
@@ -150,24 +176,6 @@ public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleView
             diceBox10 = itemView.findViewById(R.id.checkBoxDiceNumberTen);
             diceBox11 = itemView.findViewById(R.id.checkBoxDiceNumberEleven);
             diceBox12 = itemView.findViewById(R.id.checkBoxDiceNumberTwelve);
-
-            itemView.findViewById(R.id.btnAddWound).setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    ArrayList<Integer> wounds = human.getWounds();
-                    wounds.add(1);
-                    wounds.add(2);
-                    wounds.add(3);
-                    wounds.add(4);
-                    wounds.add(5);
-                    wounds.add(6);
-                    human.setWounds(wounds);
-
-
-                    Log.d("test", "+1 wound");
-                }
-            });
-
 
         }
     }

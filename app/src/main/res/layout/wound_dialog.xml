@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:columnCount="3"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/btn_add_wound_one"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/button_add_text"
+            android:textAllCaps="false"
+            android:textSize="12sp">
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/house_lanister"
+            android:text="@string/wound_one"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_remove_wound_one"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/button_remove_text"
+            android:textAllCaps="false"
+            android:textSize="12sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_add_wound_two"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/button_add_text"
+            android:textAllCaps="false"
+            android:textSize="12sp">
+
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/house_lanister"
+            android:text="@string/wound_two"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_remove_wound_two"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/button_remove_text"
+            android:textAllCaps="false"
+            android:textSize="12sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_add_wound_three"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/button_add_text"
+            android:textAllCaps="false"
+            android:textSize="12sp">
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/house_lanister"
+            android:text="@string/wound_three"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_remove_wound_three"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/button_remove_text"
+            android:textAllCaps="false"
+            android:textSize="12sp">
+
+        </Button>
+
+
+        <Button
+            android:id="@+id/btn_add_wound_four"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/button_add_text"
+            android:textAllCaps="false"
+            android:textSize="12sp">
+
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/house_lanister"
+            android:text="@string/wound_four"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_remove_wound_four"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/button_remove_text"
+            android:textAllCaps="false"
+            android:textSize="12sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_add_wound_five"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/button_add_text"
+            android:textAllCaps="false"
+            android:textSize="12sp">
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/house_lanister"
+            android:text="@string/wound_five"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_remove_wound_five"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/button_remove_text"
+            android:textAllCaps="false"
+            android:textSize="12sp">
+
+        </Button>
+
+
+        <Button
+            android:id="@+id/btn_add_wound_six"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/button_add_text"
+            android:textAllCaps="false"
+            android:textSize="12sp">
+        </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/house_lanister"
+            android:text="@string/wound_six"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_remove_wound_six"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/button_remove_text"
+            android:textAllCaps="false"
+            android:textSize="12sp">
+
+        </Button>
+
+    </GridLayout>
+
+</RelativeLayout>

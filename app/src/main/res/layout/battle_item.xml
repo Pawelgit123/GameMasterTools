@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="8dp">
+    android:paddingBottom="8dp"
+    android:id="@+id/battle_item_id">
 
     <CheckBox
         android:id="@+id/checkBoxDiceNumberTwelve"
@@ -369,19 +370,6 @@
         app:layout_constraintStart_toEndOf="@+id/textCombatDices"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxDiceNumberTen" />
 
-    <TextView
-        android:id="@+id/textViewWounds"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/house_lanister"
-        android:textColor="@color/red"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/btnAddWound"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewBackgroundVirtues" />
-
     <CheckBox
         android:id="@+id/checkBoxDiceNumberOne"
         android:layout_width="25dp"
@@ -399,5 +387,18 @@
         app:layout_constraintBottom_toBottomOf="@+id/checkBoxDiceNumberOne"
         app:layout_constraintStart_toEndOf="@+id/checkBoxDiceNumberOne"
         app:layout_constraintTop_toTopOf="@+id/checkBoxDiceNumberOne" />
+
+    <TextView
+        android:id="@+id/textViewWounds"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/house_lanister"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddWound"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBackgroundVirtues" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
