@@ -28,10 +28,10 @@ public class HumanCreator {
         if (human.getVirtueCourage() >= 3) {
             human.setBonusInitiative(human.getBonusInitiative() + humanQualityUpgrade);
         }
-        if (human.getVirtueWisdom() >= 4) {
+        if (human.getVirtueCunning() >= 4) {
             human.setBonusCombatDices(human.getBonusCombatDices() + humanQualityUpgrade);
         }
-        if (human.getVirtueCunning() >= 4) {
+        if (human.getVirtueWisdom() >= 4) {
             human.setBonusCombatDices(human.getBonusCombatDices() + humanQualityUpgrade);
         }
 

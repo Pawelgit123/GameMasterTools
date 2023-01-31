@@ -12,10 +12,10 @@ public class WeaponRandomByRank implements HumanWeapon {
         switch (toss) {
             case 0:
             case 1:
+            case 2:
                 WeaponUnarmed weaponUnarmed = new WeaponUnarmed();
                 weaponUnarmed.setWeaponForHuman(human);
                 break;
-            case 2:
             case 3:
                 WeaponDagger weaponDagger = new WeaponDagger();
                 weaponDagger.setWeaponForHuman(human);
@@ -25,10 +25,10 @@ public class WeaponRandomByRank implements HumanWeapon {
                 weaponAxe.setWeaponForHuman(human);
             case 5:
             case 6:
+            case 7:
                 WeaponMace weaponMace = new WeaponMace();
                 weaponMace.setWeaponForHuman(human);
                 break;
-            case 7:
             case 8:
             case 9:
                 WeaponSpear weaponSpear = new WeaponSpear();
@@ -118,9 +118,12 @@ public class WeaponRandomByRank implements HumanWeapon {
                 break;
             case 2:
             case 3:
-            case 4:
                 WeaponSpear weaponSpear = new WeaponSpear();
                 weaponSpear.setWeaponForHuman(human);
+                break;
+            case 4:
+                WeaponSpearHeavy weaponSpearHeavy = new WeaponSpearHeavy();
+                weaponSpearHeavy.setWeaponForHuman(human);
                 break;
             case 5:
             case 6:
@@ -141,18 +144,21 @@ public class WeaponRandomByRank implements HumanWeapon {
         int toss = coin.nextInt(9);
         switch (toss) {
             case 0:
-            case 1:
                 WeaponAxeHeavy weaponAxeHeavy = new WeaponAxeHeavy();
                 weaponAxeHeavy.setWeaponForHuman(human);
                 break;
-            case 2:
-            case 3:
+            case 1:
                 WeaponMaceHeavy weaponMaceHeavy = new WeaponMaceHeavy();
                 weaponMaceHeavy.setWeaponForHuman(human);
                 break;
-            case 4:
+            case 2:
                 WeaponSpear weaponSpear = new WeaponSpear();
                 weaponSpear.setWeaponForHuman(human);
+                break;
+            case 3:
+            case 4:
+                WeaponSpearHeavy weaponSpearHeavy = new WeaponSpearHeavy();
+                weaponSpearHeavy.setWeaponForHuman(human);
                 break;
             case 5:
             case 6:
@@ -179,6 +185,9 @@ public class WeaponRandomByRank implements HumanWeapon {
                 break;
             case 2:
             case 3:
+                WeaponSpearHeavy weaponSpearHeavy = new WeaponSpearHeavy();
+                weaponSpearHeavy.setWeaponForHuman(human);
+                break;
             case 4:
             case 5:
             case 6:

@@ -4,13 +4,10 @@ import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.CheckBox;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -46,18 +43,104 @@ public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleView
             @Override
             public void onClick(View v) {
                 dialog.show();
-
                 //Todo dialog buttons
-                Human human = adversaryList.get(holder.getAdapterPosition());
-                ArrayList<Integer> wounds = human.getWounds();
-                wounds.add(1);
-                wounds.add(2);
-                wounds.add(3);
-                wounds.add(4);
-                wounds.add(5);
-                wounds.add(6);
 
-                notifyItemChanged(holder.getAdapterPosition());
+                dialog.findViewById(R.id.btn_add_wound_one).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        addWound(1,holder);
+                        dialog.dismiss();
+
+                    }
+                });
+
+                dialog.findViewById(R.id.btn_add_wound_two).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        addWound(2,holder);
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.findViewById(R.id.btn_add_wound_three).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        addWound(3,holder);
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.findViewById(R.id.btn_add_wound_four).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        addWound(4, holder);
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.findViewById(R.id.btn_add_wound_five).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        addWound(5, holder);
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.findViewById(R.id.btn_add_wound_six).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        addWound(6, holder);
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.findViewById(R.id.btn_remove_wound_one).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        removeWound(1,holder);
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.findViewById(R.id.btn_remove_wound_two).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        removeWound(2,holder);
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.findViewById(R.id.btn_remove_wound_three).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        removeWound(3,holder);
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.findViewById(R.id.btn_remove_wound_four).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        removeWound(4,holder);
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.findViewById(R.id.btn_remove_wound_five).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        removeWound(5,holder);
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.findViewById(R.id.btn_remove_wound_six).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        removeWound(6,holder);
+                        dialog.dismiss();
+                    }
+                });
             }
         });
 
@@ -178,5 +261,19 @@ public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleView
             diceBox12 = itemView.findViewById(R.id.checkBoxDiceNumberTwelve);
 
         }
+    }
+
+    void addWound(int wound, BattleViewHolder holder){
+        Human human = adversaryList.get(holder.getAdapterPosition());
+        ArrayList<Integer> wounds = human.getWounds();
+        wounds.add(wound);
+        notifyItemChanged(holder.getAdapterPosition());
+    }
+
+    void removeWound(int wound, BattleViewHolder holder){
+        Human human = adversaryList.get(holder.getAdapterPosition());
+        ArrayList<Integer> wounds = human.getWounds();
+        wounds.remove(Integer.valueOf(wound));
+        notifyItemChanged(holder.getAdapterPosition());
     }
 }
