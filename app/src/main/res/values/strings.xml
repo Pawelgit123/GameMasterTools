@@ -125,4 +125,20 @@
     <string name="button_add_text">add</string>
     <string name="button_remove_text">rem</string>
 
+    //Alien
+    <string name="alien_armory_button">Armory</string>
+    <string name="alien_random_item_button">Random item</string>
+    <string name="alien_panic_roller_button">Panic Roll</string>
+    <string name="alien_wound_roller_button">Wound Roll</string>
+    <string name="alien_xeno_button">Xenos</string>
+
+    <string name="alien_armory">Alien-Armory</string>
+    <string name="alien_random_item_">Alien-Random item</string>
+    <string name="alien_panic_roller">Alien-Panic Roll</string>
+    <string name="alien_wound_roller">Alien-Wound Roll</string>
+    <string name="alien_xeno">Alien-Xenos</string>
+
+    <string name="alien_panic_roller_panic_level">Panic Level</string>
+    <string name="alien_panic_roller_panic_roll_button">Panic Roll</string>
+
 </resources>
