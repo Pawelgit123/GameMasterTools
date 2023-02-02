@@ -141,4 +141,9 @@
     <string name="alien_panic_roller_panic_level">Panic Level</string>
     <string name="alien_panic_roller_panic_roll_button">Panic Roll</string>
 
+    <string name="alien_wound_roll_button">Wound Roll</string>
+    <string name="alien_wound_roll_radio_button_original">Original roll ( [k6] +[ k6] )</string>
+    <string name="alien_wound_roll_radio_button_low">Low roll ( [low] + [high] )</string>
+    <string name="alien_wound_roll_radio_button_high">High roll ( [high] + [low] )</string>
+
 </resources>

@@ -1,14 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AlienWoundRoll">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <Button
+        android:id="@+id/btnWoundRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/alien_wound_roll_button"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</FrameLayout>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="244dp"
+        android:layout_height="159dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButtonWoundOriginal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            android:text="@string/alien_wound_roll_radio_button_original" />
+
+        <RadioButton
+            android:id="@+id/radioButtonWoundLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/alien_wound_roll_radio_button_low" />
+
+        <RadioButton
+            android:id="@+id/radioButtonWoundHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/alien_wound_roll_radio_button_high" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewWoundRollNumberRolled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toTopOf="@+id/btnWoundRoll"
+        app:layout_constraintEnd_toEndOf="@+id/btnWoundRoll"
+        app:layout_constraintStart_toStartOf="@+id/btnWoundRoll" />
+
+    <TextView
+        android:id="@+id/textViewWoundRollDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/namePlacedHolder"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
