@@ -1,5 +1,6 @@
 package com.example.gamemastertools;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -16,6 +17,7 @@ import com.example.gamemastertools.databinding.FragmentAlienWoundRollBinding;
 public class AlienWoundRoll extends Fragment {
 
     private FragmentAlienWoundRollBinding binding;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -31,6 +33,12 @@ public class AlienWoundRoll extends Fragment {
         binding.radioButtonWoundOriginal.setActivated(true);
         binding.radioButtonWoundOriginal.setChecked(true);
 
+        binding.textViewWoundRollTitle.setVisibility(View.INVISIBLE);
+        binding.textViewWoundRollDescription.setVisibility(View.INVISIBLE);
+        binding.textViewWoundFatal.setVisibility(View.INVISIBLE);
+        binding.textViewWoundTimeLimit.setVisibility(View.INVISIBLE);
+        binding.textViewWoundHealingTime.setVisibility(View.INVISIBLE);
+
         binding.btnWoundRoll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,12 +46,17 @@ public class AlienWoundRoll extends Fragment {
                 if (binding.radioButtonWoundOriginal.isActivated()){
                     String s = AlienWoundRoller.woundRollOriginal();
                     binding.textViewWoundRollNumberRolled.setText(s);
+                    setWoundTextForAll(s);
+
                 } else if (binding.radioButtonWoundLow.isActivated()){
                     String s = AlienWoundRoller.woundRollLow();
                     binding.textViewWoundRollNumberRolled.setText(s);
+                    setWoundTextForAll(s);
+
                 } else if (binding.radioButtonWoundHigh.isActivated()){
                     String s = AlienWoundRoller.woundRollHigh();
                     binding.textViewWoundRollNumberRolled.setText(s);
+                    setWoundTextForAll(s);
                 }
             }
         });
@@ -75,5 +88,21 @@ public class AlienWoundRoll extends Fragment {
                 binding.radioButtonWoundHigh.setActivated(true);
             }
         });
+    }
+
+    @SuppressLint("SetTextI18n")
+    void setWoundTextForAll(String s){
+        int integer = Integer.parseInt(s);
+        binding.textViewWoundRollTitle.setVisibility(View.VISIBLE);
+        binding.textViewWoundRollTitle.setText(AlienWoundRoller.woundTitle(integer));
+        binding.textViewWoundRollDescription.setVisibility(View.VISIBLE);
+        binding.textViewWoundRollDescription.setText(AlienWoundRoller.woundEffect(integer));
+        binding.textViewWoundFatal.setVisibility(View.VISIBLE);
+        binding.textViewWoundFatal.setText(AlienWoundRoller.woundIsFatal(integer));
+        binding.textViewWoundTimeLimit.setVisibility(View.VISIBLE);
+        binding.textViewWoundTimeLimit.setText("Duration: " +AlienWoundRoller.woundTimeLimit(integer));
+        binding.textViewWoundHealingTime.setVisibility(View.VISIBLE);
+        binding.textViewWoundHealingTime.setText("Healing time: " +AlienWoundRoller.woundHealingTime(integer));
+
     }
 }

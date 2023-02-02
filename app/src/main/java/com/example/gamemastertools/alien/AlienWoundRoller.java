@@ -73,13 +73,13 @@ public class AlienWoundRoller {
             case 45: return "BLEEDING GUT";
             case 46: return "RUPTURED INTESTINES";
             case 51: return "BUSTED KIDNEY";
-            case 52: return "ARM ARTERY CUT [1]";
-            case 53: return "LEG ARTERY CUT [1]";
-            case 54: return "SEVERED ARM [1]";
-            case 55: return "SEVERED LEG [1]";
+            case 52: return "ARM ARTERY CUT";
+            case 53: return "LEG ARTERY CUT";
+            case 54: return "SEVERED ARM";
+            case 55: return "SEVERED LEG";
             case 56: return "CRACKED SPINE";
-            case 61: return "RUPTURED JUGULAR [1]";
-            case 62: return "RUPTURED AORTA [2]";
+            case 61: return "RUPTURED JUGULAR";
+            case 62: return "RUPTURED AORTA";
             case 63: return "DISEMBOWELED";
             case 64: return "CRUSHED SKULL";
             case 65: return "PIERCED HEAD";
@@ -87,28 +87,28 @@ public class AlienWoundRoller {
         }
     }
 
-    public static boolean woundIsFatal(int number){
+    public static String woundIsFatal(int number){
 
         switch (number){
             case 44:
             case 45:
             case 46:
-            case 51:
+            case 51: return "FATAL WOUND -0";
             case 52:
             case 53:
             case 54:
             case 55:
-            case 61:
-            case 62:
+            case 61: return "FATAL WOUND -1";
+            case 62: return "FATAL WOUND -2";
             case 63:
             case 64:
             case 65:
-            case 66: return true;
-            default: return false;
+            case 66: return "KIA";
+            default: return "";
         }
     }
 
-    public static String woundTimLimit(int number){
+    public static String woundTimeLimit(int number){
 
         switch (number){
             case 52:
@@ -180,7 +180,7 @@ public class AlienWoundRoller {
             case 26: return "Can't use arm";
             case 31: return "Manipulation and Observation -1";
             case 45:
-            case 32: return "1 point of damage for every Mobility and Close Combat roll";
+            case 32: return "One point of damage for every Mobility and Close Combat roll";
             case 33: return "Mobility and Close Combat -2";
             case 34: return "Observation and Range Combat -2";
             case 41:
