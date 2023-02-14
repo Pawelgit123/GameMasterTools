@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/btnXenoDialogProtomorphUteroPod"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="8dp"
+        android:text="Utero-Pod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnXenoDialogProtomorphSquid"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="8dp"
+        android:text="Squid"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogProtomorphUteroPod"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogProtomorphUteroPod"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogProtomorphUteroPod" />
+
+    <Button
+        android:id="@+id/btnXenoDialogProtomorphTrilobite"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="8dp"
+        android:text="Trilobite"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogProtomorphSquid"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogProtomorphSquid"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogProtomorphSquid" />
+
+    <Button
+        android:id="@+id/btnXenoDialogProtomorphDaecon"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="8dp"
+        android:text="Daecon"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogProtomorphTrilobite"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogProtomorphTrilobite"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogProtomorphTrilobite" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,5 +12,9 @@
     <color name="green">#8BC34A</color>
     <color name="green_deep">#4CAF50</color>
     <color name="grey">#C9C5C5</color>
+    <color name="aliengreen">#6D8764</color>
+    <color name="aliengrey">#647687</color>
+    <color name="alienbrown">#A0522D</color>
+    <color name="alienviolet">#76608A</color>
 
 </resources>

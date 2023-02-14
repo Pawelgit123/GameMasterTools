@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/btnXenoDialogXenomorphStageOne"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:backgroundTint="@color/teal_700"
+        android:text="Stage 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnXenoDialogXenomorphStageTwo"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="8dp"
+        android:text="Stage 2"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogXenomorphStageOne"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogXenomorphStageOne"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogXenomorphStageOne" />
+
+    <Button
+        android:id="@+id/btnXenoDialogXenomorphStageThree"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Stage 3"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogXenomorphStageTwo"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogXenomorphStageTwo"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogXenomorphStageTwo" />
+
+    <Button
+        android:id="@+id/btnXenoDialogXenomorphStageFour"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="8dp"
+        android:text="Stage 4"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogXenomorphStageThree"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogXenomorphStageThree"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogXenomorphStageThree" />
+
+    <Button
+        android:id="@+id/btnXenoDialogXenomorphStageFive"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="8dp"
+        android:text="Stage 5"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogXenomorphStageFour"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogXenomorphStageFour"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogXenomorphStageFour" />
+
+    <Button
+        android:id="@+id/btnXenoDialogXenomorphStageSix"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="8dp"
+        android:text="Stage 6"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogXenomorphStageFive"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogXenomorphStageFive"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogXenomorphStageFive" />
+</androidx.constraintlayout.widget.ConstraintLayout>

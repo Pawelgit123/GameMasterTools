@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/btnXenoDialogStageFiveSoldier"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:text="Soldier"
+        android:backgroundTint="@color/aliengrey"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogStageFiveWorker"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogStageFiveWorker"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogStageFiveWorker" />
+
+    <Button
+        android:id="@+id/btnXenoDialogStageFiveWorker"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/aliengrey"
+        android:text="Worker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnXenoDialogStageFiveSentry"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/alienbrown"
+        android:text="Sentry"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogStageFiveSoldier"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogStageFiveSoldier"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogStageFiveSoldier" />
+</androidx.constraintlayout.widget.ConstraintLayout>

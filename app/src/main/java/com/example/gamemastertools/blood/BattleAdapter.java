@@ -43,7 +43,6 @@ public class BattleAdapter extends RecyclerView.Adapter<BattleAdapter.BattleView
             @Override
             public void onClick(View v) {
                 dialog.show();
-                //Todo dialog buttons
 
                 dialog.findViewById(R.id.btn_add_wound_one).setOnClickListener(new View.OnClickListener() {
                     @Override
