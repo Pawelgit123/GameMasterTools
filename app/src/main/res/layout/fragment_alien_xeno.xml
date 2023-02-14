@@ -1,14 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AlienXeno">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/btnXenoAbomination"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="150dp"
+        android:text="@string/alien_btn_abomination_b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnXenoAbominationTwo"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:text="@string/alien_btn_abomination_e"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoAbomination"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoAbomination"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoAbomination" />
+
+    <Button
+        android:id="@+id/btnXenoAnathema"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:text="@string/alien_btn_anathema"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoAbominationTwo"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoAbominationTwo"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoAbominationTwo" />
+
+    <Button
+        android:id="@+id/btnXenoNeomorph"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:text="@string/alien_btn_neomorph"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoAnathema"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoAnathema"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoAnathema" />
+
+    <Button
+        android:id="@+id/btnXenoXenomorph"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:text="@string/alien_btn_xenomorph"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoNeomorph"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoNeomorph"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoNeomorph" />
+
+    <Button
+        android:id="@+id/btnXenoProtomorph"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:text="@string/alien_btn_protomorph"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoXenomorph"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoXenomorph"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoXenomorph" />
+</androidx.constraintlayout.widget.ConstraintLayout>

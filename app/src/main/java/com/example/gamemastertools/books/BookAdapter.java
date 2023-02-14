@@ -34,8 +34,8 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
     public void onBindViewHolder(@NonNull BookViewHolder holder, int position) {
 
         Book book = bookList.get(position);
-        holder.textView.setText(book.getTitle());
-        holder.imageView.setImageResource(book.getBookImage());
+        holder.title.setText(book.getTitle());
+        holder.bookImage.setImageResource(book.getBookImage());
     }
 
     @Override
@@ -45,13 +45,13 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
 
     public static class BookViewHolder extends RecyclerView.ViewHolder{
 
-        ImageView imageView;
-        TextView textView;
+        ImageView bookImage;
+        TextView title;
 
         public BookViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.imageViewBook);
-            textView = itemView.findViewById(R.id.textView);
+            bookImage = itemView.findViewById(R.id.imageViewBook);
+            title = itemView.findViewById(R.id.textView);
         }
     }
 }

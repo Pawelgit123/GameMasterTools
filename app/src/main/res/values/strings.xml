@@ -146,4 +146,24 @@
     <string name="alien_wound_roll_radio_button_low">Low roll ( [low] + [high] )</string>
     <string name="alien_wound_roll_radio_button_high">High roll ( [high] + [low] )</string>
 
+    //Alien types
+    <string name="alien_btn_abomination_b">Abomination B</string>
+    <string name="alien_btn_abomination_e">Abomination E</string>
+    <string name="alien_btn_anathema">Anathema</string>
+    <string name="alien_btn_neomorph">Neomorph</string>
+    <string name="alien_btn_xenomorph">Xenomorph</string>
+    <string name="alien_btn_protomorph">Protomorph</string>
+    <string name="alien_txt_type">Type:</string>
+    <string name="alien_txt_name">Name:</string>
+    <string name="alien_txt_health">Health:</string>
+    <string name="alien_txt_armor">Armor:</string>
+    <string name="alien_txt_speed">Speed:</string>
+    <string name="alien_txt_mobility">Mobility:</string>
+    <string name="alien_txt_observation">Observation:</string>
+    <string name="alien_txt_virus">Virus:</string>
+    <string name="alien_txt_virus_time">Time:</string>
+    <string name="alien_txt_acid">Acid:</string>
+
+
+
 </resources>

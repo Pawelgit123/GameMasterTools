@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewXenoType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/namePlacedHolder"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCenterXenoItem"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCenterXenoItem"
+        app:layout_constraintTop_toTopOf="@+id/textViewCenterXenoItem" />
+
+    <TextView
+        android:id="@+id/textViewXenoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/namePlacedHolder"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCenterXenoItem"
+        app:layout_constraintStart_toEndOf="@+id/textViewCenterXenoItem"
+        app:layout_constraintTop_toTopOf="@+id/textViewCenterXenoItem" />
+
+    <TextView
+        android:id="@+id/textViewCenterXenoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewXenoTypeStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/alien_txt_type"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewXenoType"
+        app:layout_constraintEnd_toEndOf="@+id/textViewXenoType"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoType" />
+
+    <TextView
+        android:id="@+id/textViewXeboNameStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/alien_txt_name"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewXenoName"
+        app:layout_constraintEnd_toEndOf="@+id/textViewXenoName"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoName" />
+
+    <TextView
+        android:id="@+id/textViewXenoHealthStatic"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/alien_txt_health"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewXenoType"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoType"
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoType" />
+
+    <TextView
+        android:id="@+id/textViewXenoArmorStatic"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/alien_txt_armor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewXenoHealthStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoHealthStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoHealthStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoSpeedStatic"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/alien_txt_speed"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewXenoArmorStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoArmorStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoArmorStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoMobilityStatic"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/alien_txt_mobility"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewXenoSpeedStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoSpeedStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoSpeedStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoObservationStatic"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/alien_txt_observation"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewXenoMobilityStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoMobilityStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoMobilityStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoVirusStatic"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/alien_txt_virus"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewXenoName"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoName" />
+
+    <TextView
+        android:id="@+id/textViewXenoVirusTimeStatic"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/alien_txt_virus_time"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewXenoVirusStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoVirusStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoVirusStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoAttackStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="TextView"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCenterXenoItem"
+        app:layout_constraintStart_toStartOf="@+id/textViewCenterXenoItem"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCenterXenoItem" />
+
+    <TextView
+        android:id="@+id/textViewXenoSpecials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/gold"
+        android:text="@string/namePlacedHolder"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoVirusTimeStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoVirusTimeStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoAttack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="@+id/textViewXenoAttackStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoAttackStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoAttackStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewXenoHealthStatic"
+        app:layout_constraintStart_toEndOf="@+id/textViewXenoHealthStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewXenoHealthStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoArmor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewXenoArmorStatic"
+        app:layout_constraintStart_toEndOf="@+id/textViewXenoArmorStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewXenoArmorStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewXenoSpeedStatic"
+        app:layout_constraintStart_toEndOf="@+id/textViewXenoSpeedStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewXenoSpeedStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoMobility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewXenoMobilityStatic"
+        app:layout_constraintStart_toEndOf="@+id/textViewXenoMobilityStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewXenoMobilityStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoObservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewXenoObservationStatic"
+        app:layout_constraintStart_toEndOf="@+id/textViewXenoObservationStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewXenoObservationStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoVirus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewXenoVirusStatic"
+        app:layout_constraintStart_toEndOf="@+id/textViewXenoVirusStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewXenoVirusStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoVirusTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewXenoVirusTimeStatic"
+        app:layout_constraintStart_toEndOf="@+id/textViewXenoVirusTimeStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewXenoVirusTimeStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoArmorFire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zeroPlacedHolder"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewXenoArmor"
+        app:layout_constraintStart_toEndOf="@+id/textViewXenoArmor"
+        app:layout_constraintTop_toTopOf="@+id/textViewXenoArmor" />
+</androidx.constraintlayout.widget.ConstraintLayout>
