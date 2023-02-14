@@ -1,6 +1,11 @@
 package com.example.gamemastertools.alien;
 
-public class AlienXeno {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
+public class AlienXenoCreature implements Parcelable {
 
     int health;
     int armor;
@@ -14,6 +19,34 @@ public class AlienXeno {
     String virusTime;
     String type;
 
+
+
+    protected AlienXenoCreature(Parcel in) {
+        health = in.readInt();
+        armor = in.readInt();
+        armorFire = in.readInt();
+        speed = in.readInt();
+        mobility = in.readInt();
+        observation = in.readInt();
+        special = in.readString();
+        name = in.readString();
+        virus = in.readInt();
+        virusTime = in.readString();
+        type = in.readString();
+    }
+
+    public static final Creator<AlienXenoCreature> CREATOR = new Creator<AlienXenoCreature>() {
+        @Override
+        public AlienXenoCreature createFromParcel(Parcel in) {
+            return new AlienXenoCreature(in);
+        }
+
+        @Override
+        public AlienXenoCreature[] newArray(int size) {
+            return new AlienXenoCreature[size];
+        }
+    };
+
     public String getType() {
         return type;
     }
@@ -22,7 +55,7 @@ public class AlienXeno {
         this.type = type;
     }
 
-    public AlienXeno() {
+    public AlienXenoCreature() {
     }
 
     public int getVirus() {
@@ -103,5 +136,25 @@ public class AlienXeno {
 
     public void setArmorFire(int armorFire) {
         this.armorFire = armorFire;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(@NonNull Parcel dest, int flags) {
+        dest.writeInt(health);
+        dest.writeInt(armor);
+        dest.writeInt(armorFire);
+        dest.writeInt(speed);
+        dest.writeInt(mobility);
+        dest.writeInt(observation);
+        dest.writeString(special);
+        dest.writeString(name);
+        dest.writeInt(virus);
+        dest.writeString(virusTime);
+        dest.writeString(type);
     }
 }

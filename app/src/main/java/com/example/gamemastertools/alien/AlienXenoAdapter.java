@@ -12,9 +12,9 @@ import com.example.gamemastertools.R;
 
 public class AlienXenoAdapter extends RecyclerView.Adapter<AlienXenoAdapter.AlieXenoHolder> {
 
-    private final AlienXeno alienXeno;
+    private final AlienXenoCreature alienXeno;
 
-    public AlienXenoAdapter(AlienXeno alienXeno) {
+    public AlienXenoAdapter(AlienXenoCreature alienXeno) {
         this.alienXeno = alienXeno;
     }
 

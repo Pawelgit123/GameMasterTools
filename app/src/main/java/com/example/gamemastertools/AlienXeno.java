@@ -1,18 +1,19 @@
 package com.example.gamemastertools;
 
 import android.app.Dialog;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.gamemastertools.alien.AlienXenoCreator;
+import com.example.gamemastertools.alien.AlienXenoCreature;
 import com.example.gamemastertools.databinding.FragmentAlienXenoBinding;
 
 public class AlienXeno extends Fragment {
@@ -27,9 +28,18 @@ public class AlienXeno extends Fragment {
         return binding.getRoot();
     }
 
+    public void packAlienAndGo(AlienXenoCreature alienXeno, Dialog dialog, Bundle bundle){
+        bundle.putParcelable("alien", alienXeno);
+        NavHostFragment.findNavController(AlienXeno.this)
+                .navigate(R.id.action_alien_xeno_go_to_xeno_rolls, bundle);
+        dialog.dismiss();
+    }
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        Bundle bundle = new Bundle();
 
         Dialog dialogNeomorph = new Dialog(getContext());
         Dialog dialogAnathema = new Dialog(getContext());
@@ -61,6 +71,19 @@ public class AlienXeno extends Fragment {
             @Override
             public void onClick(View v) {
                 dialogNeomorph.show();
+
+                dialogNeomorph.findViewById(R.id.btnXenoDialogNeomoprhMote).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        AlienXenoCreature alienXeno = new AlienXenoCreature();
+                        AlienXenoCreator.createNeomorphMote(alienXeno);
+                        bundle.putParcelable("alien", alienXeno);
+                        NavHostFragment.findNavController(AlienXeno.this)
+                                .navigate(R.id.action_alien_xeno_go_to_xeno_rolls, bundle);
+                        dialogNeomorph.dismiss();
+                    }
+                });
+
             }
         });
 
