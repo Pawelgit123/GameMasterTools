@@ -46,7 +46,7 @@
         android:layout_height="@dimen/button_y"
         android:backgroundTint="@color/teal_700"
         android:layout_marginTop="8dp"
-        android:text="Daecon"
+        android:text="Deacon"
         app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogProtomorphTrilobite"
         app:layout_constraintStart_toStartOf="@+id/btnXenoDialogProtomorphTrilobite"
         app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogProtomorphTrilobite" />

@@ -13,7 +13,7 @@ public class AlienPanicRoller {
     }
 
     public static String panicTitle (int number){
-        String title ="";
+        String title;
         switch (number){
             case 1:
             case 2:

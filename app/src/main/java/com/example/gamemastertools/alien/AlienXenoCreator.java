@@ -5,6 +5,17 @@ public class AlienXenoCreator {
     public AlienXenoCreator() {
     }
 
+    public static AlienXenoCreature createAbominationBlackGoo(AlienXenoCreature alienXeno){
+
+        alienXeno.setName("Black Goo");
+        alienXeno.setType("Anathema");
+        alienXeno.setSpecial("VIRUS");
+        alienXeno.setVirus(8);
+        alienXeno.setVirusTime("1 shift");
+
+        return alienXeno;
+    }
+
     public static AlienXenoCreature createAbominationInfected(AlienXenoCreature alienXeno){
 
         alienXeno.setName("Infected");
@@ -13,6 +24,8 @@ public class AlienXenoCreator {
         alienXeno.setVirusTime("1 shift");
         alienXeno.setArmor(0);
         alienXeno.setArmorFire(0);
+        alienXeno.setSpeed(1);
+        alienXeno.setSpecial("Stats like Host");
 
         return alienXeno;
     }
@@ -25,7 +38,8 @@ public class AlienXenoCreator {
         alienXeno.setVirusTime("1 shift");
         alienXeno.setArmor(0);
         alienXeno.setArmorFire(0);
-        alienXeno.setSpecial("Strength +3, Agility +2, Empathy -1");
+        alienXeno.setSpeed(1);
+        alienXeno.setSpecial("Host: Strength +3, Agility +2, Empathy -1");
 
         return alienXeno;
     }
@@ -41,7 +55,7 @@ public class AlienXenoCreator {
         alienXeno.setArmorFire(0);
         alienXeno.setMobility(5);
         alienXeno.setObservation(3);
-        alienXeno.setSpecial("Strength +2, Agility +1, Empathy -5");
+        alienXeno.setSpecial("Host: Strength +2, Agility +1, Empathy -5");
 
         return alienXeno;
     }
@@ -56,7 +70,7 @@ public class AlienXenoCreator {
         alienXeno.setArmorFire(3);
         alienXeno.setMobility(5);
         alienXeno.setObservation(3);
-        alienXeno.setSpecial("Strength +2");
+        alienXeno.setSpecial("Host: Strength +2");
 
         return  alienXeno;
     }
@@ -68,6 +82,7 @@ public class AlienXenoCreator {
         alienXeno.setSpecial("Grow in clutches of 2d6");
         alienXeno.setArmor(0);
         alienXeno.setArmorFire(0);
+        alienXeno.setSpeed(0);
 
         return alienXeno;
     }
@@ -75,11 +90,13 @@ public class AlienXenoCreator {
     public static AlienXenoCreature createNeomorphMote(AlienXenoCreature alienXeno){
 
         alienXeno.setName("Mote");
-        alienXeno.setName("Neomorph");
+        alienXeno.setType("Neomorph");
         alienXeno.setVirus(9);
+        alienXeno.setSpeed(0);
         alienXeno.setVirusTime("1 shift");
         alienXeno.setArmor(0);
         alienXeno.setArmorFire(0);
+        alienXeno.setSpecial("VIRUS");
 
         return alienXeno;
     }
@@ -132,10 +149,12 @@ public class AlienXenoCreator {
 
         alienXeno.setName("Afflicted");
         alienXeno.setType("Anathema");
+        alienXeno.setVirus(8);
         alienXeno.setVirusTime("1 shift");
-        alienXeno.setSpecial("Stress level +1");
+        alienXeno.setSpecial("Host: Stress level +1, spread VIRUS:4");
         alienXeno.setArmor(0);
         alienXeno.setArmorFire(0);
+        alienXeno.setSpeed(1);
 
         return  alienXeno;
     }
@@ -144,10 +163,12 @@ public class AlienXenoCreator {
 
         alienXeno.setName("Febrile");
         alienXeno.setType("Anathema");
+        alienXeno.setVirus(8);
         alienXeno.setVirusTime("1 shift");
         alienXeno.setArmor(0);
         alienXeno.setArmorFire(0);
-        alienXeno.setSpecial("Stress level +1, Strength +3, Wits -2, Enthralling Gaze");
+        alienXeno.setSpeed(1);
+        alienXeno.setSpecial("Host: Stress level +1, Strength +3, Wits -2, Enthralling Gaze, spread VIRUS:6");
 
         return alienXeno;
     }
@@ -162,6 +183,7 @@ public class AlienXenoCreator {
         alienXeno.setArmorFire(0);
         alienXeno.setMobility(5);
         alienXeno.setObservation(3);
+        alienXeno.setSpecial("Stats like Host, spread VIRUS:7");
 
         return alienXeno;
     }
@@ -170,10 +192,11 @@ public class AlienXenoCreator {
 
         alienXeno.setName("Terminal");
         alienXeno.setType("Anathema");
-        alienXeno.setSpecial("Health -1 per turn, Virus at ENGAGED is doubled");
+        alienXeno.setSpecial("Host: Health -1 per turn, Virus at ENGAGED range is doubled");
         alienXeno.setVirus(4);
         alienXeno.setArmor(0);
         alienXeno.setArmorFire(0);
+        alienXeno.setSpeed(1);
 
         return alienXeno;
     }
@@ -186,6 +209,8 @@ public class AlienXenoCreator {
         alienXeno.setVirusTime("1 shift");
         alienXeno.setArmor(0);
         alienXeno.setArmorFire(0);
+        alienXeno.setSpeed(1);
+        alienXeno.setSpecial("Stats like Host");
 
         return alienXeno;
     }
@@ -198,7 +223,7 @@ public class AlienXenoCreator {
         alienXeno.setSpeed(2);
         alienXeno.setArmor(0);
         alienXeno.setArmorFire(0);
-        alienXeno.setSpecial("Strength +3, Agility +1, Empathy -1");
+        alienXeno.setSpecial("Host: Strength +3, Agility +1, Empathy -1");
 
         return alienXeno;
     }
@@ -316,7 +341,7 @@ public class AlienXenoCreator {
     public static AlienXenoCreature createXenomorphPraetoFacehugger(AlienXenoCreature alienXeno){
 
         alienXeno.setName("Praeto-Facehugger");
-        alienXeno.setType("Xenomorph");
+        alienXeno.setType("Xenomorph P");
         alienXeno.setHealth(2);
         alienXeno.setSpeed(2);
         alienXeno.setArmor(2);
@@ -348,7 +373,7 @@ public class AlienXenoCreator {
     public static AlienXenoCreature createXenomorphChestburster(AlienXenoCreature alienXeno){
 
         alienXeno.setName("Chestburster");
-        alienXeno.setType("Xenomorph");
+        alienXeno.setType("Xenomorph H");
         alienXeno.setHealth(2);
         alienXeno.setSpeed(2);
         alienXeno.setArmor(2);
@@ -363,7 +388,7 @@ public class AlienXenoCreator {
     public static AlienXenoCreature createXenomorphBambiburster(AlienXenoCreature alienXeno){
 
         alienXeno.setName("Bambiburster");
-        alienXeno.setType("Xenomorph");
+        alienXeno.setType("Xenomorph A");
         alienXeno.setHealth(2);
         alienXeno.setSpeed(2);
         alienXeno.setArmor(2);
@@ -378,7 +403,7 @@ public class AlienXenoCreator {
     public static AlienXenoCreature createXenomorphImp(AlienXenoCreature alienXeno){
 
         alienXeno.setName("Imp");
-        alienXeno.setType("Xenomorph");
+        alienXeno.setType("Xenomorph F");
         alienXeno.setHealth(2);
         alienXeno.setSpeed(2);
         alienXeno.setArmor(0);
@@ -408,7 +433,7 @@ public class AlienXenoCreator {
     public static AlienXenoCreature createXenomorphStalker(AlienXenoCreature alienXeno){
 
         alienXeno.setName("Stalker");
-        alienXeno.setType("Xenomorph");
+        alienXeno.setType("Xenomorph F");
         alienXeno.setHealth(6);
         alienXeno.setSpeed(2);
         alienXeno.setArmor(10);
@@ -423,7 +448,7 @@ public class AlienXenoCreator {
     public static AlienXenoCreature createXenomorphScout(AlienXenoCreature alienXeno){
 
         alienXeno.setName("Scout");
-        alienXeno.setType("Xenomorph");
+        alienXeno.setType("Xenomorph A");
         alienXeno.setHealth(5);
         alienXeno.setSpeed(3);
         alienXeno.setArmor(8);
@@ -438,7 +463,7 @@ public class AlienXenoCreator {
     public static AlienXenoCreature createXenomorphDrone(AlienXenoCreature alienXeno){
 
         alienXeno.setName("Scout");
-        alienXeno.setType("Xenomorph");
+        alienXeno.setType("Xenomorph H");
         alienXeno.setHealth(7);
         alienXeno.setSpeed(2);
         alienXeno.setArmor(8);
@@ -453,7 +478,7 @@ public class AlienXenoCreator {
     public static AlienXenoCreature createXenomorphSoldier(AlienXenoCreature alienXeno){
 
         alienXeno.setName("Soldier");
-        alienXeno.setType("Xenomorph");
+        alienXeno.setType("Xenomorph H");
         alienXeno.setHealth(8);
         alienXeno.setSpeed(2);
         alienXeno.setArmor(10);
@@ -468,7 +493,7 @@ public class AlienXenoCreator {
     public static AlienXenoCreature createXenomorphWorker(AlienXenoCreature alienXeno){
 
         alienXeno.setName("Worker");
-        alienXeno.setType("Xenomorph");
+        alienXeno.setType("Xenomorph H");
         alienXeno.setHealth(4);
         alienXeno.setSpeed(1);
         alienXeno.setArmor(5);
@@ -483,7 +508,7 @@ public class AlienXenoCreator {
     public static AlienXenoCreature createXenomorphSentry(AlienXenoCreature alienXeno){
 
         alienXeno.setName("Sentru");
-        alienXeno.setType("Xenomorph");
+        alienXeno.setType("Xenomorph A");
         alienXeno.setHealth(8);
         alienXeno.setSpeed(3);
         alienXeno.setArmor(12);
@@ -498,7 +523,7 @@ public class AlienXenoCreator {
     public static AlienXenoCreature createXenomorphPreatorian(AlienXenoCreature alienXeno){
 
         alienXeno.setName("Preatorian");
-        alienXeno.setType("Xenomorph");
+        alienXeno.setType("Xenomorph H");
         alienXeno.setHealth(10);
         alienXeno.setSpeed(2);
         alienXeno.setArmor(12);
@@ -513,7 +538,7 @@ public class AlienXenoCreator {
     public static AlienXenoCreature createXenomorphCrusher(AlienXenoCreature alienXeno){
 
         alienXeno.setName("Crusher");
-        alienXeno.setType("Xenomorph");
+        alienXeno.setType("Xenomorph A");
         alienXeno.setHealth(16);
         alienXeno.setSpeed(1);
         alienXeno.setArmor(18);

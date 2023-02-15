@@ -9,9 +9,10 @@
         android:id="@+id/textViewXenoType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="24dp"
         android:text="@string/namePlacedHolder"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewCenterXenoItem"
         app:layout_constraintEnd_toStartOf="@+id/textViewCenterXenoItem"
         app:layout_constraintTop_toTopOf="@+id/textViewCenterXenoItem" />
@@ -20,9 +21,10 @@
         android:id="@+id/textViewXenoName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:text="@string/namePlacedHolder"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewCenterXenoItem"
         app:layout_constraintStart_toEndOf="@+id/textViewCenterXenoItem"
         app:layout_constraintTop_toTopOf="@+id/textViewCenterXenoItem" />
@@ -31,8 +33,8 @@
         android:id="@+id/textViewCenterXenoItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="@string/zeroPlacedHolder"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -44,7 +46,9 @@
         android:layout_marginBottom="8dp"
         android:text="@string/alien_txt_type"
         android:textColor="@color/teal_200"
+        android:textSize="16sp"
         android:textStyle="bold"
+        android:fontFamily="@font/ocr_a_std_regular"
         app:layout_constraintBottom_toTopOf="@+id/textViewXenoType"
         app:layout_constraintEnd_toEndOf="@+id/textViewXenoType"
         app:layout_constraintStart_toStartOf="@+id/textViewXenoType" />
@@ -56,65 +60,86 @@
         android:layout_marginBottom="8dp"
         android:text="@string/alien_txt_name"
         android:textColor="@color/teal_200"
+        android:textSize="16sp"
         android:textStyle="bold"
+        android:fontFamily="@font/ocr_a_std_regular"
         app:layout_constraintBottom_toTopOf="@+id/textViewXenoName"
         app:layout_constraintEnd_toEndOf="@+id/textViewXenoName"
         app:layout_constraintStart_toStartOf="@+id/textViewXenoName" />
 
     <TextView
         android:id="@+id/textViewXenoHealthStatic"
-        android:layout_width="85dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:gravity="right"
         android:text="@string/alien_txt_health"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textViewXenoType"
         app:layout_constraintStart_toStartOf="@+id/textViewXenoType"
-        app:layout_constraintTop_toBottomOf="@+id/textViewXenoType" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoType"
+        tools:ignore="RtlHardcoded" />
 
     <TextView
         android:id="@+id/textViewXenoArmorStatic"
-        android:layout_width="85dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/alien_txt_armor"
+        android:gravity="right"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textViewXenoHealthStatic"
         app:layout_constraintStart_toStartOf="@+id/textViewXenoHealthStatic"
-        app:layout_constraintTop_toBottomOf="@+id/textViewXenoHealthStatic" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoHealthStatic"
+        tools:ignore="RtlHardcoded" />
 
     <TextView
         android:id="@+id/textViewXenoSpeedStatic"
-        android:layout_width="85dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/alien_txt_speed"
+        android:gravity="right"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textViewXenoArmorStatic"
         app:layout_constraintStart_toStartOf="@+id/textViewXenoArmorStatic"
-        app:layout_constraintTop_toBottomOf="@+id/textViewXenoArmorStatic" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoArmorStatic"
+        tools:ignore="RtlHardcoded" />
 
     <TextView
         android:id="@+id/textViewXenoMobilityStatic"
-        android:layout_width="85dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/alien_txt_mobility"
+        android:textColor="@color/white"
+        android:gravity="right"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textViewXenoSpeedStatic"
         app:layout_constraintStart_toStartOf="@+id/textViewXenoSpeedStatic"
-        app:layout_constraintTop_toBottomOf="@+id/textViewXenoSpeedStatic" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoSpeedStatic"
+        tools:ignore="RtlHardcoded" />
 
     <TextView
         android:id="@+id/textViewXenoObservationStatic"
-        android:layout_width="85dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/alien_txt_observation"
+        android:textColor="@color/white"
+        android:gravity="right"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textViewXenoMobilityStatic"
         app:layout_constraintStart_toStartOf="@+id/textViewXenoMobilityStatic"
-        app:layout_constraintTop_toBottomOf="@+id/textViewXenoMobilityStatic" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoMobilityStatic"
+        tools:ignore="RtlHardcoded" />
 
     <TextView
         android:id="@+id/textViewXenoVirusStatic"
@@ -122,10 +147,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/alien_txt_virus"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textViewXenoName"
+        android:gravity="right"
         app:layout_constraintStart_toStartOf="@+id/textViewXenoName"
-        app:layout_constraintTop_toBottomOf="@+id/textViewXenoName" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoName"
+        tools:ignore="RtlHardcoded" />
 
     <TextView
         android:id="@+id/textViewXenoVirusTimeStatic"
@@ -133,30 +161,37 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/alien_txt_virus_time"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         android:textStyle="bold"
+        android:gravity="right"
         app:layout_constraintEnd_toEndOf="@+id/textViewXenoVirusStatic"
         app:layout_constraintStart_toStartOf="@+id/textViewXenoVirusStatic"
-        app:layout_constraintTop_toBottomOf="@+id/textViewXenoVirusStatic" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoVirusStatic"
+        tools:ignore="RtlHardcoded" />
 
     <TextView
         android:id="@+id/textViewXenoAttackStatic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="180dp"
         android:text="TextView"
         android:textColor="@color/teal_200"
+        android:textSize="20sp"
         android:textStyle="bold"
+        android:fontFamily="@font/ocr_a_std_regular"
         app:layout_constraintEnd_toEndOf="@+id/textViewCenterXenoItem"
         app:layout_constraintStart_toStartOf="@+id/textViewCenterXenoItem"
         app:layout_constraintTop_toBottomOf="@+id/textViewCenterXenoItem" />
 
     <TextView
         android:id="@+id/textViewXenoSpecials"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
         android:layout_marginTop="8dp"
-        android:textColor="@color/gold"
         android:text="@string/namePlacedHolder"
+        android:textColor="@color/gold"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/textViewXenoVirusTimeStatic"
         app:layout_constraintTop_toBottomOf="@+id/textViewXenoVirusTimeStatic" />
 
@@ -167,6 +202,7 @@
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textColor="@color/teal_200"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/textViewXenoAttackStatic"
         app:layout_constraintStart_toStartOf="@+id/textViewXenoAttackStatic"
         app:layout_constraintTop_toBottomOf="@+id/textViewXenoAttackStatic" />
@@ -177,6 +213,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewXenoHealthStatic"
         app:layout_constraintStart_toEndOf="@+id/textViewXenoHealthStatic"
         app:layout_constraintTop_toTopOf="@+id/textViewXenoHealthStatic" />
@@ -187,6 +225,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewXenoArmorStatic"
         app:layout_constraintStart_toEndOf="@+id/textViewXenoArmorStatic"
         app:layout_constraintTop_toTopOf="@+id/textViewXenoArmorStatic" />
@@ -197,6 +237,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewXenoSpeedStatic"
         app:layout_constraintStart_toEndOf="@+id/textViewXenoSpeedStatic"
         app:layout_constraintTop_toTopOf="@+id/textViewXenoSpeedStatic" />
@@ -207,6 +249,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewXenoMobilityStatic"
         app:layout_constraintStart_toEndOf="@+id/textViewXenoMobilityStatic"
         app:layout_constraintTop_toTopOf="@+id/textViewXenoMobilityStatic" />
@@ -217,6 +261,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewXenoObservationStatic"
         app:layout_constraintStart_toEndOf="@+id/textViewXenoObservationStatic"
         app:layout_constraintTop_toTopOf="@+id/textViewXenoObservationStatic" />
@@ -227,6 +273,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewXenoVirusStatic"
         app:layout_constraintStart_toEndOf="@+id/textViewXenoVirusStatic"
         app:layout_constraintTop_toTopOf="@+id/textViewXenoVirusStatic" />
@@ -237,6 +285,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewXenoVirusTimeStatic"
         app:layout_constraintStart_toEndOf="@+id/textViewXenoVirusTimeStatic"
         app:layout_constraintTop_toTopOf="@+id/textViewXenoVirusTimeStatic" />
@@ -247,6 +297,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewXenoArmor"
         app:layout_constraintStart_toEndOf="@+id/textViewXenoArmor"
         app:layout_constraintTop_toTopOf="@+id/textViewXenoArmor" />

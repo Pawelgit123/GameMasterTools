@@ -33,11 +33,13 @@ public class AlienXenoAdapter extends RecyclerView.Adapter<AlienXenoAdapter.Alie
        holder.armor.setText(String.valueOf(alienXeno.getArmor()));
        holder.armorFire.setText(String.valueOf(alienXeno.getArmorFire()));
        holder.speed.setText(String.valueOf(alienXeno.getSpeed()));
-       holder.speed.setText(alienXeno.getSpecial());
-       holder.name.setText(alienXeno.getName());
+       holder.special.setText(alienXeno.getSpecial());
+       holder.name.setText(String.valueOf(alienXeno.getName()));
        holder.virus.setText(String.valueOf(alienXeno.getVirus()));
        holder.virusTime.setText(String.valueOf(alienXeno.getVirusTime()));
        holder.type.setText(alienXeno.getType());
+       holder.observation.setText(String.valueOf(alienXeno.getObservation()));
+       holder.mobility.setText(String.valueOf(alienXeno.getMobility()));
 
     }
 
