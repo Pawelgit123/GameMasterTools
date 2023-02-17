@@ -46,4 +46,13 @@ public class AlienXenoAttackRoller {
             default: return "ESCAPE - ";
         }
     }
+
+//    public static String attackTitleAnathema(){
+//        int roll = attackRoll();
+//
+//        switch (roll){
+//            case 1: return "HORRIF"
+//        }
+
+
 }

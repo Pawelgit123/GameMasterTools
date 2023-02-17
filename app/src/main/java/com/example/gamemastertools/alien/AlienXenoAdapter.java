@@ -1,5 +1,6 @@
 package com.example.gamemastertools.alien;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,21 +27,24 @@ public class AlienXenoAdapter extends RecyclerView.Adapter<AlienXenoAdapter.Alie
         return new AlieXenoHolder(v);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull AlieXenoHolder holder, int position) {
 
-       holder.health.setText(String.valueOf(alienXeno.getHealth()));
+       holder.health.setText(alienXeno.getHealth());
        holder.armor.setText(String.valueOf(alienXeno.getArmor()));
        holder.armorFire.setText(String.valueOf(alienXeno.getArmorFire()));
        holder.speed.setText(String.valueOf(alienXeno.getSpeed()));
        holder.special.setText(alienXeno.getSpecial());
-       holder.name.setText(String.valueOf(alienXeno.getName()));
-       holder.virus.setText(String.valueOf(alienXeno.getVirus()));
-       holder.virusTime.setText(String.valueOf(alienXeno.getVirusTime()));
+       holder.name.setText(alienXeno.getName());
        holder.type.setText(alienXeno.getType());
-       holder.observation.setText(String.valueOf(alienXeno.getObservation()));
-       holder.mobility.setText(String.valueOf(alienXeno.getMobility()));
+       holder.observation.setText(alienXeno.getObservation());
+       holder.mobility.setText(alienXeno.getMobility());
+       holder.virus.setText(alienXeno.getAcid());
 
+        if(alienXeno.getType().equals("Xenomorph")){
+            holder.virusAcidType.setText("Acid:");
+        }
     }
 
     @Override
@@ -60,8 +64,8 @@ public class AlienXenoAdapter extends RecyclerView.Adapter<AlienXenoAdapter.Alie
         TextView special;
         TextView name;
         TextView virus;
-        TextView virusTime;
         TextView type;
+        TextView virusAcidType;
 
         public AlieXenoHolder(@NonNull View itemView) {
             super(itemView);
@@ -75,8 +79,8 @@ public class AlienXenoAdapter extends RecyclerView.Adapter<AlienXenoAdapter.Alie
             special = itemView.findViewById(R.id.textViewXenoSpecials);
             name = itemView.findViewById(R.id.textViewXenoName);
             virus = itemView.findViewById(R.id.textViewXenoVirus);
-            virusTime = itemView.findViewById(R.id.textViewXenoVirusTime);
             type = itemView.findViewById(R.id.textViewXenoType);
+            virusAcidType = itemView.findViewById(R.id.textViewXenoVirusStatic);
         }
     }
 }

@@ -11,12 +11,12 @@
         android:id="@+id/btnXenoDialogAnathemaAfflicted"
         android:layout_width="@dimen/button_x"
         android:layout_height="@dimen/button_y"
-        android:backgroundTint="@color/teal_700"
         android:layout_marginTop="8dp"
+        android:backgroundTint="@color/teal_700"
         android:text="Afflicted"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogAnathemBlackGoo"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogAnathemBlackGoo"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogAnathemBlackGoo" />
 
     <Button
         android:id="@+id/btnXenoDialogAnathemaFebrile"
@@ -50,4 +50,14 @@
         app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogAnathemaFreak"
         app:layout_constraintStart_toStartOf="@+id/btnXenoDialogAnathemaFreak"
         app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogAnathemaFreak" />
+
+    <Button
+        android:id="@+id/btnXenoDialogAnathemBlackGoo"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:text="Black Goo"
+        android:backgroundTint="@color/green_deep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,31 +7,29 @@ import androidx.annotation.NonNull;
 
 public class AlienXenoCreature implements Parcelable {
 
-    int health;
+    String health;
     int armor;
     int armorFire;
     int speed;
-    int mobility;
-    int observation;
+    String mobility;
+    String observation;
     String special;
     String name;
-    int virus;
-    String virusTime;
+    String acid;
     String type;
 
 
 
     protected AlienXenoCreature(Parcel in) {
-        health = in.readInt();
+        health = in.readString();
         armor = in.readInt();
         armorFire = in.readInt();
         speed = in.readInt();
-        mobility = in.readInt();
-        observation = in.readInt();
+        mobility = in.readString();
+        observation = in.readString();
         special = in.readString();
         name = in.readString();
-        virus = in.readInt();
-        virusTime = in.readString();
+        acid = in.readString();
         type = in.readString();
     }
 
@@ -58,29 +56,7 @@ public class AlienXenoCreature implements Parcelable {
     public AlienXenoCreature() {
     }
 
-    public int getVirus() {
-        return virus;
-    }
 
-    public void setVirus(int virus) {
-        this.virus = virus;
-    }
-
-    public String getVirusTime() {
-        return virusTime;
-    }
-
-    public void setVirusTime(String virusTime) {
-        this.virusTime = virusTime;
-    }
-
-    public int getHealth() {
-        return health;
-    }
-
-    public void setHealth(int health) {
-        this.health = health;
-    }
 
     public int getArmor() {
         return armor;
@@ -98,21 +74,6 @@ public class AlienXenoCreature implements Parcelable {
         this.speed = speed;
     }
 
-    public int getMobility() {
-        return mobility;
-    }
-
-    public void setMobility(int mobility) {
-        this.mobility = mobility;
-    }
-
-    public int getObservation() {
-        return observation;
-    }
-
-    public void setObservation(int observation) {
-        this.observation = observation;
-    }
 
     public String getSpecial() {
         return special;
@@ -138,6 +99,38 @@ public class AlienXenoCreature implements Parcelable {
         this.armorFire = armorFire;
     }
 
+    public String getHealth() {
+        return health;
+    }
+
+    public void setHealth(String health) {
+        this.health = health;
+    }
+
+    public String getMobility() {
+        return mobility;
+    }
+
+    public void setMobility(String mobility) {
+        this.mobility = mobility;
+    }
+
+    public String getObservation() {
+        return observation;
+    }
+
+    public void setObservation(String observation) {
+        this.observation = observation;
+    }
+
+    public String getAcid() {
+        return acid;
+    }
+
+    public void setAcid(String acid) {
+        this.acid = acid;
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -145,16 +138,15 @@ public class AlienXenoCreature implements Parcelable {
 
     @Override
     public void writeToParcel(@NonNull Parcel dest, int flags) {
-        dest.writeInt(health);
+        dest.writeString(health);
         dest.writeInt(armor);
         dest.writeInt(armorFire);
         dest.writeInt(speed);
-        dest.writeInt(mobility);
-        dest.writeInt(observation);
+        dest.writeString(mobility);
+        dest.writeString(observation);
         dest.writeString(special);
         dest.writeString(name);
-        dest.writeInt(virus);
-        dest.writeString(virusTime);
+        dest.writeString(acid);
         dest.writeString(type);
     }
 }

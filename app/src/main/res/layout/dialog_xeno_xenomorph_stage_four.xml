@@ -12,8 +12,8 @@
         android:layout_width="@dimen/button_x"
         android:layout_height="@dimen/button_y"
         android:layout_marginTop="8dp"
-        android:text="Drone"
         android:backgroundTint="@color/aliengrey"
+        android:text="Drone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,9 +25,9 @@
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/aliengreen"
         android:text="Stalker"
-        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogStageFourDrone"
-        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogStageFourDrone"
-        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogStageFourDrone" />
+        app:layout_constraintEnd_toEndOf="@+id/bbtnXenoDialogStageFourBioDrone"
+        app:layout_constraintStart_toStartOf="@+id/bbtnXenoDialogStageFourBioDrone"
+        app:layout_constraintTop_toBottomOf="@+id/bbtnXenoDialogStageFourBioDrone" />
 
     <Button
         android:id="@+id/btnXenoDialogStageFourScout"
@@ -39,4 +39,15 @@
         app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogStageFourStalker"
         app:layout_constraintStart_toStartOf="@+id/btnXenoDialogStageFourStalker"
         app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogStageFourStalker" />
+
+    <Button
+        android:id="@+id/bbtnXenoDialogStageFourBioDrone"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:text="BioDrone"
+        android:backgroundTint="@color/aliengrey"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogStageFourDrone"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogStageFourDrone"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogStageFourDrone" />
 </androidx.constraintlayout.widget.ConstraintLayout>

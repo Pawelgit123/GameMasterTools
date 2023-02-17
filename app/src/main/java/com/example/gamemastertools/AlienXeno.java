@@ -167,6 +167,12 @@ public class AlienXeno extends Fragment {
                         packAlienAndGo(AlienXenoCreator.createAnathemaTerminal(new AlienXenoCreature()), dialogAnathema, bundle);
                     }
                 });
+                dialogAnathema.findViewById(R.id.btnXenoDialogAnathemBlackGoo).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        packAlienAndGo(AlienXenoCreator.createAnathemaBlackGoo(new AlienXenoCreature()), dialogAnathema, bundle);
+                    }
+                });
             }
         });
 
@@ -178,7 +184,7 @@ public class AlienXeno extends Fragment {
                 dialogAbominantionE.findViewById(R.id.btnXenoDialobAbominatioEeTained).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createAbominationTained(new AlienXenoCreature()), dialogAbominantionE, bundle);
+                        packAlienAndGo(AlienXenoCreator.createAbominationTainted(new AlienXenoCreature()), dialogAbominantionE, bundle);
                     }
                 });
                 dialogAbominantionE.findViewById(R.id.btnXenoDialogAbominationEeMutated).setOnClickListener(new View.OnClickListener() {
@@ -324,6 +330,12 @@ public class AlienXeno extends Fragment {
                             @Override
                             public void onClick(View v) {
                                 packAlienAndGo(AlienXenoCreator.createXenomorphDrone(new AlienXenoCreature()), dialogFour, bundle);
+                            }
+                        });
+                        dialogFour.findViewById(R.id.bbtnXenoDialogStageFourBioDrone).setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                packAlienAndGo(AlienXenoCreator.createXenomorphBioDrone(new AlienXenoCreature()), dialogFour, bundle);
                             }
                         });
                         dialogFour.findViewById(R.id.btnXenoDialogStageFourScout).setOnClickListener(new View.OnClickListener() {

@@ -9,7 +9,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/alien_xeno_view"
         android:layout_width="wrap_content"
-        android:layout_height="500dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="@+id/btnXenoRollAttack"
         app:layout_constraintStart_toStartOf="@+id/btnXenoRollAttack"
@@ -24,5 +24,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewXenoAttackStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ocr_a_std_regular"
+        android:text="TextView"
+        android:textColor="@color/teal_200"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/alien_xeno_view"
+        app:layout_constraintStart_toStartOf="@+id/alien_xeno_view"
+        app:layout_constraintTop_toBottomOf="@+id/alien_xeno_view" />
+
+    <TextView
+        android:id="@+id/textViewXenoAttack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/teal_200"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewXenoAttackStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoAttackStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoAttackStatic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
