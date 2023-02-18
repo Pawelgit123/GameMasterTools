@@ -440,6 +440,22 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
+    public static AlienXenoCreature createXenomorphAriarcusBodyburster(AlienXenoCreature alienXeno){
+
+        alienXeno.setName("Ariarcus Bodyburster");
+        alienXeno.setType("Xenomorph");
+        alienXeno.setHealth("9");
+        alienXeno.setSpeed(2);
+        alienXeno.setArmor(8);
+        alienXeno.setArmorFire(4);
+        alienXeno.setMobility("6");
+        alienXeno.setObservation("10");
+        alienXeno.setSpecial("During transformation: all present must make an immediate Panic Roll");
+        alienXeno.setAcid("10");
+
+        return alienXeno;
+    }
+
     public static AlienXenoCreature createXenomorphImp(AlienXenoCreature alienXeno){
 
         alienXeno.setName("Imp");

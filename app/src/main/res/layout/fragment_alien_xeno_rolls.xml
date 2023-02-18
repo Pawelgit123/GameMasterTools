@@ -10,28 +10,28 @@
         android:id="@+id/alien_xeno_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/btnXenoRollAttack"
-        app:layout_constraintStart_toStartOf="@+id/btnXenoRollAttack"
-        app:layout_constraintTop_toBottomOf="@+id/btnXenoRollAttack" />
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoAttackRollEight"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoAttackRollEight"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoAttackRollEight" />
 
     <Button
         android:id="@+id/btnXenoRollAttack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Roll for Attack"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginEnd="8dp"
+        android:text="Classic (d6)"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="@+id/btnXenoAttackRollEight"
+        app:layout_constraintEnd_toStartOf="@+id/btnXenoAttackRollEight"
+        app:layout_constraintTop_toTopOf="@+id/btnXenoAttackRollEight" />
 
     <TextView
         android:id="@+id/textViewXenoAttackStatic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/ocr_a_std_regular"
         android:text="TextView"
+        android:fontFamily="@font/ocr_a_std_regular"
         android:textColor="@color/teal_200"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -50,5 +50,39 @@
         app:layout_constraintEnd_toEndOf="@+id/textViewXenoAttackStatic"
         app:layout_constraintStart_toStartOf="@+id/textViewXenoAttackStatic"
         app:layout_constraintTop_toBottomOf="@+id/textViewXenoAttackStatic" />
+
+    <Button
+        android:id="@+id/btnXenoAttackRollEight"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="(d8)"
+        app:layout_constraintEnd_toEndOf="@+id/textViewXenoRollAttackStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoRollAttackStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoRollAttackStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoRollAttackStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ocr_a_std_regular"
+        android:text="Roll for Attack"
+        android:textColor="@color/teal_200"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnXenoAttackRollTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Easy (D10)"
+        app:layout_constraintBottom_toTopOf="@+id/alien_xeno_view"
+        app:layout_constraintStart_toEndOf="@+id/btnXenoAttackRollEight"
+        app:layout_constraintTop_toTopOf="@+id/btnXenoAttackRollEight" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
