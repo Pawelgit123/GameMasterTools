@@ -15,12 +15,16 @@ public class AnathemaTerminal extends AlienXenoCreature implements AlienXenoAtta
     }
 
     @Override
-    public void makeAttackTitle(int roll) {
+    public String makeAttackTitle(int roll) {
+
+        return "AGONY";
 
     }
 
     @Override
-    public void makeAttackText(int roll) {
+    public String makeAttackText(int roll) {
+
+        return "The Terminal is moving around in agony.";
 
     }
 }

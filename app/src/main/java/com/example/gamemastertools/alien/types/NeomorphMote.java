@@ -15,12 +15,14 @@ public class NeomorphMote extends AlienXenoCreature implements AlienXenoAttack {
     }
 
     @Override
-    public void makeAttackTitle(int roll) {
+    public String makeAttackTitle(int roll) {
+        return "";
 
     }
 
     @Override
-    public void makeAttackText(int roll) {
+    public String makeAttackText(int roll) {
+        return "";
 
     }
 }

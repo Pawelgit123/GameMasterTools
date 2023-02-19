@@ -15,12 +15,16 @@ public class XenomorphWorker extends AlienXenoCreature implements AlienXenoAttac
     }
 
     @Override
-    public void makeAttackTitle(int roll) {
+    public String  makeAttackTitle(int roll) {
+
+        return "FLEE";
 
     }
 
     @Override
-    public void makeAttackText(int roll) {
+    public String  makeAttackText(int roll) {
+
+        return "The Worker flee leaving their protection to other Xenos.";
 
     }
 }

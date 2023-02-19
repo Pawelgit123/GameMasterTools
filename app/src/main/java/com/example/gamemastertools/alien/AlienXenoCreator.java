@@ -331,7 +331,7 @@ public class AlienXenoCreator {
         alienXeno.setArmorFire(5);
         alienXeno.setMobility("9");
         alienXeno.setObservation("12");
-        alienXeno.setSpecial("HYPERBLIND");
+        alienXeno.setSpecial("HYPERBLIND, FLUIDITY OF MOTION");
 
         return  alienXeno;
     }

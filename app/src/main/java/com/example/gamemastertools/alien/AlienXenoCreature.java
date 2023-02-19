@@ -5,7 +5,7 @@ import android.os.Parcelable;
 
 import androidx.annotation.NonNull;
 
-public class AlienXenoCreature implements Parcelable {
+public class AlienXenoCreature implements Parcelable, AlienXenoAttack {
 
     String health;
     int armor;
@@ -147,5 +147,15 @@ public class AlienXenoCreature implements Parcelable {
         dest.writeString(name);
         dest.writeString(acid);
         dest.writeString(type);
+    }
+
+    @Override
+    public String makeAttackTitle(int roll) {
+        return null;
+    }
+
+    @Override
+    public String makeAttackText(int roll) {
+        return null;
     }
 }
