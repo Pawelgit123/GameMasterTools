@@ -22,6 +22,9 @@ public class AlienXenoRolls extends Fragment {
     private FragmentAlienXenoRollsBinding binding;
     private RecyclerView recyclerView;
     private AlienXenoAdapter alienXenoAdapter;
+    private String attackTitle;
+    private String attackText;
+    private int attackRoll;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,6 +38,9 @@ public class AlienXenoRolls extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        view.findViewById(R.id.textViewXenoAttackText).setVisibility(View.INVISIBLE);
+        view.findViewById(R.id.textViewXenoAttackTitle).setVisibility(View.INVISIBLE);
+
         Bundle bundle = getArguments();
         assert bundle != null;
         AlienXenoCreature alienXenoCreature = bundle.getParcelable("alien");
@@ -44,6 +50,26 @@ public class AlienXenoRolls extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(alienXenoAdapter);
+
+        binding.btnXenoRollAttack.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
+    }
+
+    public void attackResolve(String name, int roll){
+
+        switch (name){
+            default:
+
+
+        }
+
 
 
     }

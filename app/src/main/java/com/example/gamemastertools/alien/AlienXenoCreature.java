@@ -19,7 +19,6 @@ public class AlienXenoCreature implements Parcelable {
     String type;
 
 
-
     protected AlienXenoCreature(Parcel in) {
         health = in.readString();
         armor = in.readInt();

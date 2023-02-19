@@ -1,11 +1,55 @@
 package com.example.gamemastertools.alien;
 
+import com.example.gamemastertools.alien.types.AbominationBelugaHead;
+import com.example.gamemastertools.alien.types.AbominationEtypeMutated;
+import com.example.gamemastertools.alien.types.AbominationEtypePerfected;
+import com.example.gamemastertools.alien.types.AbominationEtypeTainted;
+import com.example.gamemastertools.alien.types.AbominationInfected;
+import com.example.gamemastertools.alien.types.AbominationMutant;
+import com.example.gamemastertools.alien.types.AbominationRevenant;
+import com.example.gamemastertools.alien.types.AnathemaAfflicted;
+import com.example.gamemastertools.alien.types.AnathemaBlackGoo;
+import com.example.gamemastertools.alien.types.AnathemaFebrile;
+import com.example.gamemastertools.alien.types.AnathemaFreak;
+import com.example.gamemastertools.alien.types.AnathemaTerminal;
+import com.example.gamemastertools.alien.types.NeomorphAdult;
+import com.example.gamemastertools.alien.types.NeomorphEgg;
+import com.example.gamemastertools.alien.types.NeomorphMote;
+import com.example.gamemastertools.alien.types.NeomorphNeophyte;
+import com.example.gamemastertools.alien.types.ProtomorphDeacon;
+import com.example.gamemastertools.alien.types.ProtomorphSquid;
+import com.example.gamemastertools.alien.types.ProtomorphTrilobite;
+import com.example.gamemastertools.alien.types.ProtomorphUteroPod;
+import com.example.gamemastertools.alien.types.XenomorphChestBursterBambi;
+import com.example.gamemastertools.alien.types.XenomorphChestBursterBodyAriarcus;
+import com.example.gamemastertools.alien.types.XenomorphChestBursterGore;
+import com.example.gamemastertools.alien.types.XenomorphChestBursterImp;
+import com.example.gamemastertools.alien.types.XenomorphChestBursterQueen;
+import com.example.gamemastertools.alien.types.XenomorphChestburster;
+import com.example.gamemastertools.alien.types.XenomorphCrusher;
+import com.example.gamemastertools.alien.types.XenomorphDrone;
+import com.example.gamemastertools.alien.types.XenomorphDroneBio;
+import com.example.gamemastertools.alien.types.XenomorphEgg;
+import com.example.gamemastertools.alien.types.XenomorphEggQueen;
+import com.example.gamemastertools.alien.types.XenomorphFacehugger;
+import com.example.gamemastertools.alien.types.XenomorphFacehuggerPraeto;
+import com.example.gamemastertools.alien.types.XenomorphFacehuggerRoyal;
+import com.example.gamemastertools.alien.types.XenomorphPreatorian;
+import com.example.gamemastertools.alien.types.XenomorphQueen;
+import com.example.gamemastertools.alien.types.XenomorphScout;
+import com.example.gamemastertools.alien.types.XenomorphSentry;
+import com.example.gamemastertools.alien.types.XenomorphSoldier;
+import com.example.gamemastertools.alien.types.XenomorphStalker;
+import com.example.gamemastertools.alien.types.XenomorphWorker;
+
 public class AlienXenoCreator {
 
     public AlienXenoCreator() {
     }
 
-    public static AlienXenoCreature createAbominationInfected(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createAbominationInfected(){
+
+        AbominationInfected alienXeno = new AbominationInfected();
 
         alienXeno.setName("Infected");
         alienXeno.setType("Abomination");
@@ -21,7 +65,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createAbominationMutant(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createAbominationMutant(){
+
+        AbominationMutant alienXeno = new AbominationMutant();
 
         alienXeno.setName("Mutant");
         alienXeno.setType("Abomination");
@@ -37,7 +83,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createAbominationRevenant(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createAbominationRevenant(){
+
+        AbominationRevenant alienXeno = new AbominationRevenant();
 
         alienXeno.setName("Revenant");
         alienXeno.setType("Abomination");
@@ -52,7 +100,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createAbominationBelugaHead(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createAbominationBelugaHead(){
+
+        AbominationBelugaHead alienXeno = new AbominationBelugaHead();
 
         alienXeno.setName("Beluga Head");
         alienXeno.setType("Abomination");
@@ -67,7 +117,9 @@ public class AlienXenoCreator {
         return  alienXeno;
     }
 
-    public static AlienXenoCreature createNeomorphEgg(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createNeomorphEgg(){
+
+        NeomorphEgg alienXeno = new NeomorphEgg();
 
         alienXeno.setName("Egg");
         alienXeno.setType("Neomorph");
@@ -81,7 +133,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createNeomorphMote(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createNeomorphMote(){
+
+        NeomorphMote alienXeno = new NeomorphMote();
 
         alienXeno.setName("Mote");
         alienXeno.setType("Neomorph");
@@ -94,7 +148,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createNeomorphBloodburster(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createNeomorphBloodburster(){
+
+        NeomorphMote alienXeno = new NeomorphMote();
 
         alienXeno.setName("Bloodburster");
         alienXeno.setType("Neomorph");
@@ -109,7 +165,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createNeomorphNeophyte(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createNeomorphNeophyte(){
+
+        NeomorphNeophyte alienXeno = new NeomorphNeophyte();
 
         alienXeno.setName("Neophyte");
         alienXeno.setType("Neomorph");
@@ -125,7 +183,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createNeomorphAdult(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createNeomorphAdult(){
+
+        NeomorphAdult alienXeno = new NeomorphAdult();
 
         alienXeno.setName("Adult");
         alienXeno.setType("Neomorph");
@@ -141,7 +201,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createAnathemaBlackGoo(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createAnathemaBlackGoo(){
+
+        AnathemaBlackGoo alienXeno = new AnathemaBlackGoo();
 
         alienXeno.setName("Black Goo");
         alienXeno.setType("Anathema");
@@ -151,7 +213,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createAnathemaAfflicted(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createAnathemaAfflicted(){
+
+        AnathemaAfflicted alienXeno = new AnathemaAfflicted();
 
         alienXeno.setName("Afflicted");
         alienXeno.setType("Anathema");
@@ -167,7 +231,9 @@ public class AlienXenoCreator {
         return  alienXeno;
     }
 
-    public static AlienXenoCreature createAnathemaFebrile(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createAnathemaFebrile(){
+
+        AnathemaFebrile alienXeno = new AnathemaFebrile();
 
         alienXeno.setName("Febrile");
         alienXeno.setType("Anathema");
@@ -183,7 +249,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createAnathemaFreak(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createAnathemaFreak(){
+
+        AnathemaFreak alienXeno = new AnathemaFreak();
 
         alienXeno.setName("Freak");
         alienXeno.setType("Anathema");
@@ -198,7 +266,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createAnathemaTerminal(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createAnathemaTerminal(){
+
+        AnathemaTerminal alienXeno = new AnathemaTerminal();
 
         alienXeno.setName("Terminal");
         alienXeno.setType("Anathema");
@@ -214,7 +284,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createAbominationTainted(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createAbominationTainted(){
+
+        AbominationEtypeTainted alienXeno = new AbominationEtypeTainted();
 
         alienXeno.setName("Tainted");
         alienXeno.setType("Abomination E");
@@ -230,7 +302,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createAbominationMutated(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createAbominationMutated(){
+
+        AbominationEtypeMutated alienXeno = new AbominationEtypeMutated();
 
         alienXeno.setName("Mutated");
         alienXeno.setType("Abomination E");
@@ -245,7 +319,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createAbominationPerfected(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createAbominationPerfected(){
+
+        AbominationEtypePerfected alienXeno = new AbominationEtypePerfected();
 
         alienXeno.setName("Perfected");
         alienXeno.setType("Abomination E");
@@ -260,7 +336,9 @@ public class AlienXenoCreator {
         return  alienXeno;
     }
 
-    public static AlienXenoCreature createProtomorphUteroPod(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createProtomorphUteroPod(){
+
+        ProtomorphUteroPod alienXeno = new ProtomorphUteroPod();
 
         alienXeno.setName("Utero Pod");
         alienXeno.setType("Protomorph");
@@ -273,7 +351,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createProtomorphSquid(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createProtomorphSquid(){
+
+        ProtomorphSquid alienXeno = new ProtomorphSquid();
 
         alienXeno.setName("Squid");
         alienXeno.setType("Protomorph");
@@ -288,7 +368,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createProtomorphTrilobite(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createProtomorphTrilobite(){
+
+        ProtomorphTrilobite alienXeno = new ProtomorphTrilobite();
 
         alienXeno.setName("Trilobite");
         alienXeno.setType("Protomorph");
@@ -303,7 +385,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createProtomorphDeacon(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createProtomorphDeacon(){
+
+        ProtomorphDeacon alienXeno = new ProtomorphDeacon();
 
         alienXeno.setName("Deacon");
         alienXeno.setType("Protomorph");
@@ -317,7 +401,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphEgg(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphEgg(){
+
+        XenomorphEgg alienXeno = new XenomorphEgg();
 
         alienXeno.setName("Ovomorph");
         alienXeno.setType("Xenomorph");
@@ -331,7 +417,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphQueenEgg(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphQueenEgg(){
+
+        XenomorphEggQueen alienXeno = new XenomorphEggQueen();
 
         alienXeno.setName("Queen's Egg");
         alienXeno.setType("Xenomorph");
@@ -345,7 +433,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphFacehugger(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphFacehugger(){
+
+        XenomorphFacehugger alienXeno = new XenomorphFacehugger();
 
         alienXeno.setName("Facehugger");
         alienXeno.setType("Xenomorph");
@@ -361,7 +451,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphPraetoFacehugger(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphPraetoFacehugger(){
+
+        XenomorphFacehuggerPraeto alienXeno = new XenomorphFacehuggerPraeto();
 
         alienXeno.setName("P-Facehugger");
         alienXeno.setType("Xenomorph");
@@ -377,7 +469,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphRoyalFacehugger(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphRoyalFacehugger(){
+
+        XenomorphFacehuggerRoyal alienXeno = new XenomorphFacehuggerRoyal();
 
         alienXeno.setName("Royal Facehugger");
         alienXeno.setType("Xenomorph");
@@ -393,7 +487,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphChestburster(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphChestburster(){
+
+        XenomorphChestburster alienXeno = new XenomorphChestburster();
 
         alienXeno.setName("Chestburster");
         alienXeno.setType("Xenomorph");
@@ -408,7 +504,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphBambiburster(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphBambiburster(){
+
+        XenomorphChestBursterBambi alienXeno = new XenomorphChestBursterBambi();
 
         alienXeno.setName("Bambiburster");
         alienXeno.setType("Xenomorph");
@@ -424,7 +522,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphGoreburster(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphGoreburster(){
+
+        XenomorphChestBursterGore alienXeno = new XenomorphChestBursterGore();
 
         alienXeno.setName("Goreburster");
         alienXeno.setType("Xenomorph");
@@ -440,7 +540,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphAriarcusBodyburster(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphAriarcusBodyburster(){
+
+        XenomorphChestBursterBodyAriarcus alienXeno = new XenomorphChestBursterBodyAriarcus();
 
         alienXeno.setName("Ariarcus Bodyburster");
         alienXeno.setType("Xenomorph");
@@ -456,7 +558,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphImp(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphImp(){
+
+        XenomorphChestBursterImp alienXeno = new XenomorphChestBursterImp();
 
         alienXeno.setName("Imp");
         alienXeno.setType("Xenomorph");
@@ -472,7 +576,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphQueenburster(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphQueenburster(){
+
+        XenomorphChestBursterQueen alienXeno = new XenomorphChestBursterQueen();
 
         alienXeno.setName("Queenburster");
         alienXeno.setType("Xenomorph");
@@ -487,7 +593,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphStalker(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphStalker(){
+
+        XenomorphStalker alienXeno = new XenomorphStalker();
 
         alienXeno.setName("Stalker");
         alienXeno.setType("Xenomorph");
@@ -503,7 +611,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphScout(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphScout(){
+
+        XenomorphScout alienXeno = new XenomorphScout();
 
         alienXeno.setName("Scout");
         alienXeno.setType("Xenomorph");
@@ -519,7 +629,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphDrone(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphDrone(){
+
+        XenomorphDrone alienXeno = new XenomorphDrone();
 
         alienXeno.setName("Drone");
         alienXeno.setType("Xenomorph");
@@ -535,7 +647,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphBioDrone(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphBioDrone(){
+
+        XenomorphDroneBio alienXeno = new XenomorphDroneBio();
 
         alienXeno.setName("Bio-Drone");
         alienXeno.setType("Xenomorph");
@@ -551,7 +665,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphSoldier(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphSoldier(){
+
+        XenomorphSoldier alienXeno = new XenomorphSoldier();
 
         alienXeno.setName("Soldier");
         alienXeno.setType("Xenomorph");
@@ -566,7 +682,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphWorker(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphWorker(){
+
+        XenomorphWorker alienXeno = new XenomorphWorker();
 
         alienXeno.setName("Worker");
         alienXeno.setType("Xenomorph");
@@ -581,7 +699,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphSentry(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphSentry(){
+
+        XenomorphSentry alienXeno = new XenomorphSentry();
 
         alienXeno.setName("Sentry");
         alienXeno.setType("Xenomorph");
@@ -597,7 +717,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphPreatorian(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphPreatorian(){
+
+        XenomorphPreatorian alienXeno = new XenomorphPreatorian();
 
         alienXeno.setName("Preatorian");
         alienXeno.setType("Xenomorph");
@@ -612,7 +734,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphCrusher(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphCrusher(){
+
+        XenomorphCrusher alienXeno = new XenomorphCrusher();
 
         alienXeno.setName("Crusher");
         alienXeno.setType("Xenomorph");
@@ -628,7 +752,9 @@ public class AlienXenoCreator {
         return alienXeno;
     }
 
-    public static AlienXenoCreature createXenomorphQueen(AlienXenoCreature alienXeno){
+    public static AlienXenoCreature createXenomorphQueen(){
+
+        XenomorphQueen alienXeno = new XenomorphQueen();
 
         alienXeno.setName("Queen");
         alienXeno.setType("Xenomorph");

@@ -75,31 +75,31 @@ public class AlienXeno extends Fragment {
                 dialogNeomorph.findViewById(R.id.btnXenoDialogNeomoprhMote).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createNeomorphMote(new AlienXenoCreature()),dialogNeomorph,bundle);
+                        packAlienAndGo(AlienXenoCreator.createNeomorphMote(),dialogNeomorph,bundle);
                     }
                 });
                 dialogNeomorph.findViewById(R.id.btnXenoDialogNeomorphBloodburster).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createNeomorphBloodburster(new AlienXenoCreature()),dialogNeomorph, bundle);
+                        packAlienAndGo(AlienXenoCreator.createNeomorphBloodburster(),dialogNeomorph, bundle);
                     }
                 });
                 dialogNeomorph.findViewById(R.id.btnXenoDialogNeomorphEgg).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createNeomorphEgg(new AlienXenoCreature()), dialogNeomorph, bundle);
+                        packAlienAndGo(AlienXenoCreator.createNeomorphEgg(), dialogNeomorph, bundle);
                     }
                 });
                 dialogNeomorph.findViewById(R.id.btnXenoDialogNeomoprhNeophyte).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createNeomorphNeophyte(new AlienXenoCreature()), dialogNeomorph,bundle);
+                        packAlienAndGo(AlienXenoCreator.createNeomorphNeophyte(), dialogNeomorph,bundle);
                     }
                 });
                 dialogNeomorph.findViewById(R.id.btnXenoDialogNeomorphAdult).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createNeomorphAdult(new AlienXenoCreature()), dialogNeomorph, bundle);
+                        packAlienAndGo(AlienXenoCreator.createNeomorphAdult(), dialogNeomorph, bundle);
                     }
                 });
 
@@ -114,25 +114,25 @@ public class AlienXeno extends Fragment {
                 dialogAbomination.findViewById(R.id.btnXenoDialogAbominationMutant).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createAbominationMutant(new AlienXenoCreature()), dialogAbomination, bundle);
+                        packAlienAndGo(AlienXenoCreator.createAbominationMutant(), dialogAbomination, bundle);
                     }
                 });
                 dialogAbomination.findViewById(R.id.btnXenoDialogAbominationBelugaHead).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createAbominationBelugaHead(new AlienXenoCreature()), dialogAbomination, bundle);
+                        packAlienAndGo(AlienXenoCreator.createAbominationBelugaHead(), dialogAbomination, bundle);
                     }
                 });
                 dialogAbomination.findViewById(R.id.btnXenoDialogAbominationInfected).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createAbominationInfected(new AlienXenoCreature()), dialogAbomination,bundle);
+                        packAlienAndGo(AlienXenoCreator.createAbominationInfected(), dialogAbomination,bundle);
                     }
                 });
                 dialogAbomination.findViewById(R.id.btnXenoDialogAbominationRevenant).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createAbominationRevenant(new AlienXenoCreature()), dialogAbomination, bundle);
+                        packAlienAndGo(AlienXenoCreator.createAbominationRevenant(), dialogAbomination, bundle);
                     }
                 });
             }
@@ -146,31 +146,31 @@ public class AlienXeno extends Fragment {
                 dialogAnathema.findViewById(R.id.btnXenoDialogAnathemaAfflicted).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createAnathemaAfflicted(new AlienXenoCreature()), dialogAnathema,bundle);
+                        packAlienAndGo(AlienXenoCreator.createAnathemaAfflicted(), dialogAnathema,bundle);
                     }
                 });
                 dialogAnathema.findViewById(R.id.btnXenoDialogAnathemaFebrile).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createAnathemaFebrile(new AlienXenoCreature()), dialogAnathema, bundle);
+                        packAlienAndGo(AlienXenoCreator.createAnathemaFebrile(), dialogAnathema, bundle);
                     }
                 });
                 dialogAnathema.findViewById(R.id.btnXenoDialogAnathemaFreak).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createAnathemaFreak(new AlienXenoCreature()), dialogAnathema, bundle);
+                        packAlienAndGo(AlienXenoCreator.createAnathemaFreak(), dialogAnathema, bundle);
                     }
                 });
                 dialogAnathema.findViewById(R.id.btnXenoDialogAnathemaTerminal).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createAnathemaTerminal(new AlienXenoCreature()), dialogAnathema, bundle);
+                        packAlienAndGo(AlienXenoCreator.createAnathemaTerminal(), dialogAnathema, bundle);
                     }
                 });
                 dialogAnathema.findViewById(R.id.btnXenoDialogAnathemBlackGoo).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createAnathemaBlackGoo(new AlienXenoCreature()), dialogAnathema, bundle);
+                        packAlienAndGo(AlienXenoCreator.createAnathemaBlackGoo(), dialogAnathema, bundle);
                     }
                 });
             }
@@ -184,19 +184,19 @@ public class AlienXeno extends Fragment {
                 dialogAbominantionE.findViewById(R.id.btnXenoDialobAbominatioEeTained).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createAbominationTainted(new AlienXenoCreature()), dialogAbominantionE, bundle);
+                        packAlienAndGo(AlienXenoCreator.createAbominationTainted(), dialogAbominantionE, bundle);
                     }
                 });
                 dialogAbominantionE.findViewById(R.id.btnXenoDialogAbominationEeMutated).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createAbominationMutated(new AlienXenoCreature()), dialogAbominantionE, bundle);
+                        packAlienAndGo(AlienXenoCreator.createAbominationMutated(), dialogAbominantionE, bundle);
                     }
                 });
                 dialogAbominantionE.findViewById(R.id.btnXenoDialogAbominationEePerfected).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createAbominationPerfected(new AlienXenoCreature()), dialogAbominantionE, bundle);
+                        packAlienAndGo(AlienXenoCreator.createAbominationPerfected(), dialogAbominantionE, bundle);
                     }
                 });
             }
@@ -210,25 +210,25 @@ public class AlienXeno extends Fragment {
                 dialogProtomorph.findViewById(R.id.btnXenoDialogProtomorphUteroPod).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createProtomorphUteroPod(new AlienXenoCreature()),dialogProtomorph, bundle);
+                        packAlienAndGo(AlienXenoCreator.createProtomorphUteroPod(),dialogProtomorph, bundle);
                     }
                 });
                 dialogProtomorph.findViewById(R.id.btnXenoDialogProtomorphSquid).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createProtomorphSquid(new AlienXenoCreature()),dialogProtomorph, bundle);
+                        packAlienAndGo(AlienXenoCreator.createProtomorphSquid(),dialogProtomorph, bundle);
                     }
                 });
                 dialogProtomorph.findViewById(R.id.btnXenoDialogProtomorphTrilobite).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createProtomorphTrilobite(new AlienXenoCreature()), dialogProtomorph, bundle);
+                        packAlienAndGo(AlienXenoCreator.createProtomorphTrilobite(), dialogProtomorph, bundle);
                     }
                 });
                 dialogProtomorph.findViewById(R.id.btnXenoDialogProtomorphDaecon).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        packAlienAndGo(AlienXenoCreator.createProtomorphDeacon(new AlienXenoCreature()), dialogProtomorph, bundle);
+                        packAlienAndGo(AlienXenoCreator.createProtomorphDeacon(), dialogProtomorph, bundle);
                     }
                 });
             }
@@ -248,13 +248,13 @@ public class AlienXeno extends Fragment {
                         dialogOne.findViewById(R.id.btnDialogXenoStageOneEgg).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphEgg(new AlienXenoCreature()), dialogOne, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphEgg(), dialogOne, bundle);
                             }
                         });
                         dialogOne.findViewById(R.id.btnDialogXenoStageOneQueenEgg).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphQueenEgg(new AlienXenoCreature()), dialogOne, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphQueenEgg(), dialogOne, bundle);
                             }
                         });
                     }
@@ -269,19 +269,19 @@ public class AlienXeno extends Fragment {
                         dialogTwo.findViewById(R.id.btnXenoDialogStageTwoFacehugger).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphFacehugger(new AlienXenoCreature()),dialogTwo, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphFacehugger(),dialogTwo, bundle);
                             }
                         });
                         dialogTwo.findViewById(R.id.btnXenoDialogStageTwoRoyalFacehugger).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphRoyalFacehugger(new AlienXenoCreature()), dialogTwo, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphRoyalFacehugger(), dialogTwo, bundle);
                             }
                         });
                         dialogTwo.findViewById(R.id.btnXenoDialogStageTwoPraetoFacehugger).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphPraetoFacehugger(new AlienXenoCreature()), dialogTwo, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphPraetoFacehugger(), dialogTwo, bundle);
                             }
                         });
                     }
@@ -296,25 +296,25 @@ public class AlienXeno extends Fragment {
                         dialogThree.findViewById(R.id.btnXenoDialogStageThreeChestburster).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphChestburster(new AlienXenoCreature()), dialogThree, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphChestburster(), dialogThree, bundle);
                             }
                         });
                         dialogThree.findViewById(R.id.btnXenoDialogStageThreeBambiburster).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphBambiburster(new AlienXenoCreature()), dialogThree, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphBambiburster(), dialogThree, bundle);
                             }
                         });
                         dialogThree.findViewById(R.id.btnXenoDialogStageThreeImp).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphImp(new AlienXenoCreature()), dialogThree, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphImp(), dialogThree, bundle);
                             }
                         });
                         dialogThree.findViewById(R.id.btnXenoDialogStageThreeQueenburster).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphQueenburster(new AlienXenoCreature()), dialogThree, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphQueenburster(), dialogThree, bundle);
                             }
                         });
                     }
@@ -329,25 +329,25 @@ public class AlienXeno extends Fragment {
                         dialogFour.findViewById(R.id.btnXenoDialogStageFourDrone).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphDrone(new AlienXenoCreature()), dialogFour, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphDrone(), dialogFour, bundle);
                             }
                         });
                         dialogFour.findViewById(R.id.bbtnXenoDialogStageFourBioDrone).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphBioDrone(new AlienXenoCreature()), dialogFour, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphBioDrone(), dialogFour, bundle);
                             }
                         });
                         dialogFour.findViewById(R.id.btnXenoDialogStageFourScout).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphScout(new AlienXenoCreature()), dialogFour, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphScout(), dialogFour, bundle);
                             }
                         });
                         dialogFour.findViewById(R.id.btnXenoDialogStageFourStalker).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphStalker(new AlienXenoCreature()), dialogFour, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphStalker(), dialogFour, bundle);
                             }
                         });
                     }
@@ -362,19 +362,19 @@ public class AlienXeno extends Fragment {
                         dialogFive.findViewById(R.id.btnXenoDialogStageFiveSentry).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphSentry(new AlienXenoCreature()), dialogFive, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphSentry(), dialogFive, bundle);
                             }
                         });
                         dialogFive.findViewById(R.id.btnXenoDialogStageFiveSoldier).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphSoldier(new AlienXenoCreature()), dialogFive, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphSoldier(), dialogFive, bundle);
                             }
                         });
                         dialogFive.findViewById(R.id.btnXenoDialogStageFiveWorker).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphWorker(new AlienXenoCreature()), dialogFive, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphWorker(), dialogFive, bundle);
                             }
                         });
                     }
@@ -389,19 +389,19 @@ public class AlienXeno extends Fragment {
                         dialogSix.findViewById(R.id.btnXenoDialogStageSixCrusher).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphCrusher(new AlienXenoCreature()), dialogSix, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphCrusher(), dialogSix, bundle);
                             }
                         });
                         dialogSix.findViewById(R.id.btnXenoDialogStageSixPreatorian).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphPreatorian(new AlienXenoCreature()), dialogSix, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphPreatorian(), dialogSix, bundle);
                             }
                         });
                         dialogSix.findViewById(R.id.btnXenoDialogStageSixQueen).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                packAlienAndGo(AlienXenoCreator.createXenomorphQueen(new AlienXenoCreature()), dialogSix, bundle);
+                                packAlienAndGo(AlienXenoCreator.createXenomorphQueen(), dialogSix, bundle);
                             }
                         });
                     }

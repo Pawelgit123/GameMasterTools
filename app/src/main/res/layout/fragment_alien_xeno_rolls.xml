@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="@+id/btnXenoAttackRollEight" />
 
     <TextView
-        android:id="@+id/textViewXenoAttackStatic"
+        android:id="@+id/textViewXenoAttackTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -40,16 +40,16 @@
         app:layout_constraintTop_toBottomOf="@+id/alien_xeno_view" />
 
     <TextView
-        android:id="@+id/textViewXenoAttack"
+        android:id="@+id/textViewXenoAttackText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textColor="@color/teal_200"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/textViewXenoAttackStatic"
-        app:layout_constraintStart_toStartOf="@+id/textViewXenoAttackStatic"
-        app:layout_constraintTop_toBottomOf="@+id/textViewXenoAttackStatic" />
+        app:layout_constraintEnd_toEndOf="@+id/textViewXenoAttackTitle"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoAttackTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoAttackTitle" />
 
     <Button
         android:id="@+id/btnXenoAttackRollEight"
