@@ -34,7 +34,7 @@ public class AbominationEtypePerfected extends AlienXenoCreature implements Alie
         switch (roll){
             case 1: return "The Perfected stares down its victim in SHORT range with its pitch-black eyes. The victim must make a Wits roll or be lost in the depths of those soulless voids, entranced and immobilized. If the roll fails, the victim loses their next fast and slow action. In addition, Stress level increases by +1 for the victim and all friendly Pcs in SHORT range. If uninterrupted, the Perfected will attempt to a FATAL KISS attack on its next action.";
             case 2:
-            default:return "TURN";
+            default:return "The Perfected locks eyes with the nearest victim. Through a combination of mental prowess and pheromones, it can hypnotize a single victim into attacking their own kind. The victim must succeed at a straight Empathy test or be compelled to defend the one who hypnotized them. The hypnotism last until the victim succeeds at an Empathy test, made at the start of each Round, or suffers damage, which breaks the link.";
             case 3:
             case 7: return "This mental surge reverberates through the victim's skull, automatically causing critical injury #16 and ears, eyes and nose to bleed. The attack is made with 10d6, Damage 2.";
             case 4: return "The Perfected attempts to rake its nails across its victim's torso - using 6d6, Damage 1. Unless the victim is able to containt the bleeding, the Perfected will be able to track the victim through the scent of their blood.";

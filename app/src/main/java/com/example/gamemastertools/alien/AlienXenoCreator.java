@@ -13,6 +13,7 @@ import com.example.gamemastertools.alien.types.AnathemaFebrile;
 import com.example.gamemastertools.alien.types.AnathemaFreak;
 import com.example.gamemastertools.alien.types.AnathemaTerminal;
 import com.example.gamemastertools.alien.types.NeomorphAdult;
+import com.example.gamemastertools.alien.types.NeomorphBloodBurster;
 import com.example.gamemastertools.alien.types.NeomorphEgg;
 import com.example.gamemastertools.alien.types.NeomorphMote;
 import com.example.gamemastertools.alien.types.NeomorphNeophyte;
@@ -150,7 +151,7 @@ public class AlienXenoCreator {
 
     public static AlienXenoCreature createNeomorphBloodburster(){
 
-        NeomorphMote alienXeno = new NeomorphMote();
+        NeomorphBloodBurster alienXeno = new NeomorphBloodBurster();
 
         alienXeno.setName("Bloodburster");
         alienXeno.setType("Neomorph");
