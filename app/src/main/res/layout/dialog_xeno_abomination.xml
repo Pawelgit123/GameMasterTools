@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@color/black">
+
+    <Button
+        android:id="@+id/btnXenoDialogAbominationInfected"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="8dp"
+        android:text="Infected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnXenoDialogAbominationMutant"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Mutant"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogAbominationInfected"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogAbominationInfected"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogAbominationInfected" />
+
+    <Button
+        android:id="@+id/btnXenoDialogAbominationRevenant"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Revenant"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogAbominationMutant"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogAbominationMutant"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogAbominationMutant" />
+
+    <Button
+        android:id="@+id/btnXenoDialogAbominationBelugaHead"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Beluga Head"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogAbominationRevenant"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogAbominationRevenant"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogAbominationRevenant" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,6 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavDirections;
 import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
@@ -14,9 +13,6 @@ import android.view.ViewGroup;
 
 import com.example.gamemastertools.blood.Battle;
 import com.example.gamemastertools.blood.BattleCreator;
-import com.example.gamemastertools.blood.HumanCreator;
-import com.example.gamemastertools.blood.HumanStrategyBalanced;
-import com.example.gamemastertools.blood.WeaponRandomByRank;
 import com.example.gamemastertools.databinding.FragmentBloodBattleCreationBinding;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -113,7 +109,7 @@ public class BloodBattleCreation extends Fragment {
                         , Snackbar.LENGTH_LONG).show();
 
                 NavHostFragment.findNavController(BloodBattleCreation.this)
-                        .navigate(R.id.action_blood_battle_create_and_go_side, bundle);
+                        .navigate(R.id.action_alien_go_to_source_books, bundle);
             }
         });
 

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/black">
+
+    <Button
+        android:id="@+id/btnXenoDialogNeomorphEgg"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:text="Egg"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnXenoDialogNeomoprhMote"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:text="Mote"
+        android:backgroundTint="@color/green_deep"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogNeomorphEgg"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogNeomorphEgg"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogNeomorphEgg" />
+
+    <Button
+        android:id="@+id/btnXenoDialogNeomorphBloodburster"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:text="Bloodburster"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogNeomoprhMote"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogNeomoprhMote"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogNeomoprhMote" />
+
+    <Button
+        android:id="@+id/btnXenoDialogNeomoprhNeophyte"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:text="Neophyte"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogNeomorphBloodburster"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogNeomorphBloodburster"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogNeomorphBloodburster" />
+
+    <Button
+        android:id="@+id/btnXenoDialogNeomorphAdult"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:text="Adult"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogNeomoprhNeophyte"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogNeomoprhNeophyte"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogNeomoprhNeophyte" />
+</androidx.constraintlayout.widget.ConstraintLayout>

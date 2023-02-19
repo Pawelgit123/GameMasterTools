@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/btnXenoDialobAbominatioEeTained"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="8dp"
+        android:text="Tainted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnXenoDialogAbominationEeMutated"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="8dp"
+        android:text="Mutated"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialobAbominatioEeTained"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialobAbominatioEeTained"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialobAbominatioEeTained" />
+
+    <Button
+        android:id="@+id/btnXenoDialogAbominationEePerfected"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="8dp"
+        android:text="Perfected"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogAbominationEeMutated"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogAbominationEeMutated"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogAbominationEeMutated" />
+</androidx.constraintlayout.widget.ConstraintLayout>

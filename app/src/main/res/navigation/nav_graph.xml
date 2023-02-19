@@ -53,8 +53,25 @@
             android:id="@+id/action_ThirdFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
         <action
-            android:id="@+id/action_blood_battle_create_and_go_side"
+            android:id="@+id/action_alien_go_to_source_books"
             app:destination="@id/AlienSourceBooks" />
+        <action
+            android:id="@+id/action_alien_go_to_alien_armory"
+            app:destination="@id/AlienArmory" />
+        <action
+            android:id="@+id/action_alien_go_to_alien_random_item"
+            app:destination="@id/AlienRandomItem" />
+        <action
+            android:id="@+id/action_alien_go_to_alien_panic_roll"
+            app:destination="@id/AlienPanicRoll" />
+        <action
+            android:id="@+id/action_alien_go_to_alien_wound_roll"
+            app:destination="@id/AlienWoundRoll" />
+        <action
+            android:id="@+id/action_alien_go_to_alien_xeno"
+            app:destination="@id/AlienXeno" />
+
+
     </fragment>
 
     <fragment
@@ -64,7 +81,7 @@
         tools:layout="@layout/fragment_blood_battle_creation">
 
         <action
-            android:id="@+id/action_blood_battle_create_and_go_side"
+            android:id="@+id/action_alien_go_to_source_books"
             app:destination="@id/BloodBattleSide" />
 
     </fragment>
@@ -115,6 +132,52 @@
         android:label="@string/blood_battle_side"
         tools:layout="@layout/fragment_blood_battle_side">
 
+    </fragment>
+
+    <fragment
+        android:id="@+id/AlienArmory"
+        android:name="com.example.gamemastertools.AlienArmory"
+        android:label="@string/alien_armory"
+        tools:layout="@layout/fragment_alien_armory">
+    </fragment>
+
+    <fragment
+        android:id="@+id/AlienRandomItem"
+        android:name="com.example.gamemastertools.AlienRandomItem"
+        android:label="@string/alien_random_item_"
+        tools:layout="@layout/fragment_alien_random_item">
+    </fragment>
+
+    <fragment
+        android:id="@+id/AlienPanicRoll"
+        android:name="com.example.gamemastertools.AlienPanicRoll"
+        android:label="@string/alien_panic_roller"
+        tools:layout="@layout/fragment_alien_panic_roll">
+    </fragment>
+
+    <fragment
+        android:id="@+id/AlienWoundRoll"
+        android:name="com.example.gamemastertools.AlienWoundRoll"
+        android:label="@string/alien_wound_roller"
+        tools:layout="@layout/fragment_alien_wound_roll">
+    </fragment>
+
+    <fragment
+        android:id="@+id/AlienXeno"
+        android:name="com.example.gamemastertools.AlienXeno"
+        android:label="@string/alien_xeno"
+        tools:layout="@layout/fragment_alien_xeno">
+
+        <action
+            android:id="@+id/action_alien_xeno_go_to_xeno_rolls"
+            app:destination="@id/AlienXenoRolls" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AlienXenoRolls"
+        android:name="com.example.gamemastertools.AlienXenoRolls"
+        android:label="@string/alien_xeno"
+        tools:layout="@layout/fragment_alien_xeno_rolls">
     </fragment>
 
 </navigation>

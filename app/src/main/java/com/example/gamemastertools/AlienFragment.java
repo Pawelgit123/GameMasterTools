@@ -41,7 +41,47 @@ public class AlienFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 NavHostFragment.findNavController(AlienFragment.this)
-                        .navigate(R.id.action_blood_battle_create_and_go_side);
+                        .navigate(R.id.action_alien_go_to_source_books);
+            }
+        });
+
+        binding.btnAlienArmory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(AlienFragment.this)
+                        .navigate(R.id.action_alien_go_to_alien_armory);
+            }
+        });
+
+        binding.btnAlienRandomItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(AlienFragment.this)
+                        .navigate(R.id.action_alien_go_to_alien_random_item);
+            }
+        });
+
+        binding.btnAlienPanicRoll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(AlienFragment.this)
+                        .navigate(R.id.action_alien_go_to_alien_panic_roll);
+            }
+        });
+
+        binding.btnAlienWoundRoll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(AlienFragment.this)
+                        .navigate(R.id.action_alien_go_to_alien_wound_roll);
+            }
+        });
+
+        binding.btnAlienXenoGo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(AlienFragment.this)
+                        .navigate(R.id.action_alien_go_to_alien_xeno);
             }
         });
     }

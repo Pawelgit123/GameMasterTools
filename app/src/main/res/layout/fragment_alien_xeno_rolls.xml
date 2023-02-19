@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlienXenoRolls">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alien_xeno_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoAttackRollEight"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoAttackRollEight"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoAttackRollEight" />
+
+    <Button
+        android:id="@+id/btnXenoRollAttack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Classic (d6)"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="@+id/btnXenoAttackRollEight"
+        app:layout_constraintEnd_toStartOf="@+id/btnXenoAttackRollEight"
+        app:layout_constraintTop_toTopOf="@+id/btnXenoAttackRollEight" />
+
+    <TextView
+        android:id="@+id/textViewXenoAttackTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:fontFamily="@font/ocr_a_std_regular"
+        android:textColor="@color/teal_200"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/alien_xeno_view"
+        app:layout_constraintStart_toStartOf="@+id/alien_xeno_view"
+        app:layout_constraintTop_toBottomOf="@+id/alien_xeno_view" />
+
+    <TextView
+        android:id="@+id/textViewXenoAttackText"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:justificationMode="inter_word"
+        android:textColor="@color/teal_200"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewXenoAttackTitle"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoAttackTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoAttackTitle" />
+
+    <Button
+        android:id="@+id/btnXenoAttackRollEight"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="(d8)"
+        app:layout_constraintEnd_toEndOf="@+id/textViewXenoRollAttackStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewXenoRollAttackStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewXenoRollAttackStatic" />
+
+    <TextView
+        android:id="@+id/textViewXenoRollAttackStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ocr_a_std_regular"
+        android:text="Roll for Attack"
+        android:textColor="@color/teal_200"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnXenoAttackRollTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Easy (D10)"
+        app:layout_constraintBottom_toTopOf="@+id/alien_xeno_view"
+        app:layout_constraintStart_toEndOf="@+id/btnXenoAttackRollEight"
+        app:layout_constraintTop_toTopOf="@+id/btnXenoAttackRollEight" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
