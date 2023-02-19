@@ -8,6 +8,29 @@
     android:padding="15dp">
 
     <Button
+        android:id="@+id/btnXenoDialogStageThreeBodyBurster"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/aliengrey"
+        android:text="BodyBurster"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogStageThreeGoreburster"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogStageThreeGoreburster"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogStageThreeGoreburster" />
+
+    <Button
+        android:id="@+id/btnXenoDialogStageThreeGoreburster"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/aliengrey"
+        android:text="Goreburster"
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogStageThreeChestburster"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogStageThreeChestburster"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogStageThreeChestburster" />
+
+    <Button
         android:id="@+id/btnXenoDialogStageThreeChestburster"
         android:layout_width="@dimen/button_x"
         android:layout_height="@dimen/button_y"
@@ -25,9 +48,9 @@
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/alienviolet"
         android:text="Queenburster"
-        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogStageThreeChestburster"
-        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogStageThreeChestburster"
-        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogStageThreeChestburster" />
+        app:layout_constraintEnd_toEndOf="@+id/btnXenoDialogStageThreeBodyBurster"
+        app:layout_constraintStart_toStartOf="@+id/btnXenoDialogStageThreeBodyBurster"
+        app:layout_constraintTop_toBottomOf="@+id/btnXenoDialogStageThreeBodyBurster" />
 
     <Button
         android:id="@+id/btnXenoDialogStageThreeImp"

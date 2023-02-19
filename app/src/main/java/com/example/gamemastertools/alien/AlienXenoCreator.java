@@ -545,7 +545,7 @@ public class AlienXenoCreator {
 
         XenomorphChestBursterBodyAriarcus alienXeno = new XenomorphChestBursterBodyAriarcus();
 
-        alienXeno.setName("Ariarcus Bodyburster");
+        alienXeno.setName("Bodyburster");
         alienXeno.setType("Xenomorph");
         alienXeno.setHealth("9");
         alienXeno.setSpeed(2);

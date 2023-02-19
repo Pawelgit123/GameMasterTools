@@ -299,6 +299,18 @@ public class AlienXeno extends Fragment {
                                 packAlienAndGo(AlienXenoCreator.createXenomorphChestburster(), dialogThree, bundle);
                             }
                         });
+                        dialogThree.findViewById(R.id.btnXenoDialogStageThreeGoreburster).setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                packAlienAndGo(AlienXenoCreator.createXenomorphGoreburster(),dialogThree,bundle);
+                            }
+                        });
+                        dialogThree.findViewById(R.id.btnXenoDialogStageThreeBodyBurster).setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                packAlienAndGo(AlienXenoCreator.createXenomorphAriarcusBodyburster(),dialogThree, bundle);
+                            }
+                        });
                         dialogThree.findViewById(R.id.btnXenoDialogStageThreeBambiburster).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
