@@ -92,7 +92,7 @@ public class AlienWeaponCreatorAdditional {
                 .build();
     }
 
-    public  static AlienWeapon createDumbullaPistol(){
+    public  static AlienWeapon createDambullaPistol(){
         return new AlienWeapon.Builder()
                 .name("8A7 Dambulla Machine Pistol")
                 .type("Pistol")
@@ -118,7 +118,7 @@ public class AlienWeaponCreatorAdditional {
                 .cost(520)
                 .specials("Auto:1")
                 .ammo("Std")
-                .weight("1/2")
+                .weight("1")
                 .build();
     }
 
@@ -130,10 +130,10 @@ public class AlienWeaponCreatorAdditional {
                 .bonus(2)
                 .damage(2)
                 .range("Medium")
-                .cost(520)
+                .cost(590)
                 .specials("")
                 .ammo("AP")
-                .weight("1/2")
+                .weight("2")
                 .build();
     }
 
@@ -145,7 +145,7 @@ public class AlienWeaponCreatorAdditional {
                 .bonus(1)
                 .damage(1)
                 .range("Medium")
-                .cost(500)
+                .cost(900)
                 .specials("Auto:4 / H-Capacity")
                 .ammo("FMJ")
                 .weight("1")
@@ -160,7 +160,7 @@ public class AlienWeaponCreatorAdditional {
                 .bonus(1)
                 .damage(1)
                 .range("Medium")
-                .cost(410)
+                .cost(810)
                 .specials("Auto:4 / H-Capacity")
                 .ammo("Std")
                 .weight("1")
@@ -175,7 +175,7 @@ public class AlienWeaponCreatorAdditional {
                 .bonus(1)
                 .damage(1)
                 .range("Medium")
-                .cost(490)
+                .cost(890)
                 .specials("Auto:1/4 / H-Capacity")
                 .ammo("Std / AP")
                 .weight("1")
@@ -190,7 +190,7 @@ public class AlienWeaponCreatorAdditional {
                 .bonus(1)
                 .damage(1)
                 .range("Medium")
-                .cost(410)
+                .cost(810)
                 .specials("Auto:4 / H-Capacity")
                 .ammo("Std / HP")
                 .weight("1")

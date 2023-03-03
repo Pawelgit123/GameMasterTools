@@ -40,7 +40,7 @@ public class AlienWeaponCreatorElysium {
                 .bonus(3)
                 .damage(1)
                 .range("Medium")
-                .cost(900)
+                .cost(1200)
                 .specials("Auto:4 / H-Capacity")
                 .ammo("Std")
                 .weight("1")

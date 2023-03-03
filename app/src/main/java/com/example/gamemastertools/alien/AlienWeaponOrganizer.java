@@ -112,7 +112,7 @@ public class AlienWeaponOrganizer {
         createWeaponAndAddToList(AlienWeaponCreatorAdditional.createType78Pistol(), list);
         createWeaponAndAddToList(AlienWeaponCreatorAdditional.createCqbPistol(), list);
         createWeaponAndAddToList(AlienWeaponCreatorAdditional.createM10Pistol(), list);
-        createWeaponAndAddToList(AlienWeaponCreatorAdditional.createDumbullaPistol(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAdditional.createDambullaPistol(), list);
         createWeaponAndAddToList(AlienWeaponCreatorAdditional.createFrontierRevolver(), list);
         createWeaponAndAddToList(AlienWeaponCreatorAdditional.createKramerMagnum(), list);
         createWeaponAndAddToList(AlienWeaponCreatorAdditional.createBarrage(), list);
@@ -206,6 +206,30 @@ public class AlienWeaponOrganizer {
 
     public List<AlienWeapon> createKovacPlusList() {
         List<AlienWeapon> list = new ArrayList<>();
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createS49Pistol(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createAridPistol(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createSteigro(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createTreffen(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createHelRevolver(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createR66(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createStbSmg(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createLtcSmg(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createNd6Smg(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createHelShotgun(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createS870Shotgun(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createAF6Shotgun(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createF4Carbine(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createGolok(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createDmr(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createLx(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createArbalist(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createVeruta(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createVM556Rifle(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createHXC(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createPrecisionRifle(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createPr11(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createLrgRifle(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorKovac.createExp1(), list);
 
         setListType(list, 6);
 
@@ -214,6 +238,34 @@ public class AlienWeaponOrganizer {
 
     public List<AlienWeapon> createAuraxisPlusList() {
         List<AlienWeapon> list = new ArrayList<>();
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createGuardian(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createBlitz(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createCyclone(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createClaw(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createCharger(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createPromise(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createGrinder(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createPiston(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createRutherford(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createAmp(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createJackal(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createMastiff(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.create100(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createWatchmen(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createMutilator(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createNS7(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createHSG(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createXMG(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createBeamer(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createManticore(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createCerberus(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createEridani(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createPandora(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createEquinox(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createPolaris(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createSlicer(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createSpectre(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorAuraxis.createQuasar(), list);
 
         setListType(list, 7);
 

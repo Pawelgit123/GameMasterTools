@@ -57,7 +57,7 @@ public class AlienWeaponCreatorPandora {
                 .range("Short")
                 .cost(0)
                 .specials("")
-                .ammo("DA")
+                .ammo("Gauge(da)")
                 .weight("1")
                 .build();
     }
@@ -72,7 +72,7 @@ public class AlienWeaponCreatorPandora {
                 .range("Short")
                 .cost(0)
                 .specials("Grenade Launcher")
-                .ammo("DA")
+                .ammo("Gauge(da)")
                 .weight("2")
                 .build();
     }
