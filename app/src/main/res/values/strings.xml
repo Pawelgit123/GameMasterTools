@@ -164,6 +164,19 @@
     <string name="alien_txt_virus_time">Time:</string>
     <string name="alien_txt_acid">Acid:</string>
 
+    //Alien armory
+
+    <string-array name="armory">
+        <item>Original</item>
+        <item>Original+</item>
+        <item>Alien+</item>
+        <item>Security+</item>
+        <item>Pandora+</item>
+        <item>Elysium+</item>
+        <item>Kovac+</item>
+        <item>Auraxis+</item>
+    </string-array>
+
 
 
 </resources>
