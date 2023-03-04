@@ -14,7 +14,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.CompoundButton;
 import android.widget.Spinner;
+import android.widget.Switch;
 
 import com.example.gamemastertools.alien.AlienWeapon;
 import com.example.gamemastertools.alien.AlienWeaponAdapterList;
@@ -49,50 +51,93 @@ public class AlienArmory extends Fragment{
         List<AlienWeapon> list = new ArrayList<>();
         AlienWeaponOrganizer alienWeaponOrganizer = new AlienWeaponOrganizer();
 
-        binding.radioBtnArmoryOriginal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setSwitchesVisible(false);
-                list.clear();
-                List<AlienWeapon> originalList = alienWeaponOrganizer.createOriginalList();
-                list.addAll(originalList);
-                list.sort(AlienWeapon::compareTo);
+        binding.radioBtnArmoryOriginal.setOnClickListener(v -> {
+            switchesOff();
+            setSwitchesVisible(false);
+            list.clear();
+            List<AlienWeapon> originalList = alienWeaponOrganizer.createOriginalList();
+            list.addAll(originalList);
+            list.sort(AlienWeapon::compareTo);
 
-                alienWeaponAdapterList = new AlienWeaponAdapterList(list);
-                recyclerView = view.findViewById(R.id.AlienArmoryRecyclerView);
-                recyclerView.setLayoutManager(new GridLayoutManager(binding.getRoot().getContext(),1));
-                recyclerView.setHasFixedSize(true);
-                recyclerView.setAdapter(alienWeaponAdapterList);
+            alienWeaponAdapterList = new AlienWeaponAdapterList(list);
+            recyclerView = view.findViewById(R.id.AlienArmoryRecyclerView);
+            recyclerView.setLayoutManager(new GridLayoutManager(binding.getRoot().getContext(),1));
+            recyclerView.setHasFixedSize(true);
+            recyclerView.setAdapter(alienWeaponAdapterList);
 
-            }
         });
 
-        binding.radioBtnArmoryExpanded.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setSwitchesVisible(true);
-                list.clear();
-                List<AlienWeapon> list1 = alienWeaponOrganizer.createOriginalPlusList();
-                List<AlienWeapon> list2 = alienWeaponOrganizer.createAdditionalPlusList();
-                list.addAll(list1);
-                list.addAll(list2);
-                list.sort(AlienWeapon::compareTo);
+        binding.radioBtnArmoryExpanded.setOnClickListener(v -> {
+            setSwitchesVisible(true);
+            list.clear();
+            List<AlienWeapon> list1 = alienWeaponOrganizer.createOriginalPlusList();
+            List<AlienWeapon> list2 = alienWeaponOrganizer.createAdditionalPlusList();
+            list.addAll(list1);
+            list.addAll(list2);
+            list.sort(AlienWeapon::compareTo);
 
 
-                alienWeaponAdapterList = new AlienWeaponAdapterList(list);
-                recyclerView = view.findViewById(R.id.AlienArmoryRecyclerView);
-                recyclerView.setLayoutManager(new GridLayoutManager(binding.getRoot().getContext(),1));
-                recyclerView.setHasFixedSize(true);
-                recyclerView.setAdapter(alienWeaponAdapterList);
+            alienWeaponAdapterList = new AlienWeaponAdapterList(list);
+            recyclerView = view.findViewById(R.id.AlienArmoryRecyclerView);
+            recyclerView.setLayoutManager(new GridLayoutManager(binding.getRoot().getContext(),1));
+            recyclerView.setHasFixedSize(true);
+            recyclerView.setAdapter(alienWeaponAdapterList);
 
-            }
         });
 
-
+        binding.switch1.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            List<AlienWeapon> listA = alienWeaponOrganizer.createPandoraPlusList();
+            if(isChecked){
+                list.addAll(listA);
+            } else {
+                list.removeIf(a -> a.getListType() == 4);
+            }
+            recyclerView.setAdapter(alienWeaponAdapterList);
+            list.sort(AlienWeapon::compareTo);
+        });
+        binding.switch2.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            List<AlienWeapon> listA = alienWeaponOrganizer.createElysiumPlusList();
+            if(isChecked){
+                list.addAll(listA);
+            } else {
+                list.removeIf(a -> a.getListType() == 5);
+            }
+            recyclerView.setAdapter(alienWeaponAdapterList);
+            list.sort(AlienWeapon::compareTo);
+        });
+        binding.switch3.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            List<AlienWeapon> listA = alienWeaponOrganizer.createKovacPlusList();
+            if(isChecked){
+                list.addAll(listA);
+            } else {
+                list.removeIf(a -> a.getListType() == 6);
+            }
+            recyclerView.setAdapter(alienWeaponAdapterList);
+            list.sort(AlienWeapon::compareTo);
+        });
+        binding.switch4.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            List<AlienWeapon> listA = alienWeaponOrganizer.createAuraxisPlusList();
+            if(isChecked){
+                list.addAll(listA);
+            } else {
+                list.removeIf(a -> a.getListType() == 7);
+            }
+            recyclerView.setAdapter(alienWeaponAdapterList);
+            list.sort(AlienWeapon::compareTo);
+        });
+        binding.switch5.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            List<AlienWeapon> listA = alienWeaponOrganizer.createSecurityPlusList();
+            if(isChecked){
+                list.addAll(listA);
+            } else {
+                list.removeIf(a -> a.getListType() == 8);
+            }
+            recyclerView.setAdapter(alienWeaponAdapterList);
+            list.sort(AlienWeapon::compareTo);
+        });
     }
 
     public void setSwitchesVisible(Boolean visible){
-
         if(visible){
             binding.switch1.setVisibility(View.VISIBLE);
             binding.switch2.setVisibility(View.VISIBLE);
@@ -107,6 +152,15 @@ public class AlienArmory extends Fragment{
             binding.switch5.setVisibility(View.INVISIBLE);
         }
     }
+
+    public void switchesOff(){
+        binding.switch1.setChecked(false);
+        binding.switch2.setChecked(false);
+        binding.switch3.setChecked(false);
+        binding.switch4.setChecked(false);
+        binding.switch5.setChecked(false);
+    }
+
 
 
 }

@@ -2,7 +2,7 @@ package com.example.gamemastertools.alien;
 
 public class AlienWeaponCreatorOriginalPlus {
 
-    public static AlienWeapon createServicePistol(){
+    public static AlienWeapon createServicePistol() {
         return new AlienWeapon.Builder()
                 .name("M4A3 Service Pistol")
                 .type("Pistol")
@@ -17,7 +17,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public static  AlienWeapon createReximPistol(){
+    public static AlienWeapon createReximPistol() {
         return new AlienWeapon.Builder()
                 .name("Rexim RXF-M5 Eva Pistol")
                 .type("Pistol")
@@ -32,7 +32,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public static  AlienWeapon createInjectionPistol(){
+    public static AlienWeapon createInjectionPistol() {
         return new AlienWeapon.Builder()
                 .name("TX-0 C-B Injection Air Pistol")
                 .type("Pistol")
@@ -47,7 +47,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createVpPistol(){
+    public static AlienWeapon createVpPistol() {
         return new AlienWeapon.Builder()
                 .name("VP-70MA6 SA Pistol")
                 .type("Pistol")
@@ -62,7 +62,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createElectrostaticPistol(){
+    public static AlienWeapon createElectrostaticPistol() {
         return new AlienWeapon.Builder()
                 .name("ES-4 SA Electrostatic Pistol")
                 .type("Pistol")
@@ -77,7 +77,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createQszPistol(){
+    public static AlienWeapon createQszPistol() {
         return new AlienWeapon.Builder()
                 .name("QSZ-203 SA Pistol")
                 .type("Pistol")
@@ -92,7 +92,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createMagnumRevolver(){
+    public static AlienWeapon createMagnumRevolver() {
         return new AlienWeapon.Builder()
                 .name(".357 Magnum Revolver")
                 .type("Revolver")
@@ -107,7 +107,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createShotgunRifle(){
+    public static AlienWeapon createShotgunRifle() {
         return new AlienWeapon.Builder()
                 .name("Model 37A2 12 Gauge Pump Action")
                 .type("Rifle")
@@ -122,7 +122,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public static  AlienWeapon createCrowdControlRifle(){
+    public static AlienWeapon createCrowdControlRifle() {
         return new AlienWeapon.Builder()
                 .name("U4C Civilian CC Projectile Launcher")
                 .type("Rifle")
@@ -137,7 +137,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createHarpoon(){
+    public static AlienWeapon createHarpoon() {
         return new AlienWeapon.Builder()
                 .name("ASSO-400 Harpoon Grappling Gun")
                 .type("Rifle")
@@ -152,7 +152,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public static  AlienWeapon createSuperNovaRifle(){
+    public static AlienWeapon createSuperNovaRifle() {
         return new AlienWeapon.Builder()
                 .name("ES-7 Supernova DA Electrostatic Shockgun")
                 .type("Rifle")
@@ -167,7 +167,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createPulseARifle(){
+    public static AlienWeapon createPulseARifle() {
         return new AlienWeapon.Builder()
                 .name("M41A Pulse Rifle")
                 .type("A-Rifle")
@@ -182,7 +182,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createHeavyPulseARifle(){
+    public static AlienWeapon createHeavyPulseARifle() {
         return new AlienWeapon.Builder()
                 .name("M41AE2 Heavy Pulse Rifle")
                 .type("A-Rifle")
@@ -197,7 +197,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createAkPulseARifle(){
+    public static AlienWeapon createAkPulseARifle() {
         return new AlienWeapon.Builder()
                 .name("AK-4047 Pulse AR")
                 .type("A-Rifle")
@@ -212,7 +212,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createRmcARifle(){
+    public static AlienWeapon createRmcARifle() {
         return new AlienWeapon.Builder()
                 .name("RMC F903WE Automatic AR")
                 .type("A-Rifle")
@@ -227,7 +227,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createNsgARifle(){
+    public static AlienWeapon createNsgARifle() {
         return new AlienWeapon.Builder()
                 .name("NSG23 Automatic AR")
                 .type("A-Rifle")
@@ -242,7 +242,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public static  AlienWeapon createScopeARifle(){
+    public static AlienWeapon createScopeARifle() {
         return new AlienWeapon.Builder()
                 .name("M42A Scope Rifle")
                 .type("A-Rifle")
@@ -257,7 +257,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createSmartGunLmg(){
+    public static AlienWeapon createSmartGunLmg() {
         return new AlienWeapon.Builder()
                 .name("M56A2 Smart Gun")
                 .type("LMG")
@@ -272,7 +272,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createPlasmaRifle(){
+    public static AlienWeapon createPlasmaRifle() {
         return new AlienWeapon.Builder()
                 .name("XM99A Phased Plasma Pulse Rifle")
                 .type("Rifle")
@@ -286,7 +286,8 @@ public class AlienWeaponCreatorOriginalPlus {
                 .weight("2")
                 .build();
     }
-    public static  AlienWeapon createSharpRifle(){
+
+    public static AlienWeapon createSharpRifle() {
         return new AlienWeapon.Builder()
                 .name("P9 SHARP Rifle")
                 .type("Rifle")
@@ -301,7 +302,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public static  AlienWeapon createDischargerRifle(){
+    public static AlienWeapon createDischargerRifle() {
         return new AlienWeapon.Builder()
                 .name("EDS-93 Zadak Plasma Discharger")
                 .type("Rifle")
@@ -316,7 +317,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createZvezdaRifle(){
+    public static AlienWeapon createZvezdaRifle() {
         return new AlienWeapon.Builder()
                 .name("Ilyasov EVI-86X Zvezda Plasma Rifle")
                 .type("Rifle")
@@ -331,7 +332,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createSuitGun(){
+    public static AlienWeapon createSuitGun() {
         return new AlienWeapon.Builder()
                 .name("Ak-104S Pulse Action Suit Gun")
                 .type("Suit")
@@ -346,7 +347,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createGrenadeLauncher(){
+    public static AlienWeapon createGrenadeLauncher() {
         return new AlienWeapon.Builder()
                 .name("U1 Grenade Launcher")
                 .type("Spec")
@@ -361,7 +362,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public static  AlienWeapon createGrenadeLauncherR(){
+    public static AlienWeapon createGrenadeLauncherR() {
         return new AlienWeapon.Builder()
                 .name("U4A2 Repeating Grenade Launcher")
                 .type("Heavy")
@@ -376,7 +377,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createRpgLauncher(){
+    public static AlienWeapon createRpgLauncher() {
         return new AlienWeapon.Builder()
                 .name("M5A3 RPG Launcher")
                 .type("Heavy")
@@ -391,7 +392,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public static  AlienWeapon createRpgLauncherTwo(){
+    public static AlienWeapon createRpgLauncherTwo() {
         return new AlienWeapon.Builder()
                 .name("RPG122")
                 .type("Heavy")
@@ -406,7 +407,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public static  AlienWeapon createEnergyGun(){
+    public static AlienWeapon createEnergyGun() {
         return new AlienWeapon.Builder()
                 .name("72A Light Energy Weapon")
                 .type("Heavy")
@@ -421,7 +422,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createPlasmaGun(){
+    public static AlienWeapon createPlasmaGun() {
         return new AlienWeapon.Builder()
                 .name("M78 PIG Phased-Plasma Infantry Gun")
                 .type("Heavy")
@@ -436,7 +437,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createPhalanxGun(){
+    public static AlienWeapon createPhalanxGun() {
         return new AlienWeapon.Builder()
                 .name("UA-102-20 ITPB Phalanx")
                 .type("Heavy")
@@ -451,7 +452,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createFlamer(){
+    public static AlienWeapon createFlamer() {
         return new AlienWeapon.Builder()
                 .name("M240 Incinerator Unit")
                 .type("Heavy")
@@ -466,7 +467,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createFlamerUnderBarrel(){
+    public static AlienWeapon createFlamerUnderBarrel() {
         return new AlienWeapon.Builder()
                 .name("ID23 Underbarrel Incinerator Unit")
                 .type("Spec")
@@ -481,7 +482,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createFlamerHeavy(){
+    public static AlienWeapon createFlamerHeavy() {
         return new AlienWeapon.Builder()
                 .name("Flammenmacher 3 H-Incinerator Unit")
                 .type("Heavy")
@@ -496,7 +497,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public  static AlienWeapon createSentryGun(){
+    public static AlienWeapon createSentryGun() {
         return new AlienWeapon.Builder()
                 .name("UA 571-C Sentry Gun")
                 .type("Heavy")
@@ -511,7 +512,7 @@ public class AlienWeaponCreatorOriginalPlus {
                 .build();
     }
 
-    public static  AlienWeapon createBoltGun(){
+    public static AlienWeapon createBoltGun() {
         return new AlienWeapon.Builder()
                 .name("DV-303 Bolt Gun")
                 .type("Heavy")

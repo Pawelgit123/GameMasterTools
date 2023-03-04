@@ -2,7 +2,7 @@ package com.example.gamemastertools.alien;
 
 public class AlienWeaponCreatorKovac {
 
-    public static AlienWeapon createS49Pistol(){
+    public static AlienWeapon createS49Pistol() {
         return new AlienWeapon.Builder()
                 .name("S49 Pistol")
                 .type("Pistol")
@@ -17,7 +17,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createAridPistol(){
+    public static AlienWeapon createAridPistol() {
         return new AlienWeapon.Builder()
                 .name("Arid 5 High Caliber Pistol")
                 .type("Pistol")
@@ -32,7 +32,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createSteigro(){
+    public static AlienWeapon createSteigro() {
         return new AlienWeapon.Builder()
                 .name("Steigro Autopistol")
                 .type("Pistol")
@@ -47,7 +47,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createTreffen(){
+    public static AlienWeapon createTreffen() {
         return new AlienWeapon.Builder()
                 .name("Treffen 2 Machine Pistol")
                 .type("Pistol")
@@ -61,7 +61,8 @@ public class AlienWeaponCreatorKovac {
                 .weight("1/2")
                 .build();
     }
-    public static AlienWeapon createHelRevolver(){
+
+    public static AlienWeapon createHelRevolver() {
         return new AlienWeapon.Builder()
                 .name("Model 8 HEL Revolver")
                 .type("Revolver")
@@ -76,7 +77,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createR66(){
+    public static AlienWeapon createR66() {
         return new AlienWeapon.Builder()
                 .name("Mastaba R66 Revolver")
                 .type("Revolver")
@@ -91,7 +92,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createStbSmg(){
+    public static AlienWeapon createStbSmg() {
         return new AlienWeapon.Builder()
                 .name("STB PDW")
                 .type("SMG")
@@ -106,7 +107,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createLtcSmg(){
+    public static AlienWeapon createLtcSmg() {
         return new AlienWeapon.Builder()
                 .name("LTC 5 SMG")
                 .type("SMG")
@@ -121,7 +122,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createNd6Smg(){
+    public static AlienWeapon createNd6Smg() {
         return new AlienWeapon.Builder()
                 .name("ND6 Heavy SMG")
                 .type("SMG")
@@ -136,7 +137,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createHelShotgun(){
+    public static AlienWeapon createHelShotgun() {
         return new AlienWeapon.Builder()
                 .name("J 300 Hel Shotgun")
                 .type("Rifle")
@@ -151,7 +152,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createS870Shotgun(){
+    public static AlienWeapon createS870Shotgun() {
         return new AlienWeapon.Builder()
                 .name("Buckland S870 Shotgun")
                 .type("Rifle")
@@ -166,7 +167,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createAF6Shotgun(){
+    public static AlienWeapon createAF6Shotgun() {
         return new AlienWeapon.Builder()
                 .name("Buckland AF6 Combat Shotgun")
                 .type("Rifle")
@@ -181,7 +182,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createF4Carbine(){
+    public static AlienWeapon createF4Carbine() {
         return new AlienWeapon.Builder()
                 .name("CAB F4 Carbine")
                 .type("A-Rifle")
@@ -196,7 +197,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createGolok(){
+    public static AlienWeapon createGolok() {
         return new AlienWeapon.Builder()
                 .name("Golok DA Bullpup Rifle")
                 .type("A-Rifle")
@@ -211,7 +212,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createDmr(){
+    public static AlienWeapon createDmr() {
         return new AlienWeapon.Builder()
                 .name("TR22 Hanaway DMR")
                 .type("A-Rifle")
@@ -226,7 +227,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createLx(){
+    public static AlienWeapon createLx() {
         return new AlienWeapon.Builder()
                 .name("Malatack LX Assault Rifle")
                 .type("A-Rifle")
@@ -241,7 +242,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createArbalist(){
+    public static AlienWeapon createArbalist() {
         return new AlienWeapon.Builder()
                 .name("Arbalist V Machine Gun")
                 .type("A-Rifle")
@@ -256,7 +257,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createVeruta(){
+    public static AlienWeapon createVeruta() {
         return new AlienWeapon.Builder()
                 .name("Veruta XII Machine Gun")
                 .type("A-Rifle")
@@ -271,7 +272,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createVM556Rifle(){
+    public static AlienWeapon createVM556Rifle() {
         return new AlienWeapon.Builder()
                 .name("Pres MOD 556 Rifle")
                 .type("A-Rifle")
@@ -286,7 +287,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createHXC(){
+    public static AlienWeapon createHXC() {
         return new AlienWeapon.Builder()
                 .name("Malatack HXC Heavy Assault Rifle")
                 .type("LMG")
@@ -301,7 +302,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createPrecisionRifle(){
+    public static AlienWeapon createPrecisionRifle() {
         return new AlienWeapon.Builder()
                 .name("DEL P1 Precision Rifle")
                 .type("S-Rifle")
@@ -316,7 +317,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createPr11(){
+    public static AlienWeapon createPr11() {
         return new AlienWeapon.Builder()
                 .name("Köning PR 11 Sniper")
                 .type("S-Rifle")
@@ -331,7 +332,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createLrgRifle(){
+    public static AlienWeapon createLrgRifle() {
         return new AlienWeapon.Builder()
                 .name("Omneco LRG HEL Rifle")
                 .type("A-Rifle")
@@ -346,7 +347,7 @@ public class AlienWeaponCreatorKovac {
                 .build();
     }
 
-    public static AlienWeapon createExp1(){
+    public static AlienWeapon createExp1() {
         return new AlienWeapon.Builder()
                 .name("Omneco EXP1 HEL Gun")
                 .type("LMG")

@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -75,4 +76,5 @@ public class AlienWeaponAdapterList extends RecyclerView.Adapter<AlienWeaponAdap
             weaponType = itemView.findViewById(R.id.textViewWeaponItemListType);
         }
     }
+
 }

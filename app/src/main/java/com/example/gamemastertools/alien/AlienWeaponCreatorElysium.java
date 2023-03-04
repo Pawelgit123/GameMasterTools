@@ -2,7 +2,7 @@ package com.example.gamemastertools.alien;
 
 public class AlienWeaponCreatorElysium {
 
-    public static AlienWeapon createTaserPistol(){
+    public static AlienWeapon createTaserPistol() {
         return new AlienWeapon.Builder()
                 .name("CD Taser Pistol")
                 .type("Pistol")
@@ -17,7 +17,7 @@ public class AlienWeaponCreatorElysium {
                 .build();
     }
 
-    public  static AlienWeapon createTaserCarbine(){
+    public static AlienWeapon createTaserCarbine() {
         return new AlienWeapon.Builder()
                 .name("CD Taser Carbine")
                 .type("A-Rifle")
@@ -32,7 +32,7 @@ public class AlienWeaponCreatorElysium {
                 .build();
     }
 
-    public static  AlienWeapon createVectorSmg(){
+    public static AlienWeapon createVectorSmg() {
         return new AlienWeapon.Builder()
                 .name("Vector")
                 .type("SMG")
@@ -47,7 +47,7 @@ public class AlienWeaponCreatorElysium {
                 .build();
     }
 
-    public  static AlienWeapon createCousarRifle(){
+    public static AlienWeapon createCousarRifle() {
         return new AlienWeapon.Builder()
                 .name("Cousar Crowe Rifle")
                 .type("A-Rifle")
@@ -62,7 +62,7 @@ public class AlienWeaponCreatorElysium {
                 .build();
     }
 
-    public  static AlienWeapon createChemRail(){
+    public static AlienWeapon createChemRail() {
         return new AlienWeapon.Builder()
                 .name("ChemRail")
                 .type("A-Rifle")
@@ -77,7 +77,7 @@ public class AlienWeaponCreatorElysium {
                 .build();
     }
 
-    public static  AlienWeapon createSkySweeper(){
+    public static AlienWeapon createSkySweeper() {
         return new AlienWeapon.Builder()
                 .name("Sky Sweeper")
                 .type("Spec")
@@ -92,7 +92,7 @@ public class AlienWeaponCreatorElysium {
                 .build();
     }
 
-    public  static AlienWeapon createForSureLauncher(){
+    public static AlienWeapon createForSureLauncher() {
         return new AlienWeapon.Builder()
                 .name("4Sure Ballistics Missile Launcher")
                 .type("Heavy")

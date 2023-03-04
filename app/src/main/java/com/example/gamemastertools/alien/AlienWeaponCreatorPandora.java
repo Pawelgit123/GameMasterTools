@@ -2,7 +2,7 @@ package com.example.gamemastertools.alien;
 
 public class AlienWeaponCreatorPandora {
 
-    public static AlienWeapon createZPistol(){
+    public static AlienWeapon createZPistol() {
         return new AlienWeapon.Builder()
                 .name("Z-33 Pistol")
                 .type("Pistol")
@@ -17,7 +17,7 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public  static AlienWeapon createWaspRevolver(){
+    public static AlienWeapon createWaspRevolver() {
         return new AlienWeapon.Builder()
                 .name("SN-9 Wasp Revolver")
                 .type("Revolver")
@@ -32,7 +32,7 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public  static AlienWeapon createSentinelSmg(){
+    public static AlienWeapon createSentinelSmg() {
         return new AlienWeapon.Builder()
                 .name("CARB Sentinel")
                 .type("SMG")
@@ -47,7 +47,7 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public  static AlienWeapon createRangerRifle(){
+    public static AlienWeapon createRangerRifle() {
         return new AlienWeapon.Builder()
                 .name("CARB Ranger")
                 .type("Rifle")
@@ -62,7 +62,7 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public  static AlienWeapon createBullpupRifle(){
+    public static AlienWeapon createBullpupRifle() {
         return new AlienWeapon.Builder()
                 .name("Y70 Bullpup Rifle")
                 .type("Rifle")
@@ -77,7 +77,7 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public  static AlienWeapon createCarbine(){
+    public static AlienWeapon createCarbine() {
         return new AlienWeapon.Builder()
                 .name("CARB Carbine")
                 .type("A-Rifle")
@@ -92,7 +92,7 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public  static AlienWeapon createBasicUnit(){
+    public static AlienWeapon createBasicUnit() {
         return new AlienWeapon.Builder()
                 .name("CARB Basic Unit")
                 .type("A-Rifle")
@@ -107,7 +107,7 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public  static AlienWeapon createSolarisRifle(){
+    public static AlienWeapon createSolarisRifle() {
         return new AlienWeapon.Builder()
                 .name("Solaris")
                 .type("A-Rifle")
@@ -122,7 +122,7 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public  static AlienWeapon createEurysRifle(){
+    public static AlienWeapon createEurysRifle() {
         return new AlienWeapon.Builder()
                 .name("Eurys")
                 .type("A-Rifle")
@@ -137,7 +137,7 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public  static AlienWeapon createGS(){
+    public static AlienWeapon createGS() {
         return new AlienWeapon.Builder()
                 .name("GS-221")
                 .type("LMG")
@@ -152,7 +152,7 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public  static AlienWeapon createGau(){
+    public static AlienWeapon createGau() {
         return new AlienWeapon.Builder()
                 .name("Gau 45s")
                 .type("LMG")
@@ -167,7 +167,7 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public static  AlienWeapon createMachineGunSix(){
+    public static AlienWeapon createMachineGunSix() {
         return new AlienWeapon.Builder()
                 .name("M60 Machine Gun")
                 .type("LMG")
@@ -182,7 +182,7 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public static  AlienWeapon createMachineGunNine(){
+    public static AlienWeapon createMachineGunNine() {
         return new AlienWeapon.Builder()
                 .name("Gau 90")
                 .type("Suit")
@@ -197,7 +197,7 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public  static AlienWeapon createHydra(){
+    public static AlienWeapon createHydra() {
         return new AlienWeapon.Builder()
                 .name("MBS-9M Hydra")
                 .type("Heavy")
@@ -212,7 +212,7 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public  static AlienWeapon createFlamethrower(){
+    public static AlienWeapon createFlamethrower() {
         return new AlienWeapon.Builder()
                 .name("FD-3 Flamethrower")
                 .type("Heavy")
@@ -227,10 +227,10 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public  static AlienWeapon createSentryGun(){
+    public static AlienWeapon createSentryGun() {
         return new AlienWeapon.Builder()
                 .name("MBS-22A Sentry Gun")
-                .type("Sentry")
+                .type("Heavy")
                 .manufacturer("Massa-Cirre Ltd")
                 .bonus(1)
                 .damage(4)
@@ -242,7 +242,7 @@ public class AlienWeaponCreatorPandora {
                 .build();
     }
 
-    public  static AlienWeapon createSoundCannon(){
+    public static AlienWeapon createSoundCannon() {
         return new AlienWeapon.Builder()
                 .name("AHD-9 Sound Cannon")
                 .type("Heavy")

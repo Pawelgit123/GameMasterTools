@@ -2,7 +2,7 @@ package com.example.gamemastertools.alien;
 
 public class AlienWeaponCreatorSecurity {
 
-    public static AlienWeapon createRhinoRevolver(){
+    public static AlienWeapon createRhinoRevolver() {
         return new AlienWeapon.Builder()
                 .name("Rhino 50DS")
                 .type("Revolver")
@@ -17,22 +17,22 @@ public class AlienWeaponCreatorSecurity {
                 .build();
     }
 
-    public static AlienWeapon createPdwSmg(){
+    public static AlienWeapon createPdwSmg() {
         return new AlienWeapon.Builder()
-                .name("PDW")
+                .name("P90-CF PDW")
                 .type("SMG")
                 .manufacturer("")
                 .bonus(2)
                 .damage(1)
                 .range("Medium")
-                .cost(270)
+                .cost(770)
                 .specials("Auto:4 / H-Capacity")
                 .ammo("Std")
                 .weight("1")
                 .build();
     }
 
-    public static AlienWeapon createGmRiotGun(){
+    public static AlienWeapon createGmRiotGun() {
         return new AlienWeapon.Builder()
                 .name("GM-94")
                 .type("Rifle")
@@ -47,7 +47,7 @@ public class AlienWeaponCreatorSecurity {
                 .build();
     }
 
-    public static AlienWeapon createBrARifle(){
+    public static AlienWeapon createBrARifle() {
         return new AlienWeapon.Builder()
                 .name("BR18")
                 .type("A-Rifle")
@@ -62,9 +62,9 @@ public class AlienWeaponCreatorSecurity {
                 .build();
     }
 
-    public static AlienWeapon createNoxPistol(){
+    public static AlienWeapon createNoxPistol() {
         return new AlienWeapon.Builder()
-                .name("Nox")
+                .name("Nox PW")
                 .type("Pistol")
                 .manufacturer("")
                 .bonus(0)
@@ -77,7 +77,7 @@ public class AlienWeaponCreatorSecurity {
                 .build();
     }
 
-    public static AlienWeapon createPdpPistol(){
+    public static AlienWeapon createPdpPistol() {
         return new AlienWeapon.Builder()
                 .name("PDP Tactical Pistol")
                 .type("Pistol")
@@ -92,7 +92,7 @@ public class AlienWeaponCreatorSecurity {
                 .build();
     }
 
-    public static AlienWeapon createWmShotgun(){
+    public static AlienWeapon createWmShotgun() {
         return new AlienWeapon.Builder()
                 .name("WM Riot Shotgun")
                 .type("Rifle")
@@ -107,7 +107,7 @@ public class AlienWeaponCreatorSecurity {
                 .build();
     }
 
-    public static AlienWeapon createWmARifle(){
+    public static AlienWeapon createWmARifle() {
         return new AlienWeapon.Builder()
                 .name("WM Assault Rifle Model 34")
                 .type("A-Rifle")

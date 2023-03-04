@@ -2,7 +2,7 @@ package com.example.gamemastertools.alien;
 
 public class AlienWeaponCreatorAuraxis {
 
-    public static AlienWeapon createGuardian(){
+    public static AlienWeapon createGuardian() {
         return new AlienWeapon.Builder()
                 .name("Guardian G-Revolver")
                 .type("Revolver")
@@ -17,7 +17,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createBlitz(){
+    public static AlienWeapon createBlitz() {
         return new AlienWeapon.Builder()
                 .name("Blitz GD-10")
                 .type("SMG")
@@ -32,9 +32,9 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createCyclone(){
+    public static AlienWeapon createCyclone() {
         return new AlienWeapon.Builder()
-                .name("Blitz GD-10")
+                .name("AF Cyclone")
                 .type("SMG")
                 .manufacturer("Vanguard Security")
                 .bonus(1)
@@ -47,7 +47,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createClaw(){
+    public static AlienWeapon createClaw() {
         return new AlienWeapon.Builder()
                 .name("GD-66 Claw")
                 .type("Rifle")
@@ -62,7 +62,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createCharger(){
+    public static AlienWeapon createCharger() {
         return new AlienWeapon.Builder()
                 .name("MGR-C1 Charger")
                 .type("A-Rifle")
@@ -77,7 +77,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createPromise(){
+    public static AlienWeapon createPromise() {
         return new AlienWeapon.Builder()
                 .name("MGR-L1 Promise")
                 .type("LMG")
@@ -92,7 +92,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createGrinder(){
+    public static AlienWeapon createGrinder() {
         return new AlienWeapon.Builder()
                 .name("AF-23 Grinder")
                 .type("Heavy")
@@ -107,7 +107,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createPiston(){
+    public static AlienWeapon createPiston() {
         return new AlienWeapon.Builder()
                 .name("Piston")
                 .type("S-Rifle")
@@ -123,7 +123,7 @@ public class AlienWeaponCreatorAuraxis {
     }
 
 
-    public static AlienWeapon createRutherford(){
+    public static AlienWeapon createRutherford() {
         return new AlienWeapon.Builder()
                 .name("SG-ARX Rutherford")
                 .type("Rifle")
@@ -138,7 +138,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createAmp(){
+    public static AlienWeapon createAmp() {
         return new AlienWeapon.Builder()
                 .name("T4 AMP")
                 .type("Pistol")
@@ -153,7 +153,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createJackal(){
+    public static AlienWeapon createJackal() {
         return new AlienWeapon.Builder()
                 .name("SMG-46 Jackal")
                 .type("SMG")
@@ -168,7 +168,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createMastiff(){
+    public static AlienWeapon createMastiff() {
         return new AlienWeapon.Builder()
                 .name("Mastiff")
                 .type("Rifle")
@@ -183,7 +183,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon create100(){
+    public static AlienWeapon create100() {
         return new AlienWeapon.Builder()
                 .name("AR-100")
                 .type("A-Rifle")
@@ -198,7 +198,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createWatchmen(){
+    public static AlienWeapon createWatchmen() {
         return new AlienWeapon.Builder()
                 .name("MG-H1 Watchman")
                 .type("LMG")
@@ -213,7 +213,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createMutilator(){
+    public static AlienWeapon createMutilator() {
         return new AlienWeapon.Builder()
                 .name("M2 Mutilator")
                 .type("LMG")
@@ -228,7 +228,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createNS7(){
+    public static AlienWeapon createNS7() {
         return new AlienWeapon.Builder()
                 .name("NS-7 PDW")
                 .type("SMG")
@@ -243,7 +243,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createHSG(){
+    public static AlienWeapon createHSG() {
         return new AlienWeapon.Builder()
                 .name("Nanites HSG-400")
                 .type("Rifle")
@@ -258,7 +258,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createXMG(){
+    public static AlienWeapon createXMG() {
         return new AlienWeapon.Builder()
                 .name("Nanites XMG-100")
                 .type("LMG")
@@ -273,7 +273,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createBeamer(){
+    public static AlienWeapon createBeamer() {
         return new AlienWeapon.Builder()
                 .name("Beamer VS3")
                 .type("Pistol")
@@ -288,7 +288,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createManticore(){
+    public static AlienWeapon createManticore() {
         return new AlienWeapon.Builder()
                 .name("Manticore SX40")
                 .type("Pistol")
@@ -303,7 +303,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createCerberus(){
+    public static AlienWeapon createCerberus() {
         return new AlienWeapon.Builder()
                 .name("Cerberus")
                 .type("Revolver")
@@ -318,7 +318,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createEridani(){
+    public static AlienWeapon createEridani() {
         return new AlienWeapon.Builder()
                 .name("Eridani SX5")
                 .type("SMG")
@@ -333,7 +333,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createPandora(){
+    public static AlienWeapon createPandora() {
         return new AlienWeapon.Builder()
                 .name("Pandora VX25")
                 .type("Rifle")
@@ -348,7 +348,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createEquinox(){
+    public static AlienWeapon createEquinox() {
         return new AlienWeapon.Builder()
                 .name("Equinox")
                 .type("A-Rifle")
@@ -363,7 +363,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createPolaris(){
+    public static AlienWeapon createPolaris() {
         return new AlienWeapon.Builder()
                 .name("VX29 Polaris")
                 .type("LMG")
@@ -378,7 +378,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createSlicer(){
+    public static AlienWeapon createSlicer() {
         return new AlienWeapon.Builder()
                 .name("VX4-3 Slicer")
                 .type("S-Rifle")
@@ -393,7 +393,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createSpectre(){
+    public static AlienWeapon createSpectre() {
         return new AlienWeapon.Builder()
                 .name("VA39 Spectre")
                 .type("S-Rifle")
@@ -408,7 +408,7 @@ public class AlienWeaponCreatorAuraxis {
                 .build();
     }
 
-    public static AlienWeapon createQuasar(){
+    public static AlienWeapon createQuasar() {
         return new AlienWeapon.Builder()
                 .name("Quasar VM1")
                 .type("Heavy")
