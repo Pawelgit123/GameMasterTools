@@ -283,6 +283,10 @@ public class AlienWeaponOrganizer {
         createWeaponAndAddToList(AlienWeaponCreatorSecurity.createPdpPistol(), list);
         createWeaponAndAddToList(AlienWeaponCreatorSecurity.createWmShotgun(), list);
         createWeaponAndAddToList(AlienWeaponCreatorSecurity.createWmARifle(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorSecurity.create15Compact(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorSecurity.createTheNine(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorSecurity.create7SixRifle(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorSecurity.createScarRifle(), list);
 
         setListType(list, 8);
 

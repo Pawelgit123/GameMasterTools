@@ -1,24 +1,24 @@
 package com.example.gamemastertools.alien;
 
 import android.annotation.SuppressLint;
-import android.graphics.Color;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.gamemastertools.R;
-import com.example.gamemastertools.blood.Human;
 
-import java.util.Collections;
 import java.util.List;
 
-public class AlienWeaponAdapterList extends RecyclerView.Adapter<AlienWeaponAdapterList.AlienWeaponHolderList>{
+public class AlienWeaponAdapterList extends RecyclerView.Adapter<AlienWeaponAdapterList.AlienWeaponHolderList> {
 
     private final List<AlienWeapon> list;
 
@@ -31,6 +31,7 @@ public class AlienWeaponAdapterList extends RecyclerView.Adapter<AlienWeaponAdap
     public AlienWeaponHolderList onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.weapon_item, parent, false);
+
         return new AlienWeaponHolderList(v);
     }
 
@@ -41,6 +42,72 @@ public class AlienWeaponAdapterList extends RecyclerView.Adapter<AlienWeaponAdap
         AlienWeapon alienWeapon = list.get(position);
         holder.weaponName.setText(alienWeapon.getName());
         holder.weaponType.setText("[" +alienWeapon.getType() +"]");
+        holder.alienWeapon = alienWeapon;
+
+        holder.itemView.setOnClickListener(v -> {
+            AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
+            View dialogView = LayoutInflater.from(v.getContext()).inflate(R.layout.weapon_dialog, null);
+            TextView weaponNameDialog;
+            TextView weaponManufacturerDialog;
+            TextView weaponBonusDialog;
+            TextView weaponDamageDialog;
+            TextView weaponAmmoDialog;
+            TextView weaponRangeDialog;
+            TextView weaponWeightDialog;
+            TextView weaponCostDialog;
+            TextView weaponSpecialsDialog;
+
+            weaponNameDialog= dialogView.findViewById(R.id.textViewAlienWeaponDialogWeaponName);
+            weaponManufacturerDialog= dialogView.findViewById(R.id.textViewAlienWeaponManufacturer);
+            weaponBonusDialog=dialogView.findViewById(R.id.textViewAlienWeaponBonus);
+            weaponDamageDialog=dialogView.findViewById(R.id.textViewAlienWeaponDamage);
+            weaponAmmoDialog=dialogView.findViewById(R.id.textViewAlienWeaponAmmo);
+            weaponRangeDialog=dialogView.findViewById(R.id.textViewAlienWeaponRange);
+            weaponWeightDialog=dialogView.findViewById(R.id.textViewAlienWeaponWeight);
+            weaponCostDialog=dialogView.findViewById(R.id.textViewAlienWeaponCost);
+            weaponSpecialsDialog=dialogView.findViewById(R.id.textViewAlienWeaponSpecials);
+
+            weaponNameDialog.setText(alienWeapon.getName());
+            weaponManufacturerDialog.setText(alienWeapon.getManufacturer());
+            weaponBonusDialog.setText("+"+(alienWeapon.getBonus()));
+            weaponDamageDialog.setText(String.valueOf(alienWeapon.getDamage()));
+            weaponAmmoDialog.setText(alienWeapon.getAmmo());
+            weaponRangeDialog.setText(alienWeapon.getRange());
+            weaponWeightDialog.setText(alienWeapon.getWeight());
+            weaponCostDialog.setText("$"+(alienWeapon.getCost()));
+            weaponSpecialsDialog.setText(alienWeapon.getSpecials());
+
+            TextView weaponManufacturerDialogStatic;
+            TextView weaponBonusDialogStatic;
+            TextView weaponDamageDialogStatic;
+            TextView weaponAmmoDialogStatic;
+            TextView weaponRangeDialogStatic;
+            TextView weaponWeightDialogStatic;
+            TextView weaponCostDialogStatic;
+            TextView weaponSpecialsDialogStatic;
+
+            weaponManufacturerDialogStatic= dialogView.findViewById(R.id.textViewAlienWeaponManufacturerStatic);
+            weaponBonusDialogStatic=dialogView.findViewById(R.id.textViewAlienWeaponBonusStatic);
+            weaponDamageDialogStatic=dialogView.findViewById(R.id.textViewAlienWeaponDamageStatic);
+            weaponAmmoDialogStatic=dialogView.findViewById(R.id.textViewAlienWeaponAmmoStatic);
+            weaponRangeDialogStatic=dialogView.findViewById(R.id.textViewAlienWeaponRangeStatic);
+            weaponWeightDialogStatic=dialogView.findViewById(R.id.textViewAlienWeaponWeightStatic);
+            weaponCostDialogStatic=dialogView.findViewById(R.id.textViewAlienWeaponCostStatic);
+            weaponSpecialsDialogStatic=dialogView.findViewById(R.id.textViewAlienWeaponSpecialsStatic);
+
+            colorMyText(weaponNameDialog,holder,alienWeapon.listType);
+            colorMyText(weaponManufacturerDialogStatic,holder,alienWeapon.listType);
+            colorMyText(weaponBonusDialogStatic,holder,alienWeapon.listType);
+            colorMyText(weaponDamageDialogStatic,holder,alienWeapon.listType);
+            colorMyText(weaponAmmoDialogStatic,holder,alienWeapon.listType);
+            colorMyText(weaponRangeDialogStatic,holder,alienWeapon.listType);
+            colorMyText(weaponWeightDialogStatic,holder,alienWeapon.listType);
+            colorMyText(weaponCostDialogStatic,holder,alienWeapon.listType);
+            colorMyText(weaponSpecialsDialogStatic,holder,alienWeapon.listType);
+
+            builder.setView(dialogView);
+            builder.show();
+        });
 
         switch (alienWeapon.listType){
             case 3:holder.weaponType.setTextColor(ContextCompat.getColor(holder.weaponType.getContext(), R.color.teal_200));
@@ -63,18 +130,36 @@ public class AlienWeaponAdapterList extends RecyclerView.Adapter<AlienWeaponAdap
     public int getItemCount() {
         return list.size();
     }
-
     public static class AlienWeaponHolderList extends RecyclerView.ViewHolder {
 
         TextView weaponName;
         TextView weaponType;
+        AlienWeapon alienWeapon;
 
         public AlienWeaponHolderList(@NonNull View itemView) {
             super(itemView);
-
             weaponName = itemView.findViewById(R.id.textViewWeaponItemListName);
             weaponType = itemView.findViewById(R.id.textViewWeaponItemListType);
         }
+    }
+
+    public void colorMyText(TextView textView,AlienWeaponHolderList holder, int listType){
+        switch (listType){
+            case 3:textView.setTextColor(ContextCompat.getColor(holder.weaponType.getContext(), R.color.teal_200));
+                break;
+            case 4: textView.setTextColor(ContextCompat.getColor(holder.weaponType.getContext(), R.color.green));
+                break;
+            case 5: textView.setTextColor(ContextCompat.getColor(holder.weaponType.getContext(), R.color.gold));
+                break;
+            case 6: textView.setTextColor(ContextCompat.getColor(holder.weaponType.getContext(), R.color.red));
+                break;
+            case 7:textView.setTextColor(ContextCompat.getColor(holder.weaponType.getContext(), R.color.alienbrown));
+                break;
+            case 8: textView.setTextColor(ContextCompat.getColor(holder.weaponType.getContext(), R.color.alienviolet));
+                break;
+            default: textView.setTextColor(ContextCompat.getColor(holder.weaponType.getContext(), R.color.white));
+        }
+
     }
 
 }

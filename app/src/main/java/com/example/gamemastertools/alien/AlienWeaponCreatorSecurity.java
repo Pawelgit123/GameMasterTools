@@ -6,7 +6,7 @@ public class AlienWeaponCreatorSecurity {
         return new AlienWeapon.Builder()
                 .name("Rhino 50DS")
                 .type("Revolver")
-                .manufacturer("")
+                .manufacturer("CW Arms")
                 .bonus(0)
                 .damage(2)
                 .range("Medium")
@@ -21,7 +21,7 @@ public class AlienWeaponCreatorSecurity {
         return new AlienWeapon.Builder()
                 .name("P90-CF PDW")
                 .type("SMG")
-                .manufacturer("")
+                .manufacturer("CW Arms")
                 .bonus(2)
                 .damage(1)
                 .range("Medium")
@@ -36,7 +36,7 @@ public class AlienWeaponCreatorSecurity {
         return new AlienWeapon.Builder()
                 .name("GM-94")
                 .type("Rifle")
-                .manufacturer("")
+                .manufacturer("Atlas Security")
                 .bonus(1)
                 .damage(3)
                 .range("Medium")
@@ -51,7 +51,7 @@ public class AlienWeaponCreatorSecurity {
         return new AlienWeapon.Builder()
                 .name("BR18")
                 .type("A-Rifle")
-                .manufacturer("")
+                .manufacturer("Atlas Security")
                 .bonus(0)
                 .damage(2)
                 .range("Long")
@@ -66,7 +66,7 @@ public class AlienWeaponCreatorSecurity {
         return new AlienWeapon.Builder()
                 .name("Nox PW")
                 .type("Pistol")
-                .manufacturer("")
+                .manufacturer("Atlas Security")
                 .bonus(0)
                 .damage(1)
                 .range("Long")
@@ -81,7 +81,7 @@ public class AlienWeaponCreatorSecurity {
         return new AlienWeapon.Builder()
                 .name("PDP Tactical Pistol")
                 .type("Pistol")
-                .manufacturer("")
+                .manufacturer("CW Arms")
                 .bonus(2)
                 .damage(1)
                 .range("Long")
@@ -94,9 +94,9 @@ public class AlienWeaponCreatorSecurity {
 
     public static AlienWeapon createWmShotgun() {
         return new AlienWeapon.Builder()
-                .name("WM Riot Shotgun")
+                .name("Riot Shotgun")
                 .type("Rifle")
-                .manufacturer("")
+                .manufacturer("Atlas Security")
                 .bonus(2)
                 .damage(3)
                 .range("Short")
@@ -109,9 +109,9 @@ public class AlienWeaponCreatorSecurity {
 
     public static AlienWeapon createWmARifle() {
         return new AlienWeapon.Builder()
-                .name("WM Assault Rifle Model 34")
+                .name("Assault Rifle Model 34")
                 .type("A-Rifle")
-                .manufacturer("")
+                .manufacturer("Atlas Security")
                 .bonus(0)
                 .damage(2)
                 .range("Long")
@@ -122,4 +122,63 @@ public class AlienWeaponCreatorSecurity {
                 .build();
     }
 
+    public static AlienWeapon create15Compact() {
+        return new AlienWeapon.Builder()
+                .name("15th Compact")
+                .type("A-Rifle")
+                .manufacturer("H.E.R.A. Industries")
+                .bonus(0)
+                .damage(2)
+                .range("Long")
+                .cost(500)
+                .specials("Auto:1")
+                .ammo("Std / HP / FMJ")
+                .weight("1")
+                .build();
+    }
+    public static AlienWeapon createTheNine() {
+        return new AlienWeapon.Builder()
+                .name("The-9ers")
+                .type("A-Rifle")
+                .manufacturer("H.E.R.A. Industries")
+                .bonus(1)
+                .damage(2)
+                .range("Long")
+                .cost(650)
+                .specials("Auto:1")
+                .ammo("Std / HP / FMJ")
+                .weight("1")
+                .build();
+    }
+
+
+    public static AlienWeapon create7SixRifle() {
+        return new AlienWeapon.Builder()
+                .name("7SIX2 AR10 Rifle")
+                .type("A-Rifle")
+                .manufacturer("H.E.R.A. Industries")
+                .bonus(2)
+                .damage(2)
+                .range("Extreme")
+                .cost(2200)
+                .specials("Auto:1")
+                .ammo("Std / HP / FMJ")
+                .weight("1")
+                .build();
+    }
+
+    public static AlienWeapon createScarRifle() {
+        return new AlienWeapon.Builder()
+                .name("Scar Gun")
+                .type("A-Rifle")
+                .manufacturer("Goliath Holdings")
+                .bonus(1)
+                .damage(2)
+                .range("Long")
+                .cost(670)
+                .specials("Auto:3")
+                .ammo("Std")
+                .weight("1")
+                .build();
+    }
 }

@@ -6,26 +6,18 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.CompoundButton;
-import android.widget.Spinner;
-import android.widget.Switch;
 
 import com.example.gamemastertools.alien.AlienWeapon;
 import com.example.gamemastertools.alien.AlienWeaponAdapterList;
 import com.example.gamemastertools.alien.AlienWeaponOrganizer;
-import com.example.gamemastertools.blood.BattleAdapter;
 import com.example.gamemastertools.databinding.FragmentAlienArmoryBinding;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class AlienArmory extends Fragment{
@@ -50,6 +42,7 @@ public class AlienArmory extends Fragment{
         setSwitchesVisible(false);
         List<AlienWeapon> list = new ArrayList<>();
         AlienWeaponOrganizer alienWeaponOrganizer = new AlienWeaponOrganizer();
+
 
         binding.radioBtnArmoryOriginal.setOnClickListener(v -> {
             switchesOff();
@@ -83,7 +76,10 @@ public class AlienArmory extends Fragment{
             recyclerView.setHasFixedSize(true);
             recyclerView.setAdapter(alienWeaponAdapterList);
 
+
         });
+
+
 
         binding.switch1.setOnCheckedChangeListener((buttonView, isChecked) -> {
             List<AlienWeapon> listA = alienWeaponOrganizer.createPandoraPlusList();
