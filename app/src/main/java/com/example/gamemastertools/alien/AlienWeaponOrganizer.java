@@ -287,6 +287,16 @@ public class AlienWeaponOrganizer {
         createWeaponAndAddToList(AlienWeaponCreatorSecurity.createTheNine(), list);
         createWeaponAndAddToList(AlienWeaponCreatorSecurity.create7SixRifle(), list);
         createWeaponAndAddToList(AlienWeaponCreatorSecurity.createScarRifle(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorSecurity.createMaximPistol(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorSecurity.createInvictaSmg(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorSecurity.createAradRifle(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorSecurity.createLP4(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorSecurity.createSafin(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorSecurity.createCarmel(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorSecurity.createSpectral(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorSecurity.createReaperRifle(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorSecurity.createAlphaOne(), list);
+        createWeaponAndAddToList(AlienWeaponCreatorSecurity.createAlphaTwo(), list);
 
         setListType(list, 8);
 

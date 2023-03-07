@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/ocr_a_std_regular"
+        android:gravity="center"
         android:text="TextView"
         android:textColor="@color/teal_200"
         android:textSize="18sp"
@@ -49,6 +50,7 @@
         android:id="@+id/textViewAlienWeaponRangeStatic"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:text="Range:"
         android:textColor="@color/teal_200"
         android:textStyle="bold"
@@ -196,6 +198,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/textViewAlienWeaponAmmoStatic"
         app:layout_constraintStart_toEndOf="@+id/textViewAlienWeaponAmmoStatic"
         app:layout_constraintTop_toTopOf="@+id/textViewAlienWeaponAmmoStatic" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/namePlacedHolder"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAlienWeaponManufacturerStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewAlienWeaponRangeStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewAlienWeaponManufacturerStatic" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

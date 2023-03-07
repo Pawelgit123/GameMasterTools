@@ -56,6 +56,7 @@ public class AlienWeaponAdapterList extends RecyclerView.Adapter<AlienWeaponAdap
             TextView weaponWeightDialog;
             TextView weaponCostDialog;
             TextView weaponSpecialsDialog;
+            TextView weaponTypeDialog;
 
             weaponNameDialog= dialogView.findViewById(R.id.textViewAlienWeaponDialogWeaponName);
             weaponManufacturerDialog= dialogView.findViewById(R.id.textViewAlienWeaponManufacturer);
@@ -66,6 +67,7 @@ public class AlienWeaponAdapterList extends RecyclerView.Adapter<AlienWeaponAdap
             weaponWeightDialog=dialogView.findViewById(R.id.textViewAlienWeaponWeight);
             weaponCostDialog=dialogView.findViewById(R.id.textViewAlienWeaponCost);
             weaponSpecialsDialog=dialogView.findViewById(R.id.textViewAlienWeaponSpecials);
+            weaponTypeDialog=dialogView.findViewById(R.id.textViewAlienWeaponType);
 
             weaponNameDialog.setText(alienWeapon.getName());
             weaponManufacturerDialog.setText(alienWeapon.getManufacturer());
@@ -76,6 +78,7 @@ public class AlienWeaponAdapterList extends RecyclerView.Adapter<AlienWeaponAdap
             weaponWeightDialog.setText(alienWeapon.getWeight());
             weaponCostDialog.setText("$"+(alienWeapon.getCost()));
             weaponSpecialsDialog.setText(alienWeapon.getSpecials());
+            weaponTypeDialog.setText("["+alienWeapon.getType()+"]");
 
             TextView weaponManufacturerDialogStatic;
             TextView weaponBonusDialogStatic;
@@ -104,6 +107,7 @@ public class AlienWeaponAdapterList extends RecyclerView.Adapter<AlienWeaponAdap
             colorMyText(weaponWeightDialogStatic,holder,alienWeapon.listType);
             colorMyText(weaponCostDialogStatic,holder,alienWeapon.listType);
             colorMyText(weaponSpecialsDialogStatic,holder,alienWeapon.listType);
+            colorMyText(weaponTypeDialog,holder,alienWeapon.listType);
 
             builder.setView(dialogView);
             builder.show();
@@ -159,7 +163,24 @@ public class AlienWeaponAdapterList extends RecyclerView.Adapter<AlienWeaponAdap
                 break;
             default: textView.setTextColor(ContextCompat.getColor(holder.weaponType.getContext(), R.color.white));
         }
+    }
 
+    public void colorMyTextRandomPick(TextView textView, View view, int listType){
+        switch (listType){
+            case 3:textView.setTextColor(ContextCompat.getColor(view.getContext(), R.color.teal_200));
+                break;
+            case 4: textView.setTextColor(ContextCompat.getColor(view.getContext(), R.color.green));
+                break;
+            case 5: textView.setTextColor(ContextCompat.getColor(view.getContext(), R.color.gold));
+                break;
+            case 6: textView.setTextColor(ContextCompat.getColor(view.getContext(), R.color.red));
+                break;
+            case 7:textView.setTextColor(ContextCompat.getColor(view.getContext(), R.color.alienbrown));
+                break;
+            case 8: textView.setTextColor(ContextCompat.getColor(view.getContext(), R.color.alienviolet));
+                break;
+            default: textView.setTextColor(ContextCompat.getColor(view.getContext(), R.color.white));
+        }
     }
 
 }
