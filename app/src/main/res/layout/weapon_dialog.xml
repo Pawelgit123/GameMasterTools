@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponDialogWeaponName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ocr_a_std_regular"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/teal_200"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponBonusStatic"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Bonus:"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAlienWeaponManufacturerStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewAlienWeaponManufacturerStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAlienWeaponManufacturer" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponDamageStatic"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Damage:"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAlienWeaponBonusStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewAlienWeaponBonusStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAlienWeaponBonusStatic" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponRangeStatic"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Range:"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewAlienWeaponBonusStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewAlienWeaponBonusStatic" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponWeightStatic"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Weight:"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAlienWeaponRangeStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewAlienWeaponRangeStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAlienWeaponRangeStatic" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponManufacturerStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Manufacturer:"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAlienWeaponDialogWeaponName" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponCostStatic"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cost:"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAlienWeaponWeightStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewAlienWeaponWeightStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAlienWeaponWeightStatic" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponAmmoStatic"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ammo:"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAlienWeaponDamageStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewAlienWeaponDamageStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAlienWeaponDamageStatic" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponSpecialsStatic"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Special:"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAlienWeaponAmmoStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewAlienWeaponAmmoStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAlienWeaponAmmoStatic" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponManufacturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/namePlacedHolder"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textViewAlienWeaponManufacturerStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAlienWeaponManufacturerStatic" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponSpecials"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/namePlacedHolder"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textViewAlienWeaponSpecialsStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewAlienWeaponSpecialsStatic" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponBonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAlienWeaponBonusStatic"
+        app:layout_constraintStart_toEndOf="@+id/textViewAlienWeaponBonusStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewAlienWeaponBonusStatic" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponDamage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAlienWeaponDamageStatic"
+        app:layout_constraintStart_toEndOf="@+id/textViewAlienWeaponDamageStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewAlienWeaponDamageStatic" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zeroPlacedHolder"
+
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAlienWeaponRangeStatic"
+        app:layout_constraintStart_toEndOf="@+id/textViewAlienWeaponRangeStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewAlienWeaponRangeStatic" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAlienWeaponWeightStatic"
+        app:layout_constraintStart_toEndOf="@+id/textViewAlienWeaponWeightStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewAlienWeaponWeightStatic" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAlienWeaponCostStatic"
+        app:layout_constraintStart_toEndOf="@+id/textViewAlienWeaponCostStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewAlienWeaponCostStatic" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponAmmo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zeroPlacedHolder"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAlienWeaponAmmoStatic"
+        app:layout_constraintStart_toEndOf="@+id/textViewAlienWeaponAmmoStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewAlienWeaponAmmoStatic" />
+
+    <TextView
+        android:id="@+id/textViewAlienWeaponType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/namePlacedHolder"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAlienWeaponManufacturerStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewAlienWeaponRangeStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewAlienWeaponManufacturerStatic" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
