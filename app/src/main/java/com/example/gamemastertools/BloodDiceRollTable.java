@@ -18,7 +18,7 @@ public class BloodDiceRollTable extends Fragment {
     private FragmentBloodDiceRollTableBinding binding;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentBloodDiceRollTableBinding.inflate(inflater, container, false);
         return binding.getRoot();
@@ -28,12 +28,8 @@ public class BloodDiceRollTable extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.btnBloodDiceRollTablePrevious.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        binding.btnBloodDiceRollTablePrevious.setOnClickListener(v ->
                 NavHostFragment.findNavController(BloodDiceRollTable.this)
-                        .navigate(R.id.action_blood_dice_roll_to_blood);
-            }
-        });
+                .navigate(R.id.action_blood_dice_roll_to_blood));
     }
 }

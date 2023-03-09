@@ -12,11 +12,15 @@
         tools:layout="@layout/fragment_first">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            android:id="@+id/action_FirstFragment_to_Blood"
             app:destination="@id/BloodFragment" />
         <action
-            android:id="@+id/action_FirstFragment_to_ThirdFragment"
+            android:id="@+id/action_FirstFragment_to_Alien"
             app:destination="@id/AlienFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_Houses"
+            app:destination="@id/HousesFragment" />
+
     </fragment>
 
     <fragment
@@ -26,7 +30,7 @@
         tools:layout="@layout/fragment_blood">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            android:id="@+id/action_Blood_to_FirstFragment"
             app:destination="@id/FirstFragment" />
         <action
             android:id="@+id/action_blood_to_blood_source_books"
@@ -50,7 +54,7 @@
         tools:layout="@layout/fragment_alien">
 
         <action
-            android:id="@+id/action_ThirdFragment_to_FirstFragment"
+            android:id="@+id/action_Alien_to_FirstFragment"
             app:destination="@id/FirstFragment" />
         <action
             android:id="@+id/action_alien_go_to_source_books"
@@ -71,6 +75,18 @@
             android:id="@+id/action_alien_go_to_alien_xeno"
             app:destination="@id/AlienXeno" />
 
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/HousesFragment"
+        android:name="com.example.gamemastertools.HousesFragment"
+        android:label="@string/fourth_fragment_label"
+        tools:layout="@layout/fragment_houses">
+
+        <action
+            android:id="@+id/action_Houses_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
 
     </fragment>
 
@@ -135,10 +151,10 @@
     </fragment>
 
     <fragment
-        android:id="@+id/AlienArmory"
-        android:name="com.example.gamemastertools.AlienArmory"
+        android:id="@+id/AlienArmoryWeapons"
+        android:name="com.example.gamemastertools.AlienArmoryWeapons"
         android:label="@string/alien_armory"
-        tools:layout="@layout/fragment_alien_armory">
+        tools:layout="@layout/fragment_alien_armory_weapons">
     </fragment>
 
     <fragment
@@ -178,6 +194,18 @@
         android:name="com.example.gamemastertools.AlienXenoRolls"
         android:label="@string/alien_xeno"
         tools:layout="@layout/fragment_alien_xeno_rolls">
+    </fragment>
+
+    <fragment
+        android:id="@+id/AlienArmory"
+        android:name="com.example.gamemastertools.AlienArmory"
+        android:label="@string/alien_armory"
+        tools:layout="@layout/fragment_alien_armory">
+
+        <action
+            android:id="@+id/action_armory_go_to_armory_weapons"
+            app:destination="@id/AlienArmoryWeapons" />
+
     </fragment>
 
 </navigation>

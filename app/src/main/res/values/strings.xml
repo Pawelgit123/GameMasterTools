@@ -19,6 +19,8 @@
     <string name="third_fragment_label">Alien RPG</string>
     <string name="alien_source_books">Alien-Source Books</string>
 
+    <string name="fourth_fragment_label">HotB RPG</string>
+
     <string name="blood">Blood n Honor</string>
     <string name="alien">Alien</string>
     <string name="house">Houses of the Blooded</string>
@@ -31,8 +33,9 @@
 
     <string name="plus">+</string>
     <string name="minus">-</string>
+    <string name="character_creation">Character creation</string>
 
-    //Battle
+    //Blood Battle
     <string name="createNewBattle">Create New Battle</string>
     <string name="withLeader">with Leader</string>
     <string name="onlyFighters">only Fighters</string>
@@ -72,7 +75,7 @@
     <string name="book_title_alien_infernos_fall">Infernos Fall</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    //Healing Table
+    //Blood Healing Table
     <string name="healing_wound_rank_one">Rank I</string>
     <string name="healing_wound_rank_two">Rank II</string>
     <string name="healing_wound_rank_three">Rank III</string>

@@ -87,10 +87,10 @@
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:justificationMode="inter_word"
         android:text="@string/namePlacedHolder"
         android:textColor="@color/teal_200"
         android:textSize="16sp"
-        android:justificationMode="inter_word"
         app:layout_constraintEnd_toEndOf="@+id/textViewPanicTitle"
         app:layout_constraintStart_toStartOf="@+id/textViewPanicTitle"
         app:layout_constraintTop_toBottomOf="@+id/textViewPanicTitle" />
@@ -108,4 +108,15 @@
         app:layout_constraintEnd_toEndOf="@+id/textPanicRollNumberRolled"
         app:layout_constraintStart_toStartOf="@+id/textPanicRollNumberRolled"
         app:layout_constraintTop_toBottomOf="@+id/textPanicRollNumberRolled" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="@string/previous"
+        android:backgroundTint="@color/aliengrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

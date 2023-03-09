@@ -20,7 +20,6 @@ public class AlienPanicRoll extends Fragment {
     private int panicLevelRolled = 0;
     private String panicTitle = "";
 
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -38,44 +37,30 @@ public class AlienPanicRoll extends Fragment {
         binding.textViewPanicTitle.setVisibility(View.INVISIBLE);
         binding.textPanicRollDescription.setVisibility(View.INVISIBLE);
 
-        binding.btnPlusPanicLevel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(panicLevel<15){
-                    panicLevel++;
-                }
-                binding.txtCurrentPanicLevel.setText(String.valueOf(panicLevel));
+        binding.btnPlusPanicLevel.setOnClickListener(v -> {
+            if(panicLevel<15){
+                panicLevel++;
             }
+            binding.txtCurrentPanicLevel.setText(String.valueOf(panicLevel));
         });
-        binding.btnMinusPanicLevel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(panicLevel > 1){
-                    panicLevel--;
-                }
-                binding.txtCurrentPanicLevel.setText(String.valueOf(panicLevel));
+        binding.btnMinusPanicLevel.setOnClickListener(v -> {
+            if(panicLevel > 1){
+                panicLevel--;
             }
+            binding.txtCurrentPanicLevel.setText(String.valueOf(panicLevel));
         });
 
-        binding.btnPanicRoll.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View v) {
+        binding.btnPanicRoll.setOnClickListener(v -> {
 
+            panicLevelRolled = AlienPanicRoller.panicRoll(panicLevel);
+            binding.textPanicRollNumberRolled.setText(String.valueOf(panicLevelRolled));
+            panicTitle = AlienPanicRoller.panicTitle(panicLevelRolled);
 
-                panicLevelRolled = AlienPanicRoller.panicRoll(panicLevel);
-                binding.textPanicRollNumberRolled.setText(String.valueOf(panicLevelRolled));
-                panicTitle = AlienPanicRoller.panicTitle(panicLevelRolled);
-
-                binding.textViewPanicTitle.setText(panicTitle);
-                binding.textViewPanicTitle.setVisibility(View.VISIBLE);
-                binding.textPanicRollDescription.setText(AlienPanicRoller.panicDescription(panicTitle));
-                binding.textPanicRollDescription.setVisibility(View.VISIBLE);
-
-
-            }
+            binding.textViewPanicTitle.setText(panicTitle);
+            binding.textViewPanicTitle.setVisibility(View.VISIBLE);
+            binding.textPanicRollDescription.setText(AlienPanicRoller.panicDescription(panicTitle));
+            binding.textPanicRollDescription.setVisibility(View.VISIBLE);
         });
-
-
     }
+
 }

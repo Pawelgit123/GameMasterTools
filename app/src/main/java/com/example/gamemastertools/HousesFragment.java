@@ -10,17 +10,17 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.gamemastertools.databinding.FragmentAlienArmoryBinding;
+import com.example.gamemastertools.databinding.FragmentHousesBinding;
 
-public class AlienArmory extends Fragment {
+public class HousesFragment extends Fragment {
 
-    private FragmentAlienArmoryBinding binding;
+    private FragmentHousesBinding binding;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        binding = FragmentAlienArmoryBinding.inflate(inflater,container,false);
+        binding = FragmentHousesBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
@@ -28,9 +28,9 @@ public class AlienArmory extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.btnAlienArmoryFirearms.setOnClickListener(v ->
-                NavHostFragment.findNavController(AlienArmory.this)
-                .navigate(R.id.action_armory_go_to_armory_weapons));
-    }
+        binding.buttonGoMenuHouses.setOnClickListener(v ->
+                NavHostFragment.findNavController(HousesFragment.this)
+                .navigate(R.id.action_Houses_to_FirstFragment));
 
+    }
 }
