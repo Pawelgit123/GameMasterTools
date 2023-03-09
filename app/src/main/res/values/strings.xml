@@ -21,11 +21,13 @@
 
     <string name="blood">Blood n Honor</string>
     <string name="alien">Alien</string>
+    <string name="house">Houses of the Blooded</string>
 
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="developedBy">Developed by: Paweł Gałązka</string>
     <string name="imageLogoDescription">mainLogo</string>
+    <string name="disc">-> In order to understand the app you should provide yourself with proper books</string>
 
     <string name="plus">+</string>
     <string name="minus">-</string>

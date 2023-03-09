@@ -29,8 +29,8 @@
         android:id="@+id/btnBloodSourceBooks"
         android:layout_width="@dimen/button_x"
         android:layout_height="@dimen/button_y"
+        android:layout_marginTop="150dp"
         android:text="@string/source_books"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
