@@ -19,7 +19,7 @@ public class AlienWoundRoll extends Fragment {
     private FragmentAlienWoundRollBinding binding;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         binding = FragmentAlienWoundRollBinding.inflate(inflater, container, false);
@@ -39,54 +39,42 @@ public class AlienWoundRoll extends Fragment {
         binding.textViewWoundTimeLimit.setVisibility(View.INVISIBLE);
         binding.textViewWoundHealingTime.setVisibility(View.INVISIBLE);
 
-        binding.btnWoundRoll.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        binding.btnWoundRoll.setOnClickListener(v -> {
 
-                if (binding.radioButtonWoundOriginal.isActivated()){
-                    String s = AlienWoundRoller.woundRollOriginal();
-                    binding.textViewWoundRollNumberRolled.setText(s);
-                    setWoundTextForAll(s);
+            if (binding.radioButtonWoundOriginal.isActivated()){
+                String s = AlienWoundRoller.woundRollOriginal();
+                binding.textViewWoundRollNumberRolled.setText(s);
+                setWoundTextForAll(s);
 
-                } else if (binding.radioButtonWoundLow.isActivated()){
-                    String s = AlienWoundRoller.woundRollLow();
-                    binding.textViewWoundRollNumberRolled.setText(s);
-                    setWoundTextForAll(s);
+            } else if (binding.radioButtonWoundLow.isActivated()){
+                String s = AlienWoundRoller.woundRollLow();
+                binding.textViewWoundRollNumberRolled.setText(s);
+                setWoundTextForAll(s);
 
-                } else if (binding.radioButtonWoundHigh.isActivated()){
-                    String s = AlienWoundRoller.woundRollHigh();
-                    binding.textViewWoundRollNumberRolled.setText(s);
-                    setWoundTextForAll(s);
-                }
+            } else if (binding.radioButtonWoundHigh.isActivated()){
+                String s = AlienWoundRoller.woundRollHigh();
+                binding.textViewWoundRollNumberRolled.setText(s);
+                setWoundTextForAll(s);
             }
         });
 
-        binding.radioButtonWoundOriginal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                binding.radioButtonWoundOriginal.setActivated(true);
-                binding.radioButtonWoundLow.setActivated(false);
-                binding.radioButtonWoundHigh.setActivated(false);
-            }
+        binding.radioButtonWoundOriginal.setOnClickListener(v -> {
+            binding.radioButtonWoundOriginal.setActivated(true);
+            binding.radioButtonWoundLow.setActivated(false);
+            binding.radioButtonWoundHigh.setActivated(false);
         });
 
-        binding.radioButtonWoundLow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                binding.radioButtonWoundOriginal.setActivated(false);
-                binding.radioButtonWoundLow.setActivated(true);
-                binding.radioButtonWoundHigh.setActivated(false);
+        binding.radioButtonWoundLow.setOnClickListener(v -> {
+            binding.radioButtonWoundOriginal.setActivated(false);
+            binding.radioButtonWoundLow.setActivated(true);
+            binding.radioButtonWoundHigh.setActivated(false);
 
-            }
         });
 
-        binding.radioButtonWoundHigh.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                binding.radioButtonWoundOriginal.setActivated(false);
-                binding.radioButtonWoundLow.setActivated(false);
-                binding.radioButtonWoundHigh.setActivated(true);
-            }
+        binding.radioButtonWoundHigh.setOnClickListener(v -> {
+            binding.radioButtonWoundOriginal.setActivated(false);
+            binding.radioButtonWoundLow.setActivated(false);
+            binding.radioButtonWoundHigh.setActivated(true);
         });
     }
 

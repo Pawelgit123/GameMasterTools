@@ -29,61 +29,33 @@ public class AlienFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonGoMenuAlien.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        binding.buttonGoMenuAlien.setOnClickListener(v ->
                 NavHostFragment.findNavController(AlienFragment.this)
-                        .navigate(R.id.action_ThirdFragment_to_FirstFragment);
-            }
-        });
+                .navigate(R.id.action_Alien_to_FirstFragment));
 
-        binding.btnAlienSourceBooks.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        binding.btnAlienSourceBooks.setOnClickListener(v ->
                 NavHostFragment.findNavController(AlienFragment.this)
-                        .navigate(R.id.action_alien_go_to_source_books);
-            }
-        });
+                .navigate(R.id.action_alien_go_to_source_books));
 
-        binding.btnAlienArmory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        binding.btnAlienArmory.setOnClickListener(v ->
                 NavHostFragment.findNavController(AlienFragment.this)
-                        .navigate(R.id.action_alien_go_to_alien_armory);
-            }
-        });
+                .navigate(R.id.action_alien_go_to_alien_armory));
 
-        binding.btnAlienRandomItem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        binding.btnAlienRandomItem.setOnClickListener(v ->
                 NavHostFragment.findNavController(AlienFragment.this)
-                        .navigate(R.id.action_alien_go_to_alien_random_item);
-            }
-        });
+                .navigate(R.id.action_alien_go_to_alien_random_item));
 
-        binding.btnAlienPanicRoll.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        binding.btnAlienPanicRoll.setOnClickListener(v ->
                 NavHostFragment.findNavController(AlienFragment.this)
-                        .navigate(R.id.action_alien_go_to_alien_panic_roll);
-            }
-        });
+                .navigate(R.id.action_alien_go_to_alien_panic_roll));
 
-        binding.btnAlienWoundRoll.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        binding.btnAlienWoundRoll.setOnClickListener(v ->
                 NavHostFragment.findNavController(AlienFragment.this)
-                        .navigate(R.id.action_alien_go_to_alien_wound_roll);
-            }
-        });
+                .navigate(R.id.action_alien_go_to_alien_wound_roll));
 
-        binding.btnAlienXenoGo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        binding.btnAlienXenoGo.setOnClickListener(v ->
                 NavHostFragment.findNavController(AlienFragment.this)
-                        .navigate(R.id.action_alien_go_to_alien_xeno);
-            }
-        });
+                .navigate(R.id.action_alien_go_to_alien_xeno));
     }
 
     @Override

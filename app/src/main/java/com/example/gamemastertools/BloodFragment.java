@@ -16,67 +16,45 @@ public class BloodFragment extends Fragment {
 
     private FragmentBloodBinding binding;
 
-
     @Override
     public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState
-    ) {
+            Bundle savedInstanceState) {
 
         binding = FragmentBloodBinding.inflate(inflater, container, false);
         return binding.getRoot();
-
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonGoMenuBlood.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        binding.buttonGoMenuBlood.setOnClickListener(v ->
                 NavHostFragment.findNavController(BloodFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
-            }
+                .navigate(R.id.action_Blood_to_FirstFragment));
+
+        binding.btnBloodSourceBooks.setOnClickListener(v ->
+                NavHostFragment.findNavController(BloodFragment.this)
+                .navigate(R.id.action_blood_to_blood_source_books));
+
+        binding.btnBloodBattleCreate.setOnClickListener(v ->
+                NavHostFragment.findNavController(BloodFragment.this)
+                .navigate(R.id.action_blood_to_blood_battle_creator));
+
+        binding.btnBloodHealing.setOnClickListener(v -> {
+
+            HealingModificationPack healingModificationPack = new HealingModificationPack();
+            healingModificationPack.initialiseMods(healingModificationPack);
+
+            Bundle bundle = new Bundle();
+            bundle.putParcelable("healingPack", healingModificationPack);
+
+            NavHostFragment.findNavController(BloodFragment.this)
+                    .navigate(R.id.action_blood_to_blood_healing, bundle);
         });
 
-        binding.btnBloodSourceBooks.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        binding.btnBloodDiceTable.setOnClickListener(v ->
                 NavHostFragment.findNavController(BloodFragment.this)
-                        .navigate(R.id.action_blood_to_blood_source_books);
-            }
-        });
-
-        binding.btnBloodBattleCreate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                NavHostFragment.findNavController(BloodFragment.this)
-                        .navigate(R.id.action_blood_to_blood_battle_creator);
-            }
-        });
-
-        binding.btnBloodHealing.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                HealingModificationPack healingModificationPack = new HealingModificationPack();
-                healingModificationPack.initialiseMods(healingModificationPack);
-
-                Bundle bundle = new Bundle();
-                bundle.putParcelable("healingPack", healingModificationPack);
-
-                NavHostFragment.findNavController(BloodFragment.this)
-                        .navigate(R.id.action_blood_to_blood_healing, bundle);
-            }
-        });
-
-        binding.btnBloodDiceTable.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                NavHostFragment.findNavController(BloodFragment.this)
-                        .navigate(R.id.action_blood_to_blood_dice_roll);
-            }
-        });
+                .navigate(R.id.action_blood_to_blood_dice_roll));
     }
 
     @Override

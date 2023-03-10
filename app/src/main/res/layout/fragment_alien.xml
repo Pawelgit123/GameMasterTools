@@ -19,11 +19,11 @@
         android:id="@+id/button_go_menu_alien"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
         android:text="@string/previous"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAlienXenoGo" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnAlienSourceBooks"
@@ -40,9 +40,9 @@
         android:layout_width="@dimen/button_x"
         android:layout_height="@dimen/button_y"
         android:text="@string/alien_armory_button"
-        app:layout_constraintEnd_toEndOf="@+id/btnAlienSourceBooks"
-        app:layout_constraintStart_toStartOf="@+id/btnAlienSourceBooks"
-        app:layout_constraintTop_toBottomOf="@+id/btnAlienSourceBooks" />
+        app:layout_constraintEnd_toEndOf="@+id/btnAlienCharacterCreation"
+        app:layout_constraintStart_toStartOf="@+id/btnAlienCharacterCreation"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlienCharacterCreation" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -58,6 +58,7 @@
         android:id="@+id/btnAlienRandomItem"
         android:layout_width="@dimen/button_x"
         android:layout_height="@dimen/button_y"
+        android:backgroundTint="@color/aliengrey"
         android:text="@string/alien_random_item_button"
         app:layout_constraintEnd_toEndOf="@+id/btnAlienArmory"
         app:layout_constraintStart_toStartOf="@+id/btnAlienArmory"
@@ -89,4 +90,14 @@
         app:layout_constraintEnd_toEndOf="@+id/btnAlienWoundRoll"
         app:layout_constraintStart_toStartOf="@+id/btnAlienWoundRoll"
         app:layout_constraintTop_toBottomOf="@+id/btnAlienWoundRoll" />
+
+    <Button
+        android:id="@+id/btnAlienCharacterCreation"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:text="@string/character_creation"
+        android:backgroundTint="@color/aliengrey"
+        app:layout_constraintEnd_toEndOf="@+id/btnAlienSourceBooks"
+        app:layout_constraintStart_toStartOf="@+id/btnAlienSourceBooks"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlienSourceBooks" />
 </androidx.constraintlayout.widget.ConstraintLayout>

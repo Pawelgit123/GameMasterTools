@@ -25,7 +25,7 @@ public class BloodBattleSide extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         binding = FragmentBloodBattleSideBinding.inflate(inflater,container, false);
@@ -47,14 +47,11 @@ public class BloodBattleSide extends Fragment {
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(battleAdapter);
 
-        binding.btnBloodBattleSideRollForInitiative.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                battle.rollForInitiative();
+        binding.btnBloodBattleSideRollForInitiative.setOnClickListener(v -> {
+            battle.rollForInitiative();
 
-                recyclerView.setAdapter(battleAdapter);
+            recyclerView.setAdapter(battleAdapter);
 
-            }
         });
 
 

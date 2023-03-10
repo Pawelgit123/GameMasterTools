@@ -19,11 +19,11 @@
         android:id="@+id/button_go_menu_blood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
         android:text="@string/previous"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBloodDiceTable" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnBloodSourceBooks"
@@ -49,9 +49,9 @@
         android:layout_width="@dimen/button_x"
         android:layout_height="@dimen/button_y"
         android:text="@string/battle_creator"
-        app:layout_constraintEnd_toEndOf="@+id/btnBloodSourceBooks"
-        app:layout_constraintStart_toStartOf="@+id/btnBloodSourceBooks"
-        app:layout_constraintTop_toBottomOf="@+id/btnBloodSourceBooks" />
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/btnBloodDiceTable"
@@ -69,8 +69,18 @@
         android:src="@drawable/swords"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/button_x"
+        android:layout_height="@dimen/button_y"
+        android:backgroundTint="@color/aliengrey"
+        android:text="@string/character_creation"
+        app:layout_constraintEnd_toEndOf="@+id/btnBloodSourceBooks"
+        app:layout_constraintStart_toStartOf="@+id/btnBloodSourceBooks"
+        app:layout_constraintTop_toBottomOf="@+id/btnBloodSourceBooks" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,21 +29,17 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonGoBlood.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        binding.buttonGoBlood.setOnClickListener(v ->
                 NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
-            }
-        });
+                .navigate(R.id.action_FirstFragment_to_Blood));
 
-        binding.buttonGoAlien.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        binding.buttonGoAlien.setOnClickListener(v ->
                 NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_ThirdFragment);
-            }
-        });
+                .navigate(R.id.action_FirstFragment_to_Alien));
+
+        binding.buttonGoToHouse.setOnClickListener(v ->
+                NavHostFragment.findNavController(FirstFragment.this)
+                .navigate(R.id.action_FirstFragment_to_Houses));
 
     }
 

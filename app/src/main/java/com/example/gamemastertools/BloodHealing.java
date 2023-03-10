@@ -64,12 +64,8 @@ public class BloodHealing extends Fragment {
         recyclerView.setAdapter(healingModificationAdapter);
 
 
-        binding.btbBloodHealingTablePrevious.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        binding.btbBloodHealingTablePrevious.setOnClickListener(v ->
                 NavHostFragment.findNavController(BloodHealing.this)
-                        .navigate(R.id.action_blood_healing_table_to_blood);
-            }
-        });
+                .navigate(R.id.action_blood_healing_table_to_blood));
     }
 }

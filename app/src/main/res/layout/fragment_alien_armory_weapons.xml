@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlienArmoryWeapons">
+
+    <ScrollView
+        android:id="@+id/AlienArmoryScroll"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="125dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnArmoryRandomWeapon"
+        app:layout_constraintEnd_toEndOf="@+id/textViewArmoryStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewArmoryStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewArmoryStatic">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/AlienArmoryRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnArmoryRandomWeapon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Pick Random"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewArmoryStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/ocr_a_std_regular"
+        android:text="Firearms"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Pandora"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup2"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Elysium"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
+        app:layout_constraintBottom_toBottomOf="@+id/switch1"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="@+id/switch1"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Kovac"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="@+id/switch1"
+        app:layout_constraintStart_toStartOf="@+id/switch1"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        />
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Auraxis"
+        android:textStyle="bold"
+        android:textColor="@color/alienbrown"
+        app:layout_constraintEnd_toEndOf="@+id/switch2"
+        app:layout_constraintStart_toStartOf="@+id/switch2"
+        app:layout_constraintTop_toBottomOf="@+id/switch2"
+        tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Security"
+        android:textStyle="bold"
+        android:textColor="@color/alienviolet"
+        app:layout_constraintEnd_toEndOf="@+id/switch3"
+        app:layout_constraintStart_toStartOf="@+id/switch3"
+        app:layout_constraintTop_toBottomOf="@+id/switch3"
+        tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewArmoryStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewArmoryStatic">
+
+        <RadioButton
+            android:id="@+id/radioBtnArmoryOriginal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="Original" />
+
+        <RadioButton
+            android:id="@+id/radioBtnArmoryExpanded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="Expanded" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
