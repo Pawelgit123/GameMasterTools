@@ -162,7 +162,7 @@ public class AlienArmoryWeapons extends Fragment{
             weaponBonusDialog=dialogView.findViewById(R.id.textViewAlienWeaponBonus);
             weaponDamageDialog=dialogView.findViewById(R.id.textViewAlienWeaponDamage);
             weaponAmmoDialog=dialogView.findViewById(R.id.textViewAlienWeaponAmmo);
-            weaponRangeDialog=dialogView.findViewById(R.id.textViewAlienWeaponRange);
+            weaponRangeDialog=dialogView.findViewById(R.id.textViewAlienArmorAir);
             weaponWeightDialog=dialogView.findViewById(R.id.textViewAlienWeaponWeight);
             weaponCostDialog=dialogView.findViewById(R.id.textViewAlienWeaponCost);
             weaponSpecialsDialog=dialogView.findViewById(R.id.textViewAlienWeaponSpecials);

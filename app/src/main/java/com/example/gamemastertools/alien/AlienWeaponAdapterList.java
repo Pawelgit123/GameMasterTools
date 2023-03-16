@@ -2,8 +2,6 @@ package com.example.gamemastertools.alien;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
-import android.app.Dialog;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +9,6 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.gamemastertools.R;
@@ -63,7 +60,7 @@ public class AlienWeaponAdapterList extends RecyclerView.Adapter<AlienWeaponAdap
             weaponBonusDialog=dialogView.findViewById(R.id.textViewAlienWeaponBonus);
             weaponDamageDialog=dialogView.findViewById(R.id.textViewAlienWeaponDamage);
             weaponAmmoDialog=dialogView.findViewById(R.id.textViewAlienWeaponAmmo);
-            weaponRangeDialog=dialogView.findViewById(R.id.textViewAlienWeaponRange);
+            weaponRangeDialog=dialogView.findViewById(R.id.textViewAlienArmorAir);
             weaponWeightDialog=dialogView.findViewById(R.id.textViewAlienWeaponWeight);
             weaponCostDialog=dialogView.findViewById(R.id.textViewAlienWeaponCost);
             weaponSpecialsDialog=dialogView.findViewById(R.id.textViewAlienWeaponSpecials);

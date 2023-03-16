@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/AlienArmoryScrollProtection"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="125dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnArmoryRandomArmor"
+        app:layout_constraintEnd_toEndOf="@+id/textViewArmoryProtectionStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewArmoryProtectionStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewArmoryProtectionStatic">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/AlienArmoryRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnArmoryRandomArmor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Pick Random"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewArmoryProtectionStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/ocr_a_std_regular"
+        android:text="Protection"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewArmoryProtectionStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewArmoryProtectionStatic">
+
+        <RadioButton
+            android:id="@+id/radioBtnArmoryOriginalArmor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Original"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioBtnArmoryExpandedArmor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expanded"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
