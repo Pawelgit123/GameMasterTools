@@ -38,12 +38,12 @@
         android:id="@+id/textViewAlienArmorComms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
+        android:layout_marginStart="100dp"
         android:text="[communication]"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewAlienArmorAirStatic"
-        app:layout_constraintStart_toStartOf="@+id/textViewAlienArmorAir"
-        app:layout_constraintTop_toTopOf="@+id/textViewAlienArmorAirStatic" />
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAlienArmorRatingStatic"
+        app:layout_constraintStart_toStartOf="@+id/textViewAlienArmorBonus"
+        app:layout_constraintTop_toTopOf="@+id/textViewAlienArmorRatingStatic" />
 
     <TextView
         android:id="@+id/textViewAlienArmorAirStatic"
@@ -213,6 +213,16 @@
         android:textColor="@color/red"
         app:layout_constraintStart_toStartOf="@+id/textViewAlienArmorABC"
         app:layout_constraintTop_toBottomOf="@+id/textViewAlienArmorABC" />
+
+    <TextView
+        android:id="@+id/textViewAlienArmorAcidResistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="[ACID resistant]"
+        android:textColor="@color/green_deep"
+        app:layout_constraintStart_toStartOf="@+id/textViewAlienArmorFireResistant"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAlienArmorFireResistant" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

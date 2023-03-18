@@ -11,6 +11,7 @@ public class AlienArmor {
     boolean abc;
     boolean vacuum;
     boolean fire;
+    boolean acid;
     String additional;
     String negatives;
     String type;
@@ -88,6 +89,14 @@ public class AlienArmor {
         this.fire = fire;
     }
 
+    public boolean isAcid() {
+        return acid;
+    }
+
+    public void setAcid(boolean acid) {
+        this.acid = acid;
+    }
+
     public String getAdditional() {
         return additional;
     }
@@ -131,6 +140,7 @@ public class AlienArmor {
         boolean abc;
         boolean vacuum;
         boolean fire;
+        boolean acid;
         String additional;
         String negatives;
         String type;
@@ -180,6 +190,11 @@ public class AlienArmor {
             return this;
         }
 
+        public AlienArmor.Builder acid(Boolean acid){
+            this.acid = acid;
+            return this;
+        }
+
         public AlienArmor.Builder additional(String additional){
             this.additional = additional;
             return this;
@@ -193,6 +208,23 @@ public class AlienArmor {
         public AlienArmor.Builder type(String type){
             this.type = type;
             return this;
+        }
+
+        public AlienArmor build(){
+            AlienArmor alienArmor = new AlienArmor();
+            alienArmor.name = this.name;
+            alienArmor.weight = this.weight;
+            alienArmor.communication = this.communication;
+            alienArmor.cost = this.cost;
+            alienArmor.air = this.air;
+            alienArmor.abc = this.abc;
+            alienArmor.vacuum = this.vacuum;
+            alienArmor.fire = this.fire;
+            alienArmor.acid = this.acid;
+            alienArmor.additional = this.additional;
+            alienArmor.negatives = this.negatives;
+            alienArmor.type = this.type;
+            return alienArmor;
         }
 
 
