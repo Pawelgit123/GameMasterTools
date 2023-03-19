@@ -10,6 +10,7 @@
         android:layout_width="350dp"
         android:layout_height="400dp"
         android:layout_marginTop="125dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/btnArmoryRandomArmor"
         app:layout_constraintEnd_toEndOf="@+id/textViewArmoryProtectionStatic"
         app:layout_constraintStart_toStartOf="@+id/textViewArmoryProtectionStatic"

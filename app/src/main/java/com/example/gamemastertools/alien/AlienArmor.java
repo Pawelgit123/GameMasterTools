@@ -1,6 +1,6 @@
 package com.example.gamemastertools.alien;
 
-public class AlienArmor {
+public class AlienArmor implements Comparable<AlienArmor>{
 
     String name;
     String armorValue;
@@ -129,6 +129,26 @@ public class AlienArmor {
         this.listType = listType;
     }
 
+    @Override
+    public int compareTo(AlienArmor o) {
+        return Integer.compare(compareArmorType(), o.compareArmorType());
+    }
+
+    public int compareArmorType(){
+
+        switch (getType()){
+            default: return 0;
+            case "Shield": return 1;
+            case "Personal Armor": return 2;
+            case "Personal Armor+": return 3;
+            case "Space Suit": return 4;
+            case "Power Suit": return 5;
+            case "Specialized Suit": return 6;
+            case "Power Armor": return 7;
+
+        }
+    }
+
     public static final class Builder{
 
         String name;
@@ -214,6 +234,7 @@ public class AlienArmor {
             AlienArmor alienArmor = new AlienArmor();
             alienArmor.name = this.name;
             alienArmor.weight = this.weight;
+            alienArmor.armorValue = this.armorValue;
             alienArmor.communication = this.communication;
             alienArmor.cost = this.cost;
             alienArmor.air = this.air;

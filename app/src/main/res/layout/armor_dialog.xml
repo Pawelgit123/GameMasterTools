@@ -15,7 +15,7 @@
         android:fontFamily="@font/ocr_a_std_regular"
         android:gravity="center"
         android:text="TextView"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/teal_200"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Armor Rating:"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/teal_200"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textViewAlienArmorTypeStatic"
         app:layout_constraintStart_toStartOf="@+id/textViewAlienArmorTypeStatic"
@@ -38,33 +38,33 @@
         android:id="@+id/textViewAlienArmorComms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
         android:text="[communication]"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewAlienArmorRatingStatic"
-        app:layout_constraintStart_toStartOf="@+id/textViewAlienArmorBonus"
-        app:layout_constraintTop_toTopOf="@+id/textViewAlienArmorRatingStatic" />
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewAlienArmorTypeStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewAlienArmorTypeStatic" />
 
     <TextView
         android:id="@+id/textViewAlienArmorAirStatic"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Air:"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/teal_200"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textViewAlienArmorRatingStatic"
         app:layout_constraintTop_toBottomOf="@+id/textViewAlienArmorRatingStatic" />
 
     <TextView
         android:id="@+id/textViewAlienArmorWeightStatic"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Weight:"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/teal_200"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textViewAlienArmorAirStatic"
         app:layout_constraintStart_toStartOf="@+id/textViewAlienArmorAirStatic"
         app:layout_constraintTop_toBottomOf="@+id/textViewAlienArmorAirStatic" />
 
@@ -75,32 +75,30 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Protection type:"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/teal_200"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewAlienArmorDialogArmorName" />
 
     <TextView
         android:id="@+id/textViewAlienArmorCostStatic"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Cost:"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/teal_200"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textViewAlienArmorWeightStatic"
         app:layout_constraintStart_toStartOf="@+id/textViewAlienArmorWeightStatic"
         app:layout_constraintTop_toBottomOf="@+id/textViewAlienArmorWeightStatic" />
 
     <TextView
         android:id="@+id/textViewAlienArmorNegativesStatic"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="DisAdv:"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/teal_200"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textViewAlienArmorCostStatic"
         app:layout_constraintStart_toStartOf="@+id/textViewAlienArmorCostStatic"
         app:layout_constraintTop_toBottomOf="@+id/textViewAlienArmorCostStatic" />
 
@@ -110,17 +108,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="[ABC shielding]"
-        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
         app:layout_constraintStart_toStartOf="@+id/textViewAlienArmorVacuum"
         app:layout_constraintTop_toBottomOf="@+id/textViewAlienArmorVacuum" />
 
     <TextView
         android:id="@+id/textViewAlienArmorSpecialsStatic"
-        android:layout_width="90dp"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Special:"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/teal_200"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textViewAlienArmorNegativesStatic"
         app:layout_constraintTop_toBottomOf="@+id/textViewAlienArmorNegativesStatic" />
@@ -131,7 +130,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="[vacuum protection]"
-        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
         app:layout_constraintStart_toStartOf="@+id/textViewAlienArmorComms"
         app:layout_constraintTop_toBottomOf="@+id/textViewAlienArmorComms" />
 
@@ -146,7 +146,7 @@
 
     <TextView
         android:id="@+id/textViewAlienArmorSpecials"
-        android:layout_width="180dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="@string/namePlacedHolder"
         android:textColor="@color/white"
@@ -154,9 +154,10 @@
         app:layout_constraintTop_toTopOf="@+id/textViewAlienArmorSpecialsStatic" />
 
     <TextView
-        android:id="@+id/textViewAlienArmorBonus"
+        android:id="@+id/textViewAlienArmorRating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:text="@string/zeroPlacedHolder"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -196,7 +197,7 @@
 
     <TextView
         android:id="@+id/textViewAlienArmorNegatives"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="@string/zeroPlacedHolder"
         android:textColor="@color/white"
@@ -210,6 +211,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="[FIRE resistant]"
+        android:textStyle="bold"
         android:textColor="@color/red"
         app:layout_constraintStart_toStartOf="@+id/textViewAlienArmorABC"
         app:layout_constraintTop_toBottomOf="@+id/textViewAlienArmorABC" />
@@ -220,6 +222,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="[ACID resistant]"
+        android:textStyle="bold"
         android:textColor="@color/green_deep"
         app:layout_constraintStart_toStartOf="@+id/textViewAlienArmorFireResistant"
         app:layout_constraintTop_toBottomOf="@+id/textViewAlienArmorFireResistant" />

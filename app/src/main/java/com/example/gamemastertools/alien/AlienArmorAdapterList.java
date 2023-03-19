@@ -31,12 +31,13 @@ public class AlienArmorAdapterList extends RecyclerView.Adapter<AlienArmorAdapte
         return new AlienArmorHolderList(v);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull AlienArmorHolderList holder, int position) {
 
         AlienArmor alienArmor = alienArmorList.get(position);
         holder.name.setText(alienArmor.getName());
-        holder.type.setText(alienArmor.getType());
+        holder.type.setText("["+alienArmor.getType()+"]");
 
         holder.itemView.setOnClickListener(v -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
@@ -51,12 +52,13 @@ public class AlienArmorAdapterList extends RecyclerView.Adapter<AlienArmorAdapte
             TextView armorABC;
             TextView armorVacuum;
             TextView armorFire;
+            TextView armorACID;
             TextView armorAdditional;
             TextView armorNegatives;
             TextView armorType;
 
             armorName = dialogView.findViewById(R.id.textViewAlienArmorDialogArmorName);
-            armorRating = dialogView.findViewById(R.id.textViewAlienArmorBonus);
+            armorRating = dialogView.findViewById(R.id.textViewAlienArmorRating);
             armorWeight = dialogView.findViewById(R.id.textViewAlienArmorWeight);
             armorComms = dialogView.findViewById(R.id.textViewAlienArmorComms);
             armorCost = dialogView.findViewById(R.id.textViewAlienArmorCost);
@@ -64,6 +66,7 @@ public class AlienArmorAdapterList extends RecyclerView.Adapter<AlienArmorAdapte
             armorABC = dialogView.findViewById(R.id.textViewAlienArmorABC);
             armorVacuum = dialogView.findViewById(R.id.textViewAlienArmorVacuum);
             armorFire = dialogView.findViewById(R.id.textViewAlienArmorFireResistant);
+            armorACID = dialogView.findViewById(R.id.textViewAlienArmorAcidResistance);
             armorAdditional = dialogView.findViewById(R.id.textViewAlienArmorSpecials);
             armorNegatives = dialogView.findViewById(R.id.textViewAlienArmorNegatives);
             armorType = dialogView.findViewById(R.id.textViewAlienArmorType);
@@ -71,7 +74,7 @@ public class AlienArmorAdapterList extends RecyclerView.Adapter<AlienArmorAdapte
             armorName.setText(alienArmor.getName());
             armorRating.setText(alienArmor.getArmorValue());
             armorWeight.setText(alienArmor.getWeight());
-            armorCost.setText(String.valueOf(alienArmor.getCost()));
+            armorCost.setText("$"+(alienArmor.getCost()));
             armorAir.setText(String.valueOf(alienArmor.getAir()));
             armorAdditional.setText(alienArmor.getAdditional());
             armorNegatives.setText(alienArmor.getNegatives());
@@ -81,6 +84,7 @@ public class AlienArmorAdapterList extends RecyclerView.Adapter<AlienArmorAdapte
             armorABC.setVisibility(View.INVISIBLE);
             armorComms.setVisibility(View.INVISIBLE);
             armorVacuum.setVisibility(View.INVISIBLE);
+            armorACID.setVisibility(View.INVISIBLE);
 
             if(alienArmor.fire){
                 armorFire.setVisibility(View.VISIBLE);
@@ -93,6 +97,9 @@ public class AlienArmorAdapterList extends RecyclerView.Adapter<AlienArmorAdapte
             }
             if(alienArmor.vacuum){
                 armorVacuum.setVisibility(View.VISIBLE);
+            }
+            if(alienArmor.acid){
+                armorACID.setVisibility(View.VISIBLE);
             }
 
             builder.setView(dialogView);

@@ -1,5 +1,6 @@
 package com.example.gamemastertools;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -39,6 +40,7 @@ public class AlienArmoryProtection extends Fragment {
     }
 
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -53,11 +55,10 @@ public class AlienArmoryProtection extends Fragment {
             list.clear();
             List<AlienArmor> originalList = alienArmorOrganizer.createOriginalList();
             list.addAll(originalList);
-//                list.sort(AlienArmor::compareTo);
+            list.sort(AlienArmor::compareTo);
 
             alienArmorAdapterList = new AlienArmorAdapterList(list);
             recyclerView = view.findViewById(R.id.AlienArmoryRecyclerView);
-            //TODO: is ok?
             recyclerView.setLayoutManager(new GridLayoutManager(binding.getRoot().getContext(),1));
             recyclerView.setHasFixedSize(true);
             recyclerView.setAdapter(alienArmorAdapterList);
@@ -68,11 +69,10 @@ public class AlienArmoryProtection extends Fragment {
             list.clear();
             List<AlienArmor> expandedList = alienArmorOrganizer.createExpandedList();
             list.addAll(expandedList);
-//                list.sort(AlienArmor::compareTo);
+            list.sort(AlienArmor::compareTo);
 
             alienArmorAdapterList = new AlienArmorAdapterList(list);
             recyclerView = view.findViewById(R.id.AlienArmoryRecyclerView);
-            //TODO: is ok?
             recyclerView.setLayoutManager(new GridLayoutManager(binding.getRoot().getContext(),1));
             recyclerView.setHasFixedSize(true);
             recyclerView.setAdapter(alienArmorAdapterList);
@@ -94,6 +94,7 @@ public class AlienArmoryProtection extends Fragment {
             TextView armorCost;
             TextView armorAir;
             TextView armorABC;
+            TextView armorACID;
             TextView armorVacuum;
             TextView armorFire;
             TextView armorAdditional;
@@ -101,7 +102,7 @@ public class AlienArmoryProtection extends Fragment {
             TextView armorType;
 
             armorName = dialogView.findViewById(R.id.textViewAlienArmorDialogArmorName);
-            armorRating = dialogView.findViewById(R.id.textViewAlienArmorBonus);
+            armorRating = dialogView.findViewById(R.id.textViewAlienArmorRating);
             armorWeight = dialogView.findViewById(R.id.textViewAlienArmorWeight);
             armorComms = dialogView.findViewById(R.id.textViewAlienArmorComms);
             armorCost = dialogView.findViewById(R.id.textViewAlienArmorCost);
@@ -109,6 +110,7 @@ public class AlienArmoryProtection extends Fragment {
             armorABC = dialogView.findViewById(R.id.textViewAlienArmorABC);
             armorVacuum = dialogView.findViewById(R.id.textViewAlienArmorVacuum);
             armorFire = dialogView.findViewById(R.id.textViewAlienArmorFireResistant);
+            armorACID = dialogView.findViewById(R.id.textViewAlienArmorAcidResistance);
             armorAdditional = dialogView.findViewById(R.id.textViewAlienArmorSpecials);
             armorNegatives = dialogView.findViewById(R.id.textViewAlienArmorNegatives);
             armorType = dialogView.findViewById(R.id.textViewAlienArmorType);
@@ -116,7 +118,7 @@ public class AlienArmoryProtection extends Fragment {
             armorName.setText(alienArmor.getName());
             armorRating.setText(alienArmor.getArmorValue());
             armorWeight.setText(alienArmor.getWeight());
-            armorCost.setText(String.valueOf(alienArmor.getCost()));
+            armorCost.setText("$"+(alienArmor.getCost()));
             armorAir.setText(String.valueOf(alienArmor.getAir()));
             armorAdditional.setText(alienArmor.getAdditional());
             armorNegatives.setText(alienArmor.getNegatives());
@@ -126,6 +128,7 @@ public class AlienArmoryProtection extends Fragment {
             armorABC.setVisibility(View.INVISIBLE);
             armorComms.setVisibility(View.INVISIBLE);
             armorVacuum.setVisibility(View.INVISIBLE);
+            armorACID.setVisibility(View.INVISIBLE);
 
             if(alienArmor.isFire()){
                 armorFire.setVisibility(View.VISIBLE);
@@ -138,6 +141,9 @@ public class AlienArmoryProtection extends Fragment {
             }
             if(alienArmor.isVacuum()){
                 armorVacuum.setVisibility(View.VISIBLE);
+            }
+            if(alienArmor.isAcid()){
+                armorACID.setVisibility(View.VISIBLE);
             }
 
             builder.setView(dialogView);
