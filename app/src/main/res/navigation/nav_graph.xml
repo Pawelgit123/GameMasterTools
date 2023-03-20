@@ -158,6 +158,13 @@
     </fragment>
 
     <fragment
+        android:id="@+id/AlienArmoryProtection"
+        android:name="com.example.gamemastertools.AlienArmoryProtection"
+        android:label="@string/alien_armory"
+        tools:layout="@layout/fragment_alien_armory_protection">
+    </fragment>
+
+    <fragment
         android:id="@+id/AlienRandomItem"
         android:name="com.example.gamemastertools.AlienRandomItem"
         android:label="@string/alien_random_item_"
@@ -205,6 +212,10 @@
         <action
             android:id="@+id/action_armory_go_to_armory_weapons"
             app:destination="@id/AlienArmoryWeapons" />
+
+        <action
+            android:id="@+id/action_armory_go_to_armory_protection"
+            app:destination="@+id/AlienArmoryProtection"/>
 
     </fragment>
 

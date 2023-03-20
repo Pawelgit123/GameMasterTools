@@ -31,6 +31,10 @@ public class AlienArmory extends Fragment {
         binding.btnAlienArmoryFirearms.setOnClickListener(v ->
                 NavHostFragment.findNavController(AlienArmory.this)
                 .navigate(R.id.action_armory_go_to_armory_weapons));
+
+        binding.btnAlienArmoryProtection.setOnClickListener(v ->
+                NavHostFragment.findNavController(AlienArmory.this)
+                .navigate(R.id.action_armory_go_to_armory_protection));
     }
 
 }

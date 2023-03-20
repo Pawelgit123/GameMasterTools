@@ -28,11 +28,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btnAlienArmoryProtection"
         android:layout_width="@dimen/button_x"
         android:layout_height="@dimen/button_y"
         android:text="Protection"
-        android:backgroundTint="@color/aliengrey"
         app:layout_constraintEnd_toEndOf="@+id/btnAlienArmoryFirearms"
         app:layout_constraintStart_toStartOf="@+id/btnAlienArmoryFirearms"
         app:layout_constraintTop_toBottomOf="@+id/btnAlienArmoryFirearms" />
@@ -43,9 +42,9 @@
         android:layout_height="@dimen/button_y"
         android:text="Ammo Types"
         android:backgroundTint="@color/aliengrey"
-        app:layout_constraintEnd_toEndOf="@+id/button9"
-        app:layout_constraintStart_toStartOf="@+id/button9"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintEnd_toEndOf="@+id/btnAlienArmoryProtection"
+        app:layout_constraintStart_toStartOf="@+id/btnAlienArmoryProtection"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlienArmoryProtection" />
 
     <Button
         android:id="@+id/button12"

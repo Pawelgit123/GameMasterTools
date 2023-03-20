@@ -159,7 +159,7 @@
         app:layout_constraintTop_toTopOf="@+id/textViewAlienWeaponDamageStatic" />
 
     <TextView
-        android:id="@+id/textViewAlienWeaponRange"
+        android:id="@+id/textViewAlienArmorAir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/zeroPlacedHolder"
