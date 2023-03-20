@@ -27,6 +27,7 @@
 
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="go_main">Go to Main</string>
     <string name="developedBy">Developed by: Paweł Gałązka</string>
     <string name="imageLogoDescription">mainLogo</string>
     <string name="disc">-> In order to understand the app you should provide yourself with proper books</string>
@@ -181,7 +182,6 @@
         <item>Kovac+</item>
         <item>Auraxis+</item>
     </string-array>
-
 
 
 </resources>

@@ -87,7 +87,9 @@
         <action
             android:id="@+id/action_Houses_to_FirstFragment"
             app:destination="@id/FirstFragment" />
-
+        <action
+            android:id="@+id/action_houses_to_houses_list"
+            app:destination="@+id/HousesListOfHouses"/>
     </fragment>
 
     <fragment
@@ -217,6 +219,13 @@
             android:id="@+id/action_armory_go_to_armory_protection"
             app:destination="@+id/AlienArmoryProtection"/>
 
+    </fragment>
+
+    <fragment
+        android:id="@+id/HousesListOfHouses"
+        android:name="com.example.gamemastertools.HousesListOfHouses"
+        android:label="@string/house"
+        tools:layout="@layout/fragment_houses_list_of_houses">
     </fragment>
 
 </navigation>

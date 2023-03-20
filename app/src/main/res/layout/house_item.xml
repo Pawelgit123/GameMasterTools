@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textViewHousesItemHouseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="26sp"
+        android:text="@string/namePlacedHolder"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewHousesItemHouseVirtueStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Virtue:"
+        android:textColor="@color/gold"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHousesItemHouseName" />
+
+    <TextView
+        android:id="@+id/textViewHousesItemHousesVirtue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/namePlacedHolder"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewHousesItemHouseVirtueStatic"
+        app:layout_constraintStart_toEndOf="@+id/textViewHousesItemHouseVirtueStatic"
+        app:layout_constraintTop_toTopOf="@+id/textViewHousesItemHouseVirtueStatic" />
+
+    <ImageView
+        android:id="@+id/imageViewHousesItemHouseLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHousesItemHouseName"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewHousesItemHouseDescription"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:justificationMode="inter_word"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textViewHousesItemHouseVirtueStatic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHousesItemHouseVirtueStatic" />
+
+    <TextView
+        android:id="@+id/textViewHousesItemHouseAdditional"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:justificationMode="inter_word"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textViewHousesItemHouseDescription"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHousesItemHouseDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
