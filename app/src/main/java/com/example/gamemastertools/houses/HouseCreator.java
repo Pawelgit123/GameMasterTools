@@ -17,6 +17,7 @@ public class HouseCreator {
         houseList.add(createHouseWolf());
         houseList.add(createHouseHorse());
         houseList.add(createHouseBoar());
+        houseList.add(createUnBlooded());
 
         return houseList;
     }
@@ -252,6 +253,35 @@ public class HouseCreator {
                 "Before any ven can take an action that does not somehow benefit him, he must first " +
                 "make a Service risk. Helping a stranger, defending an disliked innocent before your " +
                 "peers, just extending a hand. Danger. Potential Loss. Risk.");
+        return house;
+    }
+
+    private static House createUnBlooded() {
+        House house = new House(R.drawable.vortex_unblooded);
+        house.setName("The unBlooded");
+        house.setVirtue("no Virtue");
+        house.setDescription("Crafting the unBlooded\n" +
+                "   When you set out to tell an adventure story, you need an unBlooded " +
+                "company to participate. UnBlooded ven are still ven, even if they " +
+                "aren’t people. Th is means that they have Names, Virtues, and Aspects " +
+                "just like noble ven. There are some differences in how these are " +
+                "determined, though, and unBlooded adventurers also lack many of " +
+                "the special advantages of the nobles.\n" +
+                "   The unBlooded, start at the bottom rungs of society. As unBlooded characters " +
+                "gain Glory, they earn benefits from their patrons. These benefits grant " +
+                "them access to privileges normally reserved for the nobility, like the right " +
+                "to wield a sword, the right to own a horse, or the right to visit a temple to " +
+                "one of the Suaven. Eventually, an unBlooded character may gain a patron" +
+                "and become a Vassal, or even gain so much recognition that he goes " +
+                "through the ritual of Blooding and joins the nobility herself!");
+        house.setAdditional("   You can’t be unBlooded and have Style (unless " +
+                "you’re a well-dressed bard, that is). In general, unBlooded characters " +
+                "don’t have Style points. Instead, the company as a whole has Glory. You " +
+                "can use Glory points to do all the things that you’d do with Style: refresh " +
+                "Aspects, show up at a dramatic moment, trigger various abilities and " +
+                "so on. You just have to pull it from the company’s communal pool. The " +
+                "company gains Glory by overcoming perils, and the bard determines " +
+                "whose Glory lasts beyond the tale at the end.");
         return house;
     }
 }
