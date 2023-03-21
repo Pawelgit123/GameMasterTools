@@ -32,5 +32,9 @@ public class HousesFragment extends Fragment {
                 NavHostFragment.findNavController(HousesFragment.this)
                 .navigate(R.id.action_Houses_to_FirstFragment));
 
+        binding.btnHousesListOfHouses.setOnClickListener(v ->
+                NavHostFragment.findNavController(HousesFragment.this)
+                .navigate(R.id.action_houses_to_houses_list));
+
     }
 }
